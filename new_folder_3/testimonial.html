@@ -3,13 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Testimonials &amp; Mentor Voices | NIF Global Ghatkopar</title>
-  <meta name="description" content="Read authentic reviews, placement success stories and mentor feedback from NIF Global Ghatkopar graduates.">
+  <title>Student Testimonials | NIF Global Ghatkopar | Student Success Stories</title>
+  <meta name="description" content="Read real reviews and inspiring success stories from Fashion and Interior Design students at NIF Global Ghatkopar. Learn about runway experiences at NYFW and Lakmé.">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/design3.css">
   <link rel="icon" href="assets/images/cropped-Logo_page-0001-removebg-preview-1-32x32.webp" sizes="32x32">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .testimonial-card-d3 {
+      background: #fff;
+      border: 1px solid #eef2f6;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+    .testimonial-card-d3:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.08);
+      border-color: #fbcfe8;
+    }
+    .test-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e11d48;
+    }
+  </style>
 </head>
 <body>
 
@@ -31,9 +56,9 @@
             Who We Are
           </a>
           <ul class="dropdown-menu d3-dropdown-menu">
-            <li><a class="dropdown-item" href="about-us.html"><i class="bi bi-info-circle me-2"></i> About Us</a></li>
-            <li><a class="dropdown-item" href="why-us.html"><i class="bi bi-star me-2"></i> Why Us</a></li>
-            <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2"></i> Blogs</a></li>
+            <li><a class="dropdown-item" href="about-us.html"><i class="bi bi-info-circle me-2 text-danger"></i> About Us</a></li>
+            <li><a class="dropdown-item" href="why-us.html"><i class="bi bi-star me-2 text-danger"></i> Why Us</a></li>
+            <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2 text-danger"></i> Blogs</a></li>
           </ul>
         </div>
         <div class="dropdown">
@@ -61,100 +86,193 @@
         </a>
       </div>
     </div>
+
+    <!-- Mobile Collapsible Menu -->
+    <div class="collapse d-xl-none px-4 pt-3 pb-2" id="d3NavContent">
+      <div class="d-flex flex-column gap-2">
+        <a href="index.html" class="d3-nav-link">Home</a>
+        <a href="about-us.html" class="d3-nav-link">About Us</a>
+        <a href="why-us.html" class="d3-nav-link">Why Us</a>
+        <a href="fashion-design.html" class="d3-nav-link">Fashion Design</a>
+        <a href="interior-design.html" class="d3-nav-link">Interior Design</a>
+        <a href="gallery.html" class="d3-nav-link">Gallery</a>
+        <a href="testimonial.html" class="d3-nav-link fw-bold text-danger">Testimonial</a>
+        <a href="blog.html" class="d3-nav-link">Blogs</a>
+        <a href="contact-us.html" class="d3-nav-link">Contact-us</a>
+        <a href="tel:+918433777788" class="d3-nav-link text-primary fw-bold">Call Now: +91 8433-7777-88</a>
+        <div class="pt-2 d-flex flex-column gap-2">
+          <a href="contact-us.html" class="btn-d3-admission w-100 text-center">Admission Open 2026</a>
+          <a href="assets/images/NIF-Global-Brochure-2025-1-2_removed.pdf" download class="d3-pdf-badge justify-content-center">
+            <img src="assets/images/pdf-1.webp" alt="PDF">
+            <span>DOWNLOAD NOW</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- ================= BANNER ================= -->
   <section class="d3-hero-section py-5 text-center">
     <div class="container py-3">
       <span class="d3-section-kicker">- STUDENT VOICES -</span>
-      <h1 class="d3-hero-title mb-2">What Our <span class="text-magenta-gradient d-inline">Graduates Say</span></h1>
+      <h1 class="d3-hero-title mb-2">What Our Students <span class="text-magenta-gradient d-inline">Say</span></h1>
       <p class="d3-hero-desc mx-auto">
-        Read real experiences from alumni working at top fashion labels, architecture firms, and luxury design consultancies.
+        Hear directly from the talented students and graduates who built their dream design careers, showcased at New York Fashion Week, and secured top studio placements through NIF Global Ghatkopar.
       </p>
       <div class="d3-hero-swoosh mx-auto" style="max-width: 320px;"></div>
     </div>
   </section>
 
-  <!-- ================= TESTIMONIALS GRID ================= -->
-  <section class="py-5 bg-white">
+  <!-- ================= FEATURED RUNWAY TESTIMONIAL ================= -->
+  <section class="py-5 bg-white border-bottom">
+    <div class="container">
+      <div class="card border-0 rounded-4 p-4 p-md-5 shadow-sm" style="background: linear-gradient(135deg, #fff1f2 0%, #eff6ff 100%);">
+        <div class="row align-items-center g-4">
+          <div class="col-md-3 text-center">
+            <img src="assets/images/VANSHIKA-1.webp" alt="Vanshika Bhanushali" class="img-fluid rounded-circle shadow-lg" style="width: 160px; height: 160px; object-fit: cover; border: 4px solid #fff;">
+            <h5 class="fw-bold mt-3 mb-1">Vanshika Bhanushali</h5>
+            <span class="badge bg-danger">Fashion Design Student</span>
+            <p class="text-secondary small mt-1 mb-0">Showcased at New York Fashion Week</p>
+          </div>
+          <div class="col-md-9">
+            <div class="text-warning fs-5 mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fs-5 text-dark fst-italic mb-3" style="line-height: 1.8;">
+              &ldquo;Attending NIF’s fashion designing classes was truly transformative. The curriculum blended theory with practical skills, and the supportive instructors shaped my passion for design. Participating in New York Fashion Week as a dress designer was exhilarating. Showcasing my creations on such a prestigious platform and interacting with industry professionals deepened my insight into the fashion world. These experiences have honed my skills and fueled my aspirations in the industry.&rdquo;
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <span class="text-secondary small fw-semibold"><i class="bi bi-geo-alt-fill text-danger me-1"></i> NIF Global Ghatkopar Campus</span>
+              <span class="text-secondary small fw-semibold"><i class="bi bi-award-fill text-primary me-1"></i> NYFW Dress Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS GRID (ALL STUDENTS FROM ORIGINAL SITE) ================= -->
+  <section class="py-5" style="background-color: #fbf9f6;">
     <div class="container">
       <div class="row g-4">
         
-        <!-- Review 1 -->
+        <!-- Review 1: Zoya Khan -->
         <div class="col-lg-4 col-md-6">
-          <div class="d3-testimonial-card">
-            <img src="assets/images/design3/student_1.jpg" alt="Priya Sharma" class="d3-student-avatar">
-            <div>
-              <p class="d3-testimonial-quote">"NIF Global gave me the right platform to follow my passion in Fashion Design. The faculty pushed my creativity beyond conventional limits."</p>
-              <div class="d3-student-name">Priya Sharma</div>
-              <div class="d3-student-role">Fashion Design Graduate &bull; Couturier</div>
-              <div class="d3-stars">★★★★★</div>
+          <div class="testimonial-card-d3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/images/ZOYAKHAN.webp" alt="Zoya Khan" class="test-avatar">
+              <div>
+                <h5 class="fw-bold mb-0">Zoya Khan</h5>
+                <span class="badge bg-primary-subtle text-primary small">Interior Design Student</span>
+              </div>
             </div>
+            <div class="text-warning small mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+              &ldquo;Hi, I am Zoya Rafique Khan, 1st Year Interior Designing student studying in NIF Ghatkopar. It’s an awesome experience studying here. The faculty is very cooperative and encouraging. I learned AutoCAD, SketchUp, and residential planning thoroughly with hands-on site visits.&rdquo;
+            </p>
+            <div class="border-top pt-2 text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Verified Student Review</div>
           </div>
         </div>
 
-        <!-- Review 2 -->
+        <!-- Review 2: Khushi Parekh -->
         <div class="col-lg-4 col-md-6">
-          <div class="d3-testimonial-card">
-            <img src="assets/images/design3/student_2.jpg" alt="Riya Mehta" class="d3-student-avatar">
-            <div>
-              <p class="d3-testimonial-quote">"The mentors are amazing and the learning experience is incredible! The 3D modeling and site visits prepared me thoroughly for architectural practice."</p>
-              <div class="d3-student-name">Riya Mehta</div>
-              <div class="d3-student-role">Interior Design Graduate &bull; Spatial Designer</div>
-              <div class="d3-stars">★★★★★</div>
+          <div class="testimonial-card-d3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/images/khushiparekh.webp" alt="Khushi Parekh" class="test-avatar">
+              <div>
+                <h5 class="fw-bold mb-0">Khushi Parekh</h5>
+                <span class="badge bg-danger-subtle text-danger small">Fashion Design Student</span>
+              </div>
             </div>
+            <div class="text-warning small mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+              &ldquo;I am a first year student at NIF GHATKOPAR. The classrooms and the faculty is really supportive. We get exposure to real fabrics, advanced sewing labs, and fashion show backstage coordination that gives genuine industry exposure.&rdquo;
+            </p>
+            <div class="border-top pt-2 text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Verified Student Review</div>
           </div>
         </div>
 
-        <!-- Review 3 -->
+        <!-- Review 3: Mahek Jadhav -->
         <div class="col-lg-4 col-md-6">
-          <div class="d3-testimonial-card">
-            <img src="assets/images/design3/student_3.jpg" alt="Neha Kapoor" class="d3-student-avatar">
-            <div>
-              <p class="d3-testimonial-quote">"A perfect place to build a creative and successful career. The personalized mentorship by celebrity instructors gave me immense confidence."</p>
-              <div class="d3-student-name">Neha Kapoor</div>
-              <div class="d3-student-role">Beauty &amp; Wellness Graduate &bull; Aesthetician</div>
-              <div class="d3-stars">★★★★★</div>
+          <div class="testimonial-card-d3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/images/MAHEKJADHAV.webp" alt="Mahek Jadhav" class="test-avatar">
+              <div>
+                <h5 class="fw-bold mb-0">Mahek Jadhav</h5>
+                <span class="badge bg-primary-subtle text-primary small">Interior Design Student</span>
+              </div>
             </div>
+            <div class="text-warning small mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+              &ldquo;Hello, this is Mahek Jadhav from 1st year of Interior Designing in NIF Ghatkopar. The hands-on project work, 3D software rendering classes, and guidance from industry mentors made my transition into design seamless and exciting.&rdquo;
+            </p>
+            <div class="border-top pt-2 text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Verified Student Review</div>
           </div>
         </div>
 
-        <!-- Review 4 -->
+        <!-- Review 4: Sanika Rane -->
         <div class="col-lg-4 col-md-6">
-          <div class="d3-testimonial-card">
-            <img src="assets/images/design3/student_1.jpg" alt="Vanshika Jain" class="d3-student-avatar">
-            <div>
-              <p class="d3-testimonial-quote">"From day one, the practical draping exercises and fabric laboratories helped me build a runway-ready portfolio for Lakmé Fashion Week."</p>
-              <div class="d3-student-name">Vanshika Jain</div>
-              <div class="d3-student-role">Fashion Design Graduate</div>
-              <div class="d3-stars">★★★★★</div>
+          <div class="testimonial-card-d3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/images/SANIKARANE.webp" alt="Sanika Rane" class="test-avatar">
+              <div>
+                <h5 class="fw-bold mb-0">Sanika Rane</h5>
+                <span class="badge bg-danger-subtle text-danger small">Fashion Design Student</span>
+              </div>
             </div>
+            <div class="text-warning small mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+              &ldquo;Hi I’m Sanika Rane studying fashion designing in NIF Ghatkopar. For studying fashion designing course NIF Ghatkopar is an excellent place and as a first year student I have already worked on creative pattern drafting and garment stitching.&rdquo;
+            </p>
+            <div class="border-top pt-2 text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Verified Student Review</div>
           </div>
         </div>
 
-        <!-- Review 5 -->
+        <!-- Review 5: Bhavika Gehani -->
         <div class="col-lg-4 col-md-6">
-          <div class="d3-testimonial-card">
-            <img src="assets/images/design3/student_2.jpg" alt="Zoya Merchant" class="d3-student-avatar">
-            <div>
-              <p class="d3-testimonial-quote">"The placement support team was relentless in helping me secure an internship with an international architectural firm in Mumbai."</p>
-              <div class="d3-student-name">Zoya Merchant</div>
-              <div class="d3-student-role">Interior Architecture Graduate</div>
-              <div class="d3-stars">★★★★★</div>
+          <div class="testimonial-card-d3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/images/bhavikagehani.webp" alt="Bhavika Gehani" class="test-avatar">
+              <div>
+                <h5 class="fw-bold mb-0">Bhavika Gehani</h5>
+                <span class="badge bg-danger-subtle text-danger small">Fashion Design Student</span>
+              </div>
             </div>
+            <div class="text-warning small mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+              &ldquo;I am Bhavika Gehani pursuing Fashion Design at NIF Global Ghatkopar. The mentors are top-notch and the campus environment inspires you to push creative limits every single day. The masterclasses with Manish Malhotra were unbelievable!&rdquo;
+            </p>
+            <div class="border-top pt-2 text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Verified Student Review</div>
           </div>
         </div>
 
-        <!-- Review 6 -->
+        <!-- Review 6: Sakshi Badala -->
         <div class="col-lg-4 col-md-6">
-          <div class="d3-testimonial-card">
-            <img src="assets/images/design3/student_3.jpg" alt="Khushi Shah" class="d3-student-avatar">
-            <div>
-              <p class="d3-testimonial-quote">"The 0% EMI plan made high-level international education completely stress-free for my family. Best decision of my life!"</p>
-              <div class="d3-student-name">Khushi Shah</div>
-              <div class="d3-student-role">Design Management Student</div>
-              <div class="d3-stars">★★★★★</div>
+          <div class="testimonial-card-d3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/images/SAKSHIBADALA.webp" alt="Sakshi Badala" class="test-avatar">
+              <div>
+                <h5 class="fw-bold mb-0">Sakshi Badala</h5>
+                <span class="badge bg-danger-subtle text-danger small">Fashion Design Student</span>
+              </div>
             </div>
+            <div class="text-warning small mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+              &ldquo;I’m Sakshi Badala studying fashion design at NIF Global. The practical workshops, material library, and Lakmé Fashion Week opportunities gave me the confidence to build my own designer portfolio and showcase my couture aesthetic.&rdquo;
+            </p>
+            <div class="border-top pt-2 text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Verified Student Review</div>
           </div>
         </div>
 
@@ -173,11 +291,11 @@
           <div class="col-md-4">
             <span class="d3-badge-next">&bull; Take the Next Step</span>
             <h2 class="d3-admission-title">Get Admission Today!</h2>
-            <p class="d3-admission-subtitle">Fill the enquiry form and our team will get back to you shortly.</p>
+            <p class="d3-admission-subtitle">Fill the enquiry form and start your success story with us.</p>
           </div>
           <div class="col-md-6">
             <div class="d3-form-card">
-              <form id="d3AdmissionForm">
+              <form id="d3AdmissionForm" onsubmit="event.preventDefault(); alert('Enquiry submitted successfully!');">
                 <div class="row g-2">
                   <div class="col-md-4 col-12">
                     <select class="form-select d3-form-control" id="d3CourseSelect" required>
@@ -216,13 +334,20 @@
     <div class="container position-relative">
       <img src="assets/images/design3/skyline.jpg" alt="Skyline" class="d3-skyline-bg d-none d-lg-block">
       <div class="row g-4">
+        
         <div class="col-lg-3 col-md-6">
           <div class="mb-3">
             <img src="assets/images/Logo.webp" alt="NIF Global" style="height: 48px; filter: brightness(0) invert(1);">
           </div>
-          <p class="text-secondary small mb-3">3rd Floor, Sanghvi Square, M.G. Road, Near Metro Station, Ghatkopar West, Mumbai - 400086</p>
-          <p class="text-secondary small mb-0"><strong>Phone:</strong> +91 8433-7777-88<br><strong>Email:</strong> nifghatkopar6@gmail.com</p>
+          <p class="text-secondary small mb-3">
+            3rd Floor, Sanghvi Square, M.G. Road, Near Metro Station, Ghatkopar West, Mumbai - 400086
+          </p>
+          <p class="text-secondary small mb-0">
+            <strong>Phone:</strong> +91 8433-7777-88<br>
+            <strong>Email:</strong> nifghatkopar6@gmail.com
+          </p>
         </div>
+
         <div class="col-lg-3 col-md-6 col-6">
           <h5>Quick Links</h5>
           <ul class="d3-footer-links">
@@ -232,6 +357,7 @@
             <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
+
         <div class="col-lg-3 col-md-6 col-6">
           <h5>Useful Links</h5>
           <ul class="d3-footer-links">
@@ -241,17 +367,22 @@
             <li><a href="contact-us.html">Admission Open 2026</a></li>
           </ul>
         </div>
+
         <div class="col-lg-3 col-md-6">
           <h5>Follow Us</h5>
           <div class="d-flex mb-3">
-            <a href="https://www.facebook.com/nifdghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/nifglobal.ghatkopar/" target="_blank" class="d3-social-icon"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/@nifglobalghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.linkedin.com/company/nif-global-ghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/nifdghatkopar" target="_blank" class="d3-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/nifglobal.ghatkopar/" target="_blank" class="d3-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@nifglobalghatkopar" target="_blank" class="d3-social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/nif-global-ghatkopar" target="_blank" class="d3-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
-          <p class="text-secondary small">Affiliated with London School of Trends and leading design bodies worldwide.</p>
+          <p class="text-secondary small">
+            Affiliated with London School of Trends and leading design bodies worldwide.
+          </p>
         </div>
+
       </div>
+
       <div class="d3-footer-bottom d-flex flex-wrap justify-content-between align-items-center">
         <div>&copy; 2026 NIF Global Ghatkopar. All Rights Reserved.</div>
         <div class="fw-semibold text-white-50">Dream &bull; Design &bull; Achieve</div>
@@ -263,4 +394,3 @@
   <script src="assets/js/design3.js"></script>
 </body>
 </html>
-

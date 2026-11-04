@@ -3,13 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design Blogs &amp; Career Insights | NIF Global Ghatkopar</title>
-  <meta name="description" content="Read career guidance, industry trends and design advice from NIF Global Ghatkopar.">
+  <title>Design Insights &amp; Articles | NIF Global Ghatkopar</title>
+  <meta name="description" content="Explore insightful articles, guides, and career trends in Fashion and Interior Design education from NIF Global Ghatkopar Mumbai.">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/design3.css">
   <link rel="icon" href="assets/images/cropped-Logo_page-0001-removebg-preview-1-32x32.webp" sizes="32x32">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .blog-card-d3 {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+      transition: all 0.3s ease;
+    }
+    .blog-card-d3:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 30px rgba(0,0,0,0.1);
+      border-color: #f43f5e;
+    }
+    .blog-img-wrap {
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+      background: #f1f5f9;
+    }
+    .blog-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .blog-card-d3:hover .blog-img-wrap img {
+      transform: scale(1.06);
+    }
+  </style>
 </head>
 <body>
 
@@ -31,9 +64,9 @@
             Who We Are
           </a>
           <ul class="dropdown-menu d3-dropdown-menu">
-            <li><a class="dropdown-item" href="about-us.html"><i class="bi bi-info-circle me-2"></i> About Us</a></li>
-            <li><a class="dropdown-item" href="why-us.html"><i class="bi bi-star me-2"></i> Why Us</a></li>
-            <li><a class="dropdown-item fw-bold text-danger" href="blog.html"><i class="bi bi-journal-text me-2"></i> Blogs</a></li>
+            <li><a class="dropdown-item" href="about-us.html"><i class="bi bi-info-circle me-2 text-danger"></i> About Us</a></li>
+            <li><a class="dropdown-item" href="why-us.html"><i class="bi bi-star me-2 text-danger"></i> Why Us</a></li>
+            <li><a class="dropdown-item fw-bold text-danger" href="blog.html"><i class="bi bi-journal-text me-2 text-danger"></i> Blogs</a></li>
           </ul>
         </div>
         <div class="dropdown">
@@ -61,101 +94,226 @@
         </a>
       </div>
     </div>
+
+    <!-- Mobile Collapsible Menu -->
+    <div class="collapse d-xl-none px-4 pt-3 pb-2" id="d3NavContent">
+      <div class="d-flex flex-column gap-2">
+        <a href="index.html" class="d3-nav-link">Home</a>
+        <a href="about-us.html" class="d3-nav-link">About Us</a>
+        <a href="why-us.html" class="d3-nav-link">Why Us</a>
+        <a href="fashion-design.html" class="d3-nav-link">Fashion Design</a>
+        <a href="interior-design.html" class="d3-nav-link">Interior Design</a>
+        <a href="gallery.html" class="d3-nav-link">Gallery</a>
+        <a href="testimonial.html" class="d3-nav-link">Testimonial</a>
+        <a href="blog.html" class="d3-nav-link fw-bold text-danger">Blogs</a>
+        <a href="contact-us.html" class="d3-nav-link">Contact-us</a>
+        <a href="tel:+918433777788" class="d3-nav-link text-primary fw-bold">Call Now: +91 8433-7777-88</a>
+        <div class="pt-2 d-flex flex-column gap-2">
+          <a href="contact-us.html" class="btn-d3-admission w-100 text-center">Admission Open 2026</a>
+          <a href="assets/images/NIF-Global-Brochure-2025-1-2_removed.pdf" download class="d3-pdf-badge justify-content-center">
+            <img src="assets/images/pdf-1.webp" alt="PDF">
+            <span>DOWNLOAD NOW</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- ================= BANNER ================= -->
   <section class="d3-hero-section py-5 text-center">
     <div class="container py-3">
-      <span class="d3-section-kicker">- KNOWLEDGE HUB -</span>
-      <h1 class="d3-hero-title mb-2">Design Articles &amp; <span class="text-magenta-gradient d-inline">Insights</span></h1>
+      <span class="d3-section-kicker">- KNOWLEDGE &amp; INDUSTRY TRENDS -</span>
+      <h1 class="d3-hero-title mb-2">Design <span class="text-magenta-gradient d-inline">Insights &amp; Articles</span></h1>
       <p class="d3-hero-desc mx-auto">
-        Stay updated with trends in Mumbai fashion, luxury interior design, sustainable textiles, and career roadmaps.
+        Expert analysis, admissions advice, career roadmaps, and insider guides from Mumbai's leading institute for fashion and interior design.
       </p>
       <div class="d3-hero-swoosh mx-auto" style="max-width: 320px;"></div>
     </div>
   </section>
 
-  <!-- ================= BLOG GRID ================= -->
+  <!-- ================= BLOG ARTICLES GRID (ALL 10 ARTICLES FROM ORIGINAL SITE) ================= -->
   <section class="py-5 bg-white">
     <div class="container">
       <div class="row g-4">
         
-        <!-- Blog 1 -->
+        <!-- Post 1 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
-            <img src="assets/images/design3/course_fashion.jpg" alt="Fashion Design in Mumbai" class="w-100" style="height: 200px; object-fit: cover;">
-            <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-danger-subtle text-danger small mb-2" style="width: fit-content;">Fashion Careers</span>
-              <h5 class="fw-bold mb-2">Best Fashion Design Institutes in Mumbai: A Comprehensive 2026 Guide</h5>
-              <p class="text-secondary small mb-3">Discover the essential criteria for choosing the right fashion institute in Mumbai, from runway opportunities to UGC degrees.</p>
-              <a href="contact-us.html" class="d3-card-link mt-auto">Read Full Article <i class="bi bi-arrow-right"></i></a>
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/Choosing-Mumbais-Interior-Design-Institute.png" alt="Choosing Interior Design Institute" loading="lazy">
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Interior Design</span>
             </div>
-          </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> March 2026 &bull; 5 min read</span>
+              <h5 class="fw-bold text-dark mb-2">How to Choose the Best Interior Design Institute in Mumbai: 7 Key Factors</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                Choosing where to study interior design is one of the most critical decisions for your creative journey. Discover accreditation, 3D CAD suites, and site visit access.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
         </div>
 
-        <!-- Blog 2 -->
+        <!-- Post 2 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
-            <img src="assets/images/design3/course_interior.jpg" alt="Interior Design Careers" class="w-100" style="height: 200px; object-fit: cover;">
-            <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-primary-subtle text-primary small mb-2" style="width: fit-content;">Interior Architecture</span>
-              <h5 class="fw-bold mb-2">Lucrative Interior Design Careers &amp; Salaries in Mumbai</h5>
-              <p class="text-secondary small mb-3">Explore corporate remuneration, freelance consultation fees, and commercial 3D CAD visualization demand.</p>
-              <a href="contact-us.html" class="d3-card-link mt-auto">Read Full Article <i class="bi bi-arrow-right"></i></a>
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/blog-Images-04.png" alt="Best Interior Design Course in Ghatkopar" loading="lazy">
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Ghatkopar Campus</span>
             </div>
-          </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> March 2026 &bull; 4 min read</span>
+              <h5 class="fw-bold text-dark mb-2">Which is the Best Interior Design Course in Ghatkopar for Beginners?</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                Starting a career in interior design is an exciting step for creative minds. We compare 1-year foundations vs. full 3-year degree courses for newcomers.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
         </div>
 
-        <!-- Blog 3 -->
+        <!-- Post 3 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
-            <img src="assets/images/aboutus-1.webp" alt="Online vs Offline" class="w-100" style="height: 200px; object-fit: cover;">
-            <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-success-subtle text-success small mb-2" style="width: fit-content;">Education Guide</span>
-              <h5 class="fw-bold mb-2">Online vs Offline Fashion Design Classes: Which is Better?</h5>
-              <p class="text-secondary small mb-3">Why hands-on tactile material labs and machine stitching studios remain vital for serious couture professionals.</p>
-              <a href="contact-us.html" class="d3-card-link mt-auto">Read Full Article <i class="bi bi-arrow-right"></i></a>
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/Blog-Images-03.png" alt="Interior Design Institute in Ghatkopar Guide" loading="lazy">
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Guide 2026</span>
             </div>
-          </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> February 2026 &bull; 6 min read</span>
+              <h5 class="fw-bold text-dark mb-2">What is the Best Interior Design Institute in Ghatkopar? A Complete 2026 Guide</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                A deep dive into faculty mentorship, London School of Trends affiliation, placement metrics, and practical workshop infrastructure in Central Mumbai.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
         </div>
 
-        <!-- Blog 4 -->
+        <!-- Post 4 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
-            <img src="assets/images/design3/course_beauty.jpg" alt="Beauty Careers" class="w-100" style="height: 200px; object-fit: cover;">
-            <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-warning-subtle text-warning-emphasis small mb-2" style="width: fit-content;">Beauty &amp; Hair</span>
-              <h5 class="fw-bold mb-2">How Bridal Cosmetology is Booming in the Indian Wedding Market</h5>
-              <p class="text-secondary small mb-3">High-ticket bridal appointments and editorial media opportunities for skilled makeup artists.</p>
-              <a href="contact-us.html" class="d3-card-link mt-auto">Read Full Article <i class="bi bi-arrow-right"></i></a>
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/Fashion-Design-Courses-in-Mumbai-300x179.png" alt="Fashion Design Courses Mumbai Fees" loading="lazy">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Fashion Design</span>
             </div>
-          </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> February 2026 &bull; 7 min read</span>
+              <h5 class="fw-bold text-dark mb-2">Fashion Design Courses in Mumbai: Complete Guide to Fees, Colleges &amp; Admissions</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                Mumbai is India's premier fashion capital. Explore detailed fee structures, 0% interest EMI options, eligibility criteria, and career return on investment.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
         </div>
 
-        <!-- Blog 5 -->
+        <!-- Post 5 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
-            <img src="assets/images/design3/course_management.jpg" alt="Design Portfolio" class="w-100" style="height: 200px; object-fit: cover;">
-            <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-info-subtle text-info-emphasis small mb-2" style="width: fit-content;">Portfolio Tips</span>
-              <h5 class="fw-bold mb-2">How to Build Your First Design Portfolio for Global Brands</h5>
-              <p class="text-secondary small mb-3">Step-by-step layout strategies to impress recruiters at Lakmé Fashion Week and top interior consultancies.</p>
-              <a href="contact-us.html" class="d3-card-link mt-auto">Read Full Article <i class="bi bi-arrow-right"></i></a>
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/Online-vs-Offline-Fashion-Design-Courses-in-Mumbai-Pros-Cons-300x142.png" alt="Online vs Offline Fashion Design" loading="lazy">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Analysis</span>
             </div>
-          </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> January 2026 &bull; 5 min read</span>
+              <h5 class="fw-bold text-dark mb-2">Online vs Offline Fashion Design Courses in Mumbai: Pros &amp; Cons</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                Comparing digital flexibility with hands-on sewing machinery, fabric touching, and runway preparation. Find the right learning mode for your lifestyle.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
         </div>
 
-        <!-- Blog 6 -->
+        <!-- Post 6 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
-            <img src="assets/images/design3/campus_1.jpg" alt="Runway Success" class="w-100" style="height: 200px; object-fit: cover;">
-            <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-danger-subtle text-danger small mb-2" style="width: fit-content;">Global Runways</span>
-              <h5 class="fw-bold mb-2">Inside New York Fashion Week: How NIF Students Walk the Runway</h5>
-              <p class="text-secondary small mb-3">An insider’s view on preparing student capstone collections for Manhattan’s iconic runways.</p>
-              <a href="contact-us.html" class="d3-card-link mt-auto">Read Full Article <i class="bi bi-arrow-right"></i></a>
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/The-Ultimate-List-of-Best-Fashion-Institutes-in-Mumbai-for-Global-Careers-300x142.png" alt="Best Fashion Institutes Global Careers" loading="lazy">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Global Careers</span>
             </div>
-          </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> January 2026 &bull; 6 min read</span>
+              <h5 class="fw-bold text-dark mb-2">The Ultimate List of Best Fashion Institutes in Mumbai for Global Careers</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                How international certifications and showcase opportunities at New York and London Fashion Week unlock global styling and couturier roles.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 7 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/Top-10-Fashion-Design-Institutes-in-Mumbai-Complete-2026-Guide-300x143.png" alt="Top 10 Fashion Design Institutes" loading="lazy">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Rankings</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> December 2025 &bull; 8 min read</span>
+              <h5 class="fw-bold text-dark mb-2">Top 10 Fashion Design Institutes in Mumbai: Complete 2026 Guide</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                An unbiased ranking comparing curriculum depth, celebrity mentorship, student runway records, and alumni startup success in the design industry.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 8 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/Interior-Design-Courses-in-Ghatkopar-Unlocking-Endless-Career-Possibilities-300x143.png" alt="Interior Design Courses Ghatkopar Career" loading="lazy">
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Interior Design</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> November 2025 &bull; 5 min read</span>
+              <h5 class="fw-bold text-dark mb-2">Interior Design Courses in Ghatkopar: Unlocking Endless Career Possibilities</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                How Mumbai's urban redevelopment is creating booming demand for spatial planners, 3D visualizers, lighting consultants, and residential stylists.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 9 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/Blog3-2-300x142.png" alt="Find Perfect Fashion Design Institute" loading="lazy">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Admissions</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> October 2025 &bull; 4 min read</span>
+              <h5 class="fw-bold text-dark mb-2">Best Fashion Design Institute in Mumbai: How to Find the Perfect One for You</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                Evaluate design studio equipment, alumni career outcomes, faculty credentials, and financial aid before signing up for your design degree.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 10 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card-d3">
+            <div class="blog-img-wrap">
+              <img src="assets/images/Blog2-300x142.png" alt="Best Interior Design Institute Guide" loading="lazy">
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small">Creative Minds</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="text-secondary small mb-2"><i class="bi bi-calendar3 me-1"></i> September 2025 &bull; 5 min read</span>
+              <h5 class="fw-bold text-dark mb-2">Best Interior Design Institute in Mumbai: A Guide for Creative Minds</h5>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                Unlock your potential through architectural drawing, material exploration, and commercial project internships at NIF Global Ghatkopar.
+              </p>
+              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
         </div>
 
       </div>
@@ -173,11 +331,11 @@
           <div class="col-md-4">
             <span class="d3-badge-next">&bull; Take the Next Step</span>
             <h2 class="d3-admission-title">Get Admission Today!</h2>
-            <p class="d3-admission-subtitle">Fill the enquiry form and our team will get back to you shortly.</p>
+            <p class="d3-admission-subtitle">Fill the enquiry form and our admissions team will get back to you shortly.</p>
           </div>
           <div class="col-md-6">
             <div class="d3-form-card">
-              <form id="d3AdmissionForm">
+              <form id="d3AdmissionForm" onsubmit="event.preventDefault(); alert('Enquiry submitted successfully!');">
                 <div class="row g-2">
                   <div class="col-md-4 col-12">
                     <select class="form-select d3-form-control" id="d3CourseSelect" required>
@@ -216,13 +374,20 @@
     <div class="container position-relative">
       <img src="assets/images/design3/skyline.jpg" alt="Skyline" class="d3-skyline-bg d-none d-lg-block">
       <div class="row g-4">
+        
         <div class="col-lg-3 col-md-6">
           <div class="mb-3">
             <img src="assets/images/Logo.webp" alt="NIF Global" style="height: 48px; filter: brightness(0) invert(1);">
           </div>
-          <p class="text-secondary small mb-3">3rd Floor, Sanghvi Square, M.G. Road, Near Metro Station, Ghatkopar West, Mumbai - 400086</p>
-          <p class="text-secondary small mb-0"><strong>Phone:</strong> +91 8433-7777-88<br><strong>Email:</strong> nifghatkopar6@gmail.com</p>
+          <p class="text-secondary small mb-3">
+            3rd Floor, Sanghvi Square, M.G. Road, Near Metro Station, Ghatkopar West, Mumbai - 400086
+          </p>
+          <p class="text-secondary small mb-0">
+            <strong>Phone:</strong> +91 8433-7777-88<br>
+            <strong>Email:</strong> nifghatkopar6@gmail.com
+          </p>
         </div>
+
         <div class="col-lg-3 col-md-6 col-6">
           <h5>Quick Links</h5>
           <ul class="d3-footer-links">
@@ -232,6 +397,7 @@
             <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
+
         <div class="col-lg-3 col-md-6 col-6">
           <h5>Useful Links</h5>
           <ul class="d3-footer-links">
@@ -241,17 +407,22 @@
             <li><a href="contact-us.html">Admission Open 2026</a></li>
           </ul>
         </div>
+
         <div class="col-lg-3 col-md-6">
           <h5>Follow Us</h5>
           <div class="d-flex mb-3">
-            <a href="https://www.facebook.com/nifdghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/nifglobal.ghatkopar/" target="_blank" class="d3-social-icon"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/@nifglobalghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.linkedin.com/company/nif-global-ghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/nifdghatkopar" target="_blank" class="d3-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/nifglobal.ghatkopar/" target="_blank" class="d3-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@nifglobalghatkopar" target="_blank" class="d3-social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/nif-global-ghatkopar" target="_blank" class="d3-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
-          <p class="text-secondary small">Affiliated with London School of Trends and leading design bodies worldwide.</p>
+          <p class="text-secondary small">
+            Affiliated with London School of Trends and leading design bodies worldwide.
+          </p>
         </div>
+
       </div>
+
       <div class="d3-footer-bottom d-flex flex-wrap justify-content-between align-items-center">
         <div>&copy; 2026 NIF Global Ghatkopar. All Rights Reserved.</div>
         <div class="fw-semibold text-white-50">Dream &bull; Design &bull; Achieve</div>

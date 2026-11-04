@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us &amp; Campus Location | NIF Global Ghatkopar</title>
-  <meta name="description" content="Get in touch with NIF Global Ghatkopar. Campus address, phone, email, WhatsApp counseling and Google Map.">
+  <title>Contact Us | NIF Global Ghatkopar | Admissions &amp; Campus Location</title>
+  <meta name="description" content="Get in touch with NIF Global Ghatkopar. Visit our campus at Sanghvi Square, Ghatkopar West, Mumbai. Call +91 8433-7777-88 or chat on WhatsApp for admissions.">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/design3.css">
   <link rel="icon" href="assets/images/cropped-Logo_page-0001-removebg-preview-1-32x32.webp" sizes="32x32">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .contact-info-card {
+      background: #fff;
+      border: 1px solid #eef2f6;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      height: 100%;
+    }
+    .contact-icon-box {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -31,9 +51,9 @@
             Who We Are
           </a>
           <ul class="dropdown-menu d3-dropdown-menu">
-            <li><a class="dropdown-item" href="about-us.html"><i class="bi bi-info-circle me-2"></i> About Us</a></li>
-            <li><a class="dropdown-item" href="why-us.html"><i class="bi bi-star me-2"></i> Why Us</a></li>
-            <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2"></i> Blogs</a></li>
+            <li><a class="dropdown-item" href="about-us.html"><i class="bi bi-info-circle me-2 text-danger"></i> About Us</a></li>
+            <li><a class="dropdown-item" href="why-us.html"><i class="bi bi-star me-2 text-danger"></i> Why Us</a></li>
+            <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2 text-danger"></i> Blogs</a></li>
           </ul>
         </div>
         <div class="dropdown">
@@ -54,11 +74,34 @@
       </nav>
 
       <div class="d-none d-md-flex align-items-center gap-3">
-        <a href="#enquirySection" class="btn-d3-admission">Admission Open 2026</a>
+        <a href="contact-us.html" class="btn-d3-admission">Admission Open 2026</a>
         <a href="assets/images/NIF-Global-Brochure-2025-1-2_removed.pdf" download class="d3-pdf-badge" title="Download Brochure">
           <img src="assets/images/pdf-1.webp" alt="PDF">
           <span>DOWNLOAD NOW</span>
         </a>
+      </div>
+    </div>
+
+    <!-- Mobile Collapsible Menu -->
+    <div class="collapse d-xl-none px-4 pt-3 pb-2" id="d3NavContent">
+      <div class="d-flex flex-column gap-2">
+        <a href="index.html" class="d3-nav-link">Home</a>
+        <a href="about-us.html" class="d3-nav-link">About Us</a>
+        <a href="why-us.html" class="d3-nav-link">Why Us</a>
+        <a href="fashion-design.html" class="d3-nav-link">Fashion Design</a>
+        <a href="interior-design.html" class="d3-nav-link">Interior Design</a>
+        <a href="gallery.html" class="d3-nav-link">Gallery</a>
+        <a href="testimonial.html" class="d3-nav-link">Testimonial</a>
+        <a href="blog.html" class="d3-nav-link">Blogs</a>
+        <a href="contact-us.html" class="d3-nav-link fw-bold text-danger">Contact-us</a>
+        <a href="tel:+918433777788" class="d3-nav-link text-primary fw-bold">Call Now: +91 8433-7777-88</a>
+        <div class="pt-2 d-flex flex-column gap-2">
+          <a href="contact-us.html" class="btn-d3-admission w-100 text-center">Admission Open 2026</a>
+          <a href="assets/images/NIF-Global-Brochure-2025-1-2_removed.pdf" download class="d3-pdf-badge justify-content-center">
+            <img src="assets/images/pdf-1.webp" alt="PDF">
+            <span>DOWNLOAD NOW</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -67,127 +110,141 @@
   <section class="d3-hero-section py-5 text-center">
     <div class="container py-3">
       <span class="d3-section-kicker">- REACH OUT TO US -</span>
-      <h1 class="d3-hero-title mb-2">Connect with <span class="text-magenta-gradient d-inline">NIF Global Ghatkopar</span></h1>
+      <h1 class="d3-hero-title mb-2">Ready to Take the <span class="text-magenta-gradient d-inline">First Step?</span></h1>
       <p class="d3-hero-desc mx-auto">
-        Visit our state-of-the-art design studios at Sanghvi Square or schedule a 1-on-1 counseling session with our academic advisors.
+        Visit our central Mumbai campus at Sanghvi Square, Ghatkopar West or speak directly with our admissions and career counselors.
       </p>
       <div class="d3-hero-swoosh mx-auto" style="max-width: 320px;"></div>
     </div>
   </section>
 
-  <!-- ================= CONTACT DETAILS & FORM ================= -->
-  <section class="py-5 bg-white" id="enquirySection">
+  <!-- ================= CONTACT CARDS & FORM (FULL WIDTH) ================= -->
+  <section class="py-5 bg-white">
     <div class="container">
       <div class="row g-5">
         
-        <!-- Contact Information Column -->
+        <!-- Left: Contact Details & Info -->
         <div class="col-lg-5">
-          <span class="d3-section-kicker">CAMPUS DETAILS</span>
-          <h2 class="fs-2 fw-bold text-dark mb-4">Ghatkopar West Central Campus</h2>
+          <span class="d3-section-kicker">GET IN TOUCH</span>
+          <h2 class="fs-1 fw-bold text-dark mb-3">Visit Our Ghatkopar Campus or Connect Online</h2>
+          <p class="text-secondary mb-4" style="line-height: 1.8;">
+            We’re here to guide you through your creative journey. Whether you’re interested in fashion, interior design, beauty, or management, our expert admissions team at NIF Global Ghatkopar is happy to help you explore the right path.
+          </p>
 
-          <div class="d-flex align-items-start gap-3 mb-4">
-            <div class="d3-feature-icon bg-icon-pink" style="width: 44px; height: 44px; font-size: 1.3rem;">
-              <i class="bi bi-geo-alt"></i>
+          <div class="d-flex flex-column gap-4">
+            
+            <div class="d-flex align-items-start gap-3">
+              <div class="contact-icon-box bg-danger-subtle text-danger">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-1">Campus Address</h5>
+                <p class="text-secondary small mb-0" style="line-height: 1.6;">
+                  310, 311, 311A, 312, Sanghvi Square, 3rd Floor, M.G. Road, Near Metro Railway Station, Above HDFC Bank, Ghatkopar West, Mumbai, Maharashtra - 400086.
+                </p>
+              </div>
             </div>
-            <div>
-              <h5 class="fw-bold mb-1">Campus Address</h5>
-              <p class="text-secondary small mb-0">
-                NIF Global Ghatkopar, 3rd Floor, Sanghvi Square, 310, 311, 311A, 312, M.G. Road, Above HDFC Bank, Near Metro Railway Station, Ghatkopar West, Mumbai - 400086
-              </p>
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="contact-icon-box bg-primary-subtle text-primary">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-1">Helplines &amp; Admission Desk</h5>
+                <p class="text-secondary small mb-1">
+                  <strong>Primary:</strong> <a href="tel:+918433777788" class="text-dark fw-semibold text-decoration-none">+91 8433-7777-88</a>
+                </p>
+                <p class="text-secondary small mb-0">
+                  <strong>Alternate:</strong> <a href="tel:+919326573353" class="text-dark fw-semibold text-decoration-none">+91 9326-5733-53</a>
+                </p>
+              </div>
             </div>
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="contact-icon-box bg-success-subtle text-success">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-1">Email Inquiries</h5>
+                <p class="text-secondary small mb-0">
+                  <a href="mailto:nifghatkopar6@gmail.com" class="text-dark fw-semibold text-decoration-none">nifghatkopar6@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="contact-icon-box bg-warning-subtle text-dark">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-1">Campus Timings</h5>
+                <p class="text-secondary small mb-0">
+                  Monday &ndash; Saturday : 09:00 AM &ndash; 06:00 PM (Sunday Closed)
+                </p>
+              </div>
+            </div>
+
           </div>
 
-          <div class="d-flex align-items-start gap-3 mb-4">
-            <div class="d3-feature-icon bg-icon-blue" style="width: 44px; height: 44px; font-size: 1.3rem;">
-              <i class="bi bi-telephone"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1">Direct Helplines</h5>
-              <p class="text-secondary small mb-0">
-                <a href="tel:+918433777788" class="text-decoration-none text-dark fw-bold">+91 8433-7777-88</a> / +91 8433-7777-99
-              </p>
-            </div>
+          <div class="mt-4 pt-3 border-top">
+            <a href="https://api.whatsapp.com/send?phone=+918433777788" target="_blank" class="btn btn-success rounded-pill px-4 py-3 fw-bold d-inline-flex align-items-center gap-2">
+              <i class="bi bi-whatsapp fs-5"></i> Instant WhatsApp Consultation
+            </a>
           </div>
 
-          <div class="d-flex align-items-start gap-3 mb-4">
-            <div class="d3-feature-icon bg-icon-green" style="width: 44px; height: 44px; font-size: 1.3rem;">
-              <i class="bi bi-whatsapp"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1">Instant WhatsApp Counseling</h5>
-              <p class="text-secondary small mb-0">
-                <a href="https://api.whatsapp.com/send?phone=+918433777788&text=Hi%20NIF%20Global%20Ghatkopar,%20I%20want%20counseling%20for%20Admissions%202026" target="_blank" class="text-success fw-bold text-decoration-none">
-                  Click here to Chat on WhatsApp
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div class="d-flex align-items-start gap-3 mb-4">
-            <div class="d3-feature-icon bg-icon-orange" style="width: 44px; height: 44px; font-size: 1.3rem;">
-              <i class="bi bi-envelope"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1">Email Correspondence</h5>
-              <p class="text-secondary small mb-0">
-                <a href="mailto:nifghatkopar6@gmail.com" class="text-decoration-none text-secondary">nifghatkopar6@gmail.com</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="d-flex align-items-start gap-3">
-            <div class="d3-feature-icon bg-icon-pink" style="width: 44px; height: 44px; font-size: 1.3rem;">
-              <i class="bi bi-clock"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1">Visiting Hours</h5>
-              <p class="text-secondary small mb-0">Monday to Saturday: 9:30 AM – 6:30 PM (Sunday by Appointment)</p>
-            </div>
-          </div>
         </div>
 
-        <!-- Form Column -->
+        <!-- Right: Admissions Enquiry Form -->
         <div class="col-lg-7">
-          <div class="card p-4 p-md-5 rounded-4 border shadow-sm bg-white">
-            <span class="d3-section-kicker">ADMISSIONS 2026–27</span>
-            <h3 class="fw-bold text-dark mb-2">Book a 1-on-1 Creative Counseling Session</h3>
-            <p class="text-secondary small mb-4">Fill out your details below and our senior career counselor will get back to you with program details, fee schedules, and syllabus PDFs.</p>
+          <div class="contact-info-card border-2 border-danger shadow-sm">
+            <span class="badge bg-danger-subtle text-danger fw-bold px-3 py-2 rounded-pill mb-3">Admission Open 2026 Batch</span>
+            <h3 class="fw-bold text-dark mb-2">Book Your Free Creative Counseling Session</h3>
+            <p class="text-secondary small mb-4">
+              Speak with our senior design faculty, understand eligibility, portfolio preparation, and scholarship schemes.
+            </p>
 
-            <form onsubmit="event.preventDefault(); alert('Thank you! Your admission enquiry has been submitted. Our Ghatkopar counselor will contact you within 2 business hours.'); this.reset();">
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been submitted. Our admissions counselor will call you shortly.');">
               <div class="row g-3">
+                
                 <div class="col-md-6">
-                  <label class="form-label small fw-semibold">Candidate Full Name *</label>
-                  <input type="text" class="form-control d3-form-control" placeholder="e.g. Priya Sharma" required>
+                  <label class="form-label small fw-semibold text-dark">Full Name *</label>
+                  <input type="text" class="form-control d3-form-control" placeholder="Enter your full name" required>
                 </div>
+
                 <div class="col-md-6">
-                  <label class="form-label small fw-semibold">Phone / WhatsApp Number *</label>
+                  <label class="form-label small fw-semibold text-dark">Mobile Number *</label>
                   <input type="tel" class="form-control d3-form-control" placeholder="+91 98765 43210" required>
                 </div>
+
                 <div class="col-md-6">
-                  <label class="form-label small fw-semibold">Email Address *</label>
+                  <label class="form-label small fw-semibold text-dark">Email Address *</label>
                   <input type="email" class="form-control d3-form-control" placeholder="yourname@gmail.com" required>
                 </div>
+
                 <div class="col-md-6">
-                  <label class="form-label small fw-semibold">Select Program of Interest *</label>
+                  <label class="form-label small fw-semibold text-dark">Program Interested In *</label>
                   <select class="form-select d3-form-control" required>
-                    <option value="" selected disabled>Choose Program ▾</option>
-                    <option value="Fashion Design Degree (B.Voc/B.Des)">Fashion Design Degree (B.Voc / B.Des)</option>
-                    <option value="Fashion Design Advance Diploma">Fashion Design Advance Diploma (2 Years)</option>
-                    <option value="Interior Design Degree (B.Voc/B.Des)">Interior Design Degree (B.Voc / B.Des)</option>
-                    <option value="Interior Design Advance Diploma">Interior Design Advance Diploma (2 Years)</option>
-                    <option value="School of Beauty & Wellness">School of Beauty &amp; Hair Styling</option>
-                    <option value="Design Management (BBA)">Design Management (BBA)</option>
+                    <option value="" selected disabled>Select your course</option>
+                    <option value="Fashion Design (B.Voc / Degree)">Fashion Design (B.Voc / Degree)</option>
+                    <option value="Fashion Design (Diploma / Foundation)">Fashion Design (Diploma / Foundation)</option>
+                    <option value="Interior Design (B.Voc / Degree)">Interior Design (B.Voc / Degree)</option>
+                    <option value="Interior Design (Diploma / 3D CAD)">Interior Design (Diploma / 3D CAD)</option>
+                    <option value="School of Beauty & Wellness">School of Beauty &amp; Wellness</option>
+                    <option value="Design Management & BBA">Design Management &amp; BBA</option>
                   </select>
                 </div>
+
                 <div class="col-12">
-                  <label class="form-label small fw-semibold">Your Queries or Questions (Optional)</label>
-                  <textarea class="form-control d3-form-control" rows="3" placeholder="Tell us about your educational background or questions..."></textarea>
+                  <label class="form-label small fw-semibold text-dark">Your Message or Query (Optional)</label>
+                  <textarea class="form-control d3-form-control" rows="3" placeholder="Tell us about your educational background or any specific questions..."></textarea>
                 </div>
+
                 <div class="col-12 mt-4">
                   <button type="submit" class="btn-d3-primary w-100 py-3 justify-content-center">
-                    Submit Admission Enquiry <i class="bi bi-arrow-right ms-2"></i>
+                    Submit Application &amp; Book Tour <i class="bi bi-arrow-right"></i>
                   </button>
                 </div>
+
               </div>
             </form>
           </div>
@@ -197,18 +254,26 @@
     </div>
   </section>
 
-  <!-- ================= GOOGLE MAPS ================= -->
-  <section class="py-4">
+  <!-- ================= EMBEDDED MAP & TRANSIT ================= -->
+  <section class="py-5 bg-light">
     <div class="container">
-      <div class="rounded-4 overflow-hidden shadow-sm border" style="height: 380px;">
+      <div class="text-center mb-4">
+        <span class="d3-section-kicker">- HOW TO REACH US -</span>
+        <h2 class="fs-1 fw-bold text-dark">Convenient Central Mumbai Connectivity</h2>
+        <p class="text-secondary mx-auto" style="max-width: 650px;">
+          Just 2 minutes walk from Ghatkopar Metro Station (Line 1) and Central Railway Station.
+        </p>
+      </div>
+
+      <div class="rounded-4 overflow-hidden shadow border" style="height: 420px;">
         <iframe 
-          title="NIF Global Ghatkopar Location Map"
-          src="https://maps.google.com/maps?q=NIF%20Global%20Ghatkopar%20Sanghvi%20Square%20Mumbai&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.6865239611394!2d72.90286307520539!3d19.084614482121336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8702c2e36bb%3A0xe96881774e300eb0!2sNIF%20Global%20Ghatkopar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
           width="100%" 
           height="100%" 
           style="border:0;" 
           allowfullscreen="" 
-          loading="lazy">
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
     </div>
@@ -219,13 +284,20 @@
     <div class="container position-relative">
       <img src="assets/images/design3/skyline.jpg" alt="Skyline" class="d3-skyline-bg d-none d-lg-block">
       <div class="row g-4">
+        
         <div class="col-lg-3 col-md-6">
           <div class="mb-3">
             <img src="assets/images/Logo.webp" alt="NIF Global" style="height: 48px; filter: brightness(0) invert(1);">
           </div>
-          <p class="text-secondary small mb-3">3rd Floor, Sanghvi Square, M.G. Road, Near Metro Station, Ghatkopar West, Mumbai - 400086</p>
-          <p class="text-secondary small mb-0"><strong>Phone:</strong> +91 8433-7777-88<br><strong>Email:</strong> nifghatkopar6@gmail.com</p>
+          <p class="text-secondary small mb-3">
+            3rd Floor, Sanghvi Square, M.G. Road, Near Metro Station, Ghatkopar West, Mumbai - 400086
+          </p>
+          <p class="text-secondary small mb-0">
+            <strong>Phone:</strong> +91 8433-7777-88<br>
+            <strong>Email:</strong> nifghatkopar6@gmail.com
+          </p>
         </div>
+
         <div class="col-lg-3 col-md-6 col-6">
           <h5>Quick Links</h5>
           <ul class="d3-footer-links">
@@ -235,6 +307,7 @@
             <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
+
         <div class="col-lg-3 col-md-6 col-6">
           <h5>Useful Links</h5>
           <ul class="d3-footer-links">
@@ -244,17 +317,22 @@
             <li><a href="contact-us.html">Admission Open 2026</a></li>
           </ul>
         </div>
+
         <div class="col-lg-3 col-md-6">
           <h5>Follow Us</h5>
           <div class="d-flex mb-3">
-            <a href="https://www.facebook.com/nifdghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/nifglobal.ghatkopar/" target="_blank" class="d3-social-icon"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/@nifglobalghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.linkedin.com/company/nif-global-ghatkopar" target="_blank" class="d3-social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/nifdghatkopar" target="_blank" class="d3-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/nifglobal.ghatkopar/" target="_blank" class="d3-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@nifglobalghatkopar" target="_blank" class="d3-social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/nif-global-ghatkopar" target="_blank" class="d3-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
-          <p class="text-secondary small">Affiliated with London School of Trends and leading design bodies worldwide.</p>
+          <p class="text-secondary small">
+            Affiliated with London School of Trends and leading design bodies worldwide.
+          </p>
         </div>
+
       </div>
+
       <div class="d3-footer-bottom d-flex flex-wrap justify-content-between align-items-center">
         <div>&copy; 2026 NIF Global Ghatkopar. All Rights Reserved.</div>
         <div class="fw-semibold text-white-50">Dream &bull; Design &bull; Achieve</div>
@@ -266,4 +344,3 @@
   <script src="assets/js/design3.js"></script>
 </body>
 </html>
-
