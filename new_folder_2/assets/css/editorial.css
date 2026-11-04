@@ -226,6 +226,49 @@ img {
   padding-left: 18px;
 }
 
+/* ---------------- Editorial Navbar Buttons Matching Reference UI ---------------- */
+.editorial-navbar .btn-admission-open {
+  background: #b23228 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 0.92rem !important;
+  padding: 10px 22px !important;
+  border-radius: 4px !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(178, 50, 40, 0.25) !important;
+  transition: all 0.25s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+.editorial-navbar .btn-admission-open:hover {
+  background: #93251c !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(178, 50, 40, 0.4) !important;
+}
+
+.editorial-navbar .pdf-download-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease !important;
+}
+
+.editorial-navbar .pdf-download-badge:hover {
+  transform: scale(1.05) !important;
+}
+
+.editorial-navbar .pdf-download-badge img {
+  height: 42px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
 /* ---------------- Editorial Buttons ---------------- */
 .btn-editorial-primary {
   display: inline-flex;
