@@ -8,7 +8,7 @@ This repository contains design versions for **NIF Global Ghatkopar** built with
 
 ```
 c:\laragon\www\laravel_project\nifglobalghatkopar\
-├── 1/                    <-- Modern Luxury Redesign (With Andheri Reference & Mobile Architecture)
+├── new_folder_1/         <-- Modern Luxury Redesign (With Andheri Reference & Mobile Architecture)
 │   ├── assets/           <-- Local CSS, JS, Fonts & Images
 │   ├── index.html        <-- Homepage (Hero, How Learning Works, Best Programs, Mentors, FAQs)
 │   ├── about-us.html     <-- About NIF Global Ghatkopar
@@ -30,16 +30,16 @@ c:\laragon\www\laravel_project\nifglobalghatkopar\
 
 ---
 
-## 🌟 Folder `1/` - Modern Design Highlights (Inspired by NIF Andheri)
+## 🌟 Folder `new_folder_1/` - Modern Design Highlights (Inspired by NIF Andheri)
 
 | Page | File Link | Description |
 | :--- | :--- | :--- |
-| **Homepage** | **[1/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/index.html)** | Andheri-inspired hero, 4-step "How Learning Works Here" architecture, 4 flagship programs, celebrity mentors, FAQ, and mobile quick action bar. |
-| **About Us** | **[1/about-us.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/about-us.html)** | 30+ years legacy, vision, leadership, and national affiliations. |
-| **Why Us** | **[1/why-us.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/why-us.html)** | The 6 core pillars, world-class studio infrastructure, and 100% placement cell. |
-| **Fashion Design** | **[1/fashion-design.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/fashion-design.html)** | Curriculum (Foundation, Advance, Degree), Lakmé Fashion Week runway showcase. |
-| **Interior Design** | **[1/interior-design.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/interior-design.html)** | Drafting, 3D CAD/Revit/SketchUp, live site visits, and career pathways. |
-| **Gallery** | **[1/gallery.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/gallery.html)** | Visual portfolio of student runways, 3D architectural models, and studio workshops. |
-| **Testimonials** | **[1/testimonial.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/testimonial.html)** | Student reviews with avatars, star ratings, and placement achievements. |
-| **Blogs & Articles** | **[1/blog.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/blog.html)** | Design career guides, 1-year diplomas vs 3-year degrees comparisons. |
-| **Contact Us** | **[1/contact-us.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/1/contact-us.html)** | Campus address (Sanghvi Square), helplines, inquiry form, and Google Map. |
+| **Homepage** | **[new_folder_1/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/index.html)** | Andheri-inspired hero, 4-step "How Learning Works Here" architecture, 4 flagship programs, celebrity mentors, FAQ, and mobile quick action bar. |
+| **About Us** | **[new_folder_1/about-us.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/about-us.html)** | 30+ years legacy, vision, leadership, and national affiliations. |
+| **Why Us** | **[new_folder_1/why-us.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/why-us.html)** | The 6 core pillars, world-class studio infrastructure, and 100% placement cell. |
+| **Fashion Design** | **[new_folder_1/fashion-design.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/fashion-design.html)** | Curriculum (Foundation, Advance, Degree), Lakmé Fashion Week runway showcase. |
+| **Interior Design** | **[new_folder_1/interior-design.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/interior-design.html)** | Drafting, 3D CAD/Revit/SketchUp, live site visits, and career pathways. |
+| **Gallery** | **[new_folder_1/gallery.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/gallery.html)** | Visual portfolio of student runways, 3D architectural models, and studio workshops. |
+| **Testimonials** | **[new_folder_1/testimonial.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/testimonial.html)** | Student reviews with avatars, star ratings, and placement achievements. |
+| **Blogs & Articles** | **[new_folder_1/blog.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/blog.html)** | Design career guides, 1-year diplomas vs 3-year degrees comparisons. |
+| **Contact Us** | **[new_folder_1/contact-us.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/contact-us.html)** | Campus address (Sanghvi Square), helplines, inquiry form, and Google Map. |
