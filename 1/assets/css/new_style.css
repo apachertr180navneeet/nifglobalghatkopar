@@ -1116,6 +1116,204 @@ a {
   background: var(--nif-red);
 }
 
+/* ---------------- How Learning Works Here (Andheri Signature Architecture) ---------------- */
+.how-learning-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 34px 28px;
+  border: 1px solid var(--nif-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: var(--nif-transition);
+  overflow: hidden;
+}
+
+.how-learning-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--nif-red), var(--nif-gold));
+  opacity: 0;
+  transition: var(--nif-transition-fast);
+}
+
+.how-learning-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(179, 29, 40, 0.12);
+  border-color: rgba(179, 29, 40, 0.25);
+}
+
+.how-learning-card:hover::before {
+  opacity: 1;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.step-num-badge {
+  font-family: var(--nif-font-serif);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--nif-red);
+  line-height: 1;
+  background: var(--nif-red-subtle);
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(179, 29, 40, 0.15);
+}
+
+.step-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0b0e14 0%, #1e2430 100%);
+  color: #f7e7be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.step-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--nif-dark);
+  margin-bottom: 12px;
+}
+
+.step-card-desc {
+  color: var(--nif-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.step-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--nif-slate);
+  margin-top: auto;
+}
+
+.step-card-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.step-card-list li i {
+  color: var(--nif-red);
+  font-size: 0.9rem;
+}
+
+/* ---------------- Platinum Center Badge ---------------- */
+.platinum-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #1e2430 0%, #0b0e14 100%);
+  color: #f5f5f5;
+  border: 1px solid var(--nif-gold);
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(197, 155, 39, 0.2);
+}
+
+.platinum-tag i {
+  color: var(--nif-gold);
+}
+
+/* ---------------- Mobile Sticky Bottom Quick-Action Bar ---------------- */
+.mobile-bottom-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1045;
+  padding: 6px 12px;
+}
+
+@media (max-width: 767.98px) {
+  .mobile-bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  body {
+    padding-bottom: 60px;
+  }
+
+  .nif-floating-wrap {
+    bottom: 72px; /* Elevate floating buttons above bottom bar */
+  }
+}
+
+.mobile-bottom-bar .bottom-nav-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--nif-slate);
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.mobile-bottom-bar .bottom-nav-item i {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
+}
+
+.mobile-bottom-bar .bottom-nav-item.item-call {
+  color: var(--nif-red);
+}
+
+.mobile-bottom-bar .bottom-nav-item.item-wa {
+  color: #25d366;
+}
+
+.mobile-bottom-bar .bottom-nav-item.item-apply {
+  background: var(--nif-red);
+  color: #ffffff !important;
+  border-radius: 30px;
+  padding: 6px 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px var(--nif-red-glow);
+}
+
+.mobile-bottom-bar .bottom-nav-item.item-apply i {
+  font-size: 1.05rem;
+}
+
 /* ---------------- Micro-Utilities & Animation ---------------- */
 .hover-lift {
   transition: var(--nif-transition);
