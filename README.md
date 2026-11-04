@@ -48,3 +48,29 @@ c:\laragon\www\laravel_project\nifglobalghatkopar\
 | **Mentors & Voices** | **[new_folder_2/testimonial.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_2/testimonial.html)** | Real graduate reviews (Vanshika, Zoya, Khushi, Bhavika, Dhara, Sanika) and celebrity mentor profiles. |
 | **Blog & Insights** | **[new_folder_2/blog.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_2/blog.html)** | 6 comprehensive articles on Mumbai fashion institutes, interior careers, and online vs offline design education. |
 | **Contact Us** | **[new_folder_2/contact-us.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_2/contact-us.html)** | Sanghvi Square campus address, direct helplines, WhatsApp counseling, 2026 admissions form, and Google Map. |
+
+---
+
+## 🎨 Design Comparison & Navbar UI Standardization
+
+All three designs are synchronized with the 526 local image assets and complete content crawled from `https://nifglobalghatkopar.com/`.
+
+The navigation bar layout across **all pages** in all 3 folders has been standardized to strictly match the reference header design:
+1. **Left Brand Logo**: `assets/images/Logo.webp`
+2. **Navigation Menu**:
+   - `Home` (`index.html`)
+   - `Who We Are ▾` (Dropdown: `About Us`, `Why Us`, `Blogs`)
+   - `Programs ▾` (Dropdown: `Fashion Design`, `Interior Design`, `Design Management (BBA)`, `School of Beauty & Hair`)
+   - `Gallery` (`gallery.html`)
+   - `Testimonial` (`testimonial.html`)
+   - `Contact-us` (`contact-us.html`)
+   - `Call Now` (`tel:+918433777788`)
+3. **Right Header Actions**:
+   - Red Solid Button: `Admission Open 2026`
+   - Download Badge: `assets/images/pdf-1.webp` linking directly to the PDF brochure.
+
+| Version | Folder | Direct Link | Design Style |
+| :--- | :--- | :--- | :--- |
+| **Design 1** | `new_folder_1/` | **[new_folder_1/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/index.html)** | Modern high-conversion luxury layout inspired by NIF Andheri. |
+| **Design 2** | `new_folder_2/` | **[new_folder_2/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_2/index.html)** | Editorial magazine layout in ivory, warm white, and charcoal with gold accents. |
+| **Design 3** | `old_design/` | **[old_design/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/old_design/index.html)** | Archived replica of the live site with 100% local assets and standardized navbar. |
