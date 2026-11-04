@@ -169,13 +169,18 @@ img {
   }
 }
 
+.editorial-navbar .container {
+  max-width: 1400px;
+}
+
 .editorial-navbar .nav-link {
-  font-size: 0.92rem;
+  font-size: 0.93rem;
   font-weight: 600;
   color: var(--ed-charcoal);
-  padding: 8px 16px !important;
-  letter-spacing: 0.3px;
+  padding: 8px 13px !important;
+  letter-spacing: 0.2px;
   position: relative;
+  white-space: nowrap !important;
   transition: var(--ed-transition-fast);
 }
 
@@ -183,9 +188,9 @@ img {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 16px;
-  right: 16px;
-  height: 1.5px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
   background-color: var(--ed-gold);
   transform: scaleX(0);
   transition: transform 0.25s ease;
@@ -267,6 +272,43 @@ img {
   width: auto !important;
   object-fit: contain !important;
   display: block !important;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .editorial-navbar .nav-link {
+    font-size: 0.84rem !important;
+    padding: 6px 7px !important;
+  }
+  .editorial-navbar .btn-admission-open {
+    padding: 8px 14px !important;
+    font-size: 0.84rem !important;
+  }
+  .editorial-navbar .pdf-download-badge img {
+    height: 36px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .editorial-navbar .navbar-collapse {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+  .editorial-navbar .nav-link {
+    padding: 10px 0 !important;
+    border-bottom: 1px solid var(--ed-border-subtle);
+  }
+  .editorial-navbar .header-cta-group {
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+  .editorial-navbar .header-cta-group .btn-admission-open {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* ---------------- Editorial Buttons ---------------- */
