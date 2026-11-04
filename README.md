@@ -69,8 +69,9 @@ The navigation bar layout across **all pages** in all 3 folders has been standar
    - Red Solid Button: `Admission Open 2026`
    - Download Badge: `assets/images/pdf-1.webp` linking directly to the PDF brochure.
 
-| Version | Folder | Direct Link | Design Style |
+| **Version** | **Folder** | **Direct Link** | **Design Style** |
 | :--- | :--- | :--- | :--- |
-| **Design 1** | `new_folder_1/` | **[new_folder_1/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/index.html)** | Modern high-conversion luxury layout inspired by NIF Andheri. |
+| **Design 3 (New Mockup)** | `new_folder_3/` & `folder_3/` | **[new_folder_3/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_3/index.html)** | Exact reproduction of uploaded mockup (`media_1793820475615_b3165bd9.jpg`) with vibrant magenta/navy palette, organic swoosh, 4 creative courses, polaroid collage, split ribbon banner, and quick admission form. |
 | **Design 2** | `new_folder_2/` | **[new_folder_2/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_2/index.html)** | Editorial magazine layout in ivory, warm white, and charcoal with gold accents. |
-| **Design 3** | `old_design/` | **[old_design/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/old_design/index.html)** | Archived replica of the live site with 100% local assets and standardized navbar. |
+| **Design 1** | `new_folder_1/` | **[new_folder_1/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/new_folder_1/index.html)** | Modern high-conversion luxury layout inspired by NIF Andheri. |
+| **Archived Live Site** | `old_design/` | **[old_design/index.html](file:///c:/laragon/www/laravel_project/nifglobalghatkopar/old_design/index.html)** | Archived replica of the live site with 100% local assets and standardized navbar. |
