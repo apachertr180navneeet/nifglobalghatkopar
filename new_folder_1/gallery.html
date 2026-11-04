@@ -3,14 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Gallery &amp; Student Work | NIF Global Ghatkopar</title>
-  <meta name="description" content="Explore the creative gallery of NIF Global Ghatkopar. Runway showcases, student garments, interior architecture models, design exhibitions, and studio workshops.">
+  <title>Gallery | NIF Global Ghatkopar - Student Work &amp; Runways</title>
+  <meta name="description" content="View fashion runway collections, interior design exhibitions, and campus life at NIF Global Ghatkopar Mumbai.">
   <link rel="icon" type="image/webp" href="assets/images/Logo.webp">
 
   <!-- Bootstrap 5.3 & Icons -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/new_style.css">
+  <style>
+    .gallery-filter-btn {
+      border: 1px solid #e2e8f0;
+      background: #fff;
+      color: #334155;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .gallery-filter-btn:hover, .gallery-filter-btn.active {
+      background: #e11d48;
+      border-color: #e11d48;
+      color: #fff;
+    }
+    .gallery-card-1 {
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #f1f5f9;
+      aspect-ratio: 4/3;
+    }
+    .gallery-card-1:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+    .gallery-card-1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .gallery-card-1:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-card-1 .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0, 0.8) 0%, transparent 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.25rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-card-1:hover .gallery-overlay {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
 
@@ -28,10 +82,10 @@
         <div class="col-md-4 text-end">
           <div class="d-inline-flex align-items-center">
             <span class="me-2 text-white-50 small">Follow NIF:</span>
-            <a href="https://www.facebook.com" target="_blank" class="social-pill"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="social-pill"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-pill"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.youtube.com" target="_blank" class="social-pill"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/nifdghatkopar" target="_blank" class="social-pill"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/nifglobal.ghatkopar/" target="_blank" class="social-pill"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/nif-global-ghatkopar" target="_blank" class="social-pill"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@nifglobalghatkopar" target="_blank" class="social-pill"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
       </div>
@@ -52,9 +106,7 @@
         <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="about-us.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Who We Are
-            </a>
+            <a class="nav-link dropdown-toggle" href="about-us.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Who We Are</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="about-us.html"><i class="bi bi-info-circle me-2 text-danger"></i> About Us</a></li>
               <li><a class="dropdown-item" href="why-us.html"><i class="bi bi-star me-2 text-danger"></i> Why Us</a></li>
@@ -62,7 +114,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+            <a class="nav-link dropdown-toggle" href="fashion-design.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="fashion-design.html"><i class="bi bi-scissors me-2 text-danger"></i> Fashion Design</a></li>
               <li><a class="dropdown-item" href="interior-design.html"><i class="bi bi-house-door me-2 text-danger"></i> Interior Design</a></li>
@@ -89,172 +141,204 @@
   <section class="nif-hero-section py-5">
     <div class="container text-center py-4">
       <span class="hero-pill-badge mb-3"><span class="pulse-dot"></span> Visual Showcase</span>
-      <h1 class="hero-heading font-serif mb-3">Campus Life &amp; <span class="gradient-text">Student Exhibits</span></h1>
-      <p class="hero-subhead mx-auto mb-0">Immerse yourself in student creations, backstage excitement at Lakmé Fashion Week, interior model showcases, and live studio masterclasses.</p>
+      <h1 class="hero-heading font-serif mb-3">Capturing Moments of <span class="gradient-text">Creativity</span></h1>
+      <p class="hero-subhead mx-auto mb-0">Explore runway shows, fashion week presentations, interior scale models, and creative studio workshops at NIF Global Ghatkopar.</p>
     </div>
   </section>
 
-  <!-- Gallery Grid -->
+  <!-- Filter Pills -->
+  <section class="py-4 bg-white border-bottom">
+    <div class="container text-center">
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <button class="gallery-filter-btn active" onclick="filterGallery('all')">All Work</button>
+        <button class="gallery-filter-btn" onclick="filterGallery('runway')">Fashion Runway</button>
+        <button class="gallery-filter-btn" onclick="filterGallery('interior')">Interior Exhibits</button>
+        <button class="gallery-filter-btn" onclick="filterGallery('campus')">Campus Workshops</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid (Original Images from Live Website) -->
   <section class="section-space">
     <div class="container">
-      <div class="row g-4">
-        <!-- 1 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/2.jpg" alt="Student Work">
+      <div class="row g-4" id="galleryGrid1">
+        <!-- Runway -->
+        <div class="col-lg-4 col-md-6 g-item runway">
+          <div class="gallery-card-1">
+            <img src="assets/images/m1.webp" alt="Lakmé Fashion Week Runway" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-danger small mb-1" style="width: fit-content;">Runway</span>
+              <h5 class="text-white fw-bold mb-0">Lakmé Fashion Week Student Showcase</h5>
+            </div>
           </div>
         </div>
-        <!-- 2 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/3.jpg" alt="Sketching Portfolio">
+
+        <div class="col-lg-4 col-md-6 g-item runway">
+          <div class="gallery-card-1">
+            <img src="assets/images/2-1.webp" alt="Couture Ramp" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-danger small mb-1" style="width: fit-content;">Haute Couture</span>
+              <h5 class="text-white fw-bold mb-0">Graduation Fashion Runway 2025</h5>
+            </div>
           </div>
         </div>
-        <!-- 3 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/4.jpg" alt="Fashion Runway">
+
+        <div class="col-lg-4 col-md-6 g-item runway">
+          <div class="gallery-card-1">
+            <img src="assets/images/image-7-3.webp" alt="New York Fashion Week" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-danger small mb-1" style="width: fit-content;">NYFW</span>
+              <h5 class="text-white fw-bold mb-0">New York Fashion Week Presentation</h5>
+            </div>
           </div>
         </div>
-        <!-- 4 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/5.jpg" alt="Interior Architecture Models">
+
+        <div class="col-lg-4 col-md-6 g-item runway">
+          <div class="gallery-card-1">
+            <img src="assets/images/1-12-1.webp" alt="Designer Capsule" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-danger small mb-1" style="width: fit-content;">Designer Line</span>
+              <h5 class="text-white fw-bold mb-0">Avant-Garde Capsule Collection</h5>
+            </div>
           </div>
         </div>
-        <!-- 5 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/6.jpg" alt="Fabric & Garments">
+
+        <div class="col-lg-4 col-md-6 g-item runway">
+          <div class="gallery-card-1">
+            <img src="assets/images/c1-1.webp" alt="Ramp Walk" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-danger small mb-1" style="width: fit-content;">Annual Jury</span>
+              <h5 class="text-white fw-bold mb-0">Annual Fashion Panorama Showcase</h5>
+            </div>
           </div>
         </div>
-        <!-- 6 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/7.jpg" alt="Design Exhibits">
+
+        <div class="col-lg-4 col-md-6 g-item runway">
+          <div class="gallery-card-1">
+            <img src="assets/images/1-11-1.webp" alt="Fashion Ramp" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-danger small mb-1" style="width: fit-content;">Ramp Model</span>
+              <h5 class="text-white fw-bold mb-0">National Designer Runway Jury</h5>
+            </div>
           </div>
         </div>
-        <!-- 7 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/8.jpg" alt="Creative Workshops">
+
+        <!-- Interior -->
+        <div class="col-lg-4 col-md-6 g-item interior">
+          <div class="gallery-card-1">
+            <img src="assets/images/i2.webp" alt="3D Scale Model" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-primary small mb-1" style="width: fit-content;">Interior Expo</span>
+              <h5 class="text-white fw-bold mb-0">Architectural Scale Model Setup</h5>
+            </div>
           </div>
         </div>
-        <!-- 8 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/9.jpg" alt="Pattern Making Studio">
+
+        <div class="col-lg-4 col-md-6 g-item interior">
+          <div class="gallery-card-1">
+            <img src="assets/images/elegnza16-845x667-1.webp" alt="Interior Eleganza" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-primary small mb-1" style="width: fit-content;">Eleganza 2025</span>
+              <h5 class="text-white fw-bold mb-0">Spatial Installation &amp; Material Pavilion</h5>
+            </div>
           </div>
         </div>
-        <!-- 9 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/10.jpg" alt="Campus Studio">
+
+        <div class="col-lg-4 col-md-6 g-item interior">
+          <div class="gallery-card-1">
+            <img src="assets/images/img19-1-1024x683.webp" alt="Interior Space" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-primary small mb-1" style="width: fit-content;">Residential</span>
+              <h5 class="text-white fw-bold mb-0">Contemporary Living Space Visualization</h5>
+            </div>
           </div>
         </div>
-        <!-- 10 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/11.jpg" alt="Student Exhibits">
+
+        <!-- Campus -->
+        <div class="col-lg-4 col-md-6 g-item campus">
+          <div class="gallery-card-1">
+            <img src="assets/images/about-images.webp" alt="Draping Workshop" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-success small mb-1" style="width: fit-content;">Workshop</span>
+              <h5 class="text-white fw-bold mb-0">Fashion Draping &amp; Silhouette Studio</h5>
+            </div>
           </div>
         </div>
-        <!-- 11 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/12.jpg" alt="Interior Details">
+
+        <div class="col-lg-4 col-md-6 g-item campus">
+          <div class="gallery-card-1">
+            <img src="assets/images/WhatsApp-Image-2025-03-18-at-23.03.18_1ca66eaf-1024x512.webp" alt="Manish Malhotra Masterclass" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-warning text-dark small mb-1" style="width: fit-content;">Masterclass</span>
+              <h5 class="text-white fw-bold mb-0">Manish Malhotra Interacting on Campus</h5>
+            </div>
           </div>
         </div>
-        <!-- 12 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="gallery-show-item" style="height: 280px;">
-            <img src="assets/images/Artboard1.jpg" alt="Artboard Design">
+
+        <div class="col-lg-4 col-md-6 g-item campus">
+          <div class="gallery-card-1">
+            <img src="assets/images/WhatsApp-Image-2025-03-18-at-23.03.18_e62f9c1d-1024x512.webp" alt="Gauri Khan Mentorship" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-warning text-dark small mb-1" style="width: fit-content;">Masterclass</span>
+              <h5 class="text-white fw-bold mb-0">Gauri Khan Live Design Mentorship</h5>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <div class="container my-5">
-    <div class="cta-luxury-banner text-center">
-      <h2 class="font-serif">Want to See Your Designs on the Runway?</h2>
-      <p>Join the 2026 Batch at NIF Global Ghatkopar and exhibit your collections at national fashion and design shows.</p>
-      <div class="d-flex flex-wrap justify-content-center gap-3">
-        <a href="contact-us.html" class="btn btn-light btn-lg rounded-pill px-4 fw-bold text-danger">Apply For 2026 Batch</a>
-        <a href="https://wa.me/918433777788" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4"><i class="bi bi-whatsapp me-2"></i> WhatsApp Us</a>
-      </div>
-    </div>
-  </div>
-
   <!-- Footer -->
-  <footer class="nif-main-footer">
+  <footer class="nif-footer">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <img src="assets/images/White-Logo0.webp" alt="NIF Global" class="footer-brand-logo mb-0">
-            <span class="platinum-tag"><i class="bi bi-patch-check-fill"></i> PLATINUM CENTER</span>
-          </div>
-          <p class="text-white-50">NIF Global Ghatkopar is Mumbai’s leading design institute providing world-class training in Fashion Design, Interior Architecture, and Design Management.</p>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <img src="assets/images/Logo.webp" alt="NIF Global" class="footer-logo mb-3" style="filter: brightness(0) invert(1);">
+          <p class="text-white-50">Mumbai’s premier institute for fashion &amp; interior design, affiliated with London School of Trends.</p>
         </div>
-        <div class="col-lg-2 col-md-6 col-6">
-          <h5>Quick Links</h5>
-          <ul class="footer-nav-list">
+        <div class="col-lg-2 col-md-4 col-6">
+          <h6 class="text-white text-uppercase tracking-wider mb-3">Quick Links</h6>
+          <ul class="list-unstyled footer-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="why-us.html">Why Us</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="testimonial.html">Testimonials</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 col-6">
-          <h5>Programs</h5>
-          <ul class="footer-nav-list">
+        <div class="col-lg-2 col-md-4 col-6">
+          <h6 class="text-white text-uppercase tracking-wider mb-3">Programs</h6>
+          <ul class="list-unstyled footer-nav">
             <li><a href="fashion-design.html">Fashion Design</a></li>
             <li><a href="interior-design.html">Interior Design</a></li>
-            <li><a href="fashion-design.html#management">Design Management (BBA)</a></li>
-            <li><a href="fashion-design.html#beauty">School of Beauty &amp; Hair</a></li>
+            <li><a href="fashion-design.html#management">Management</a></li>
+            <li><a href="fashion-design.html#beauty">Beauty</a></li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <h5>Contact</h5>
-          <p class="text-white-50 mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> Sanghvi Square, 3rd Floor, M.G. Road, Ghatkopar, Mumbai - 400086</p>
-          <p class="text-white-50 mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +91 8433 7777 88 / +91 9326 5733 53</p>
-          <p class="text-white-50 mb-0"><i class="bi bi-envelope-fill text-danger me-2"></i> nifghatkopar6@gmail.com</p>
+        <div class="col-lg-4 col-md-4">
+          <h6 class="text-white text-uppercase tracking-wider mb-3">Contact Us</h6>
+          <p class="text-white-50 small mb-1">3rd Floor, Sanghvi Square, Above HDFC Bank, Ghatkopar West, Mumbai - 400086</p>
+          <p class="text-white-50 small mb-0"><strong>Phone:</strong> +91 8433-7777-88 / +91 9326-5733-53</p>
         </div>
       </div>
-      <div class="footer-bottom-bar"><p class="mb-0 text-white-50">&copy; 2026 NIF Global Ghatkopar. All Rights Reserved.</p></div>
+      <div class="footer-bottom border-top border-secondary pt-4 text-center text-white-50 small">
+        &copy; 2026 NIF Global Ghatkopar. All Rights Reserved.
+      </div>
     </div>
   </footer>
 
-  <div class="nif-floating-wrap">
-    <a href="https://wa.me/918433777788" target="_blank" class="floating-action-circle btn-float-wa"><i class="bi bi-whatsapp"></i></a>
-    <a href="tel:+918433777788" class="floating-action-circle btn-float-call"><i class="bi bi-telephone-fill"></i></a>
-  </div>
-
-  <!-- Mobile Sticky Bottom Quick-Action Bar -->
-  <nav class="mobile-bottom-bar" aria-label="Mobile Quick Actions">
-    <a href="tel:+918433777788" class="bottom-nav-item item-call">
-      <i class="bi bi-telephone-fill"></i>
-      <span>Call Now</span>
-    </a>
-    <a href="https://wa.me/918433777788?text=Hello%20NIF%20Global%20Ghatkopar,%20I%20am%20interested%20in%20admission%20details." target="_blank" class="bottom-nav-item item-wa">
-      <i class="bi bi-whatsapp"></i>
-      <span>WhatsApp</span>
-    </a>
-    <a href="contact-us.html" class="bottom-nav-item item-apply">
-      <i class="bi bi-mortarboard-fill"></i>
-      <span>Apply 2026</span>
-    </a>
-    <a href="assets/images/NIF-Global-Brochure-2025-1-2_removed.pdf" download class="bottom-nav-item">
-      <i class="bi bi-file-earmark-pdf-fill text-danger"></i>
-      <span>Brochure</span>
-    </a>
-  </nav>
-
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/new_main.js"></script>
+  <script>
+    function filterGallery(cat) {
+      document.querySelectorAll('.gallery-filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      document.querySelectorAll('#galleryGrid1 .g-item').forEach(item => {
+        if (cat === 'all' || item.classList.contains(cat)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
 </body>
 </html>
-
