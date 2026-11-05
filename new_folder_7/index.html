@@ -38,10 +38,11 @@
   </div>
   
   <!-- Main Navigation -->
+  <!-- ================= UNIFIED MAIN NAVIGATION (EXACT USER SPEC) ================= -->
   <nav class="navbar navbar-expand-xl mint-navbar sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/images/Logo.webp" alt="NIF Global Ghatkopar Logo" class="mint-logo">
+        <img src="assets/images/Logo.webp" alt="NIF Global Ghatkopar Logo" class="mint-logo" style="height: 48px; width: auto;">
       </a>
       
       <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#nifNavContent" aria-controls="nifNavContent" aria-expanded="false" aria-label="Toggle Navigation">
@@ -49,44 +50,44 @@
       </button>
 
       <div class="collapse navbar-collapse" id="nifNavContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center text-center">
           <li class="nav-item">
-            <a class="nav-link mint-nav-link active" href="index.html">Home</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 active" href="index.html">HOME</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link mint-nav-link dropdown-toggle " href="#" id="courseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Courses
+            <a class="nav-link dropdown-toggle text-uppercase fw-bold px-2 px-xxl-3 " href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              COURSES
             </a>
-            <ul class="dropdown-menu border-0 shadow-lg rounded-3 py-2" aria-labelledby="courseDropdown">
-              <li><a class="dropdown-item py-2 fw-semibold" href="fashion-design.html"><i class="bi bi-scissors me-2" style="color: #10B981;"></i> Fashion Design</a></li>
-              <li><a class="dropdown-item py-2 fw-semibold" href="interior-design.html"><i class="bi bi-building me-2" style="color: #10B981;"></i> Interior Design</a></li>
+            <ul class="dropdown-menu border-0 shadow-lg rounded-3 py-2" aria-labelledby="coursesDropdown">
+              <li><a class="dropdown-item py-2 fw-semibold" href="fashion-design.html"><i class="bi bi-scissors me-2 text-success"></i> Fashion Design</a></li>
+              <li><a class="dropdown-item py-2 fw-semibold" href="interior-design.html"><i class="bi bi-house-door me-2 text-success"></i> Interior Design</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="about-us.html">About Us</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="about-us.html">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="why-us.html">Why Us</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="why-us.html">WHY US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="gallery.html">Student Work</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="gallery.html">STUDENT WORK</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="testimonial.html">Mentors &amp; Voices</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="testimonial.html">MENTORS &amp; VOICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="blog.html">Blog</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="blog.html">BLOG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="contact-us.html">Contact</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="contact-us.html">CONTACT</a>
           </li>
         </ul>
 
-        <div class="d-flex align-items-center gap-3">
-          <a href="#applyModal" data-bs-toggle="modal" class="btn-mint-primary">
-            <i class="bi bi-mortarboard-fill"></i> Apply 2026 Batch
+        <div class="d-flex align-items-center justify-content-center gap-2 mt-3 mt-xl-0">
+          <a href="#applyModal" data-bs-toggle="modal" class="btn-mint-primary text-uppercase fw-bold">
+            <i class="bi bi-mortarboard-fill me-1"></i> APPLY 2026 BATCH
           </a>
-          <a href="assets/images/pdf-1.webp" download class="d-none d-lg-inline-block" title="Download Brochure">
+          <a href="assets/images/pdf-1.webp" download class="ms-1 d-none d-lg-inline-block" title="Download Brochure">
             <img src="assets/images/pdf-1.webp" alt="Download Brochure" style="height: 38px;">
           </a>
         </div>
@@ -216,7 +217,7 @@
   <section class="py-5" id="courses">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Specialized Programs</span>
+        <span class="mint-badge">Specialized Programs</span>
         <h2 class="display-5 fw-bold font-serif mb-3">Our Courses</h2>
         <p class="text-muted mx-auto" style="max-width: 650px;">
           Explore industry-driven degrees and diploma certifications designed in collaboration with Medhavi Skills University and London School of Trends.
@@ -229,7 +230,7 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden course-card-hover">
             <div class="position-relative">
               <img src="assets/images/fashion-design-banner.webp" class="card-img-top" alt="Fashion Design" style="height: 240px; object-fit: cover;">
-              <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill">Degree &amp; Diploma</span>
+              <span class="badge btn-mint-primary position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill">Degree &amp; Diploma</span>
             </div>
             <div class="card-body p-4 d-flex flex-column">
               <h3 class="h4 fw-bold mb-3">Fashion Design</h3>
@@ -237,7 +238,7 @@
                 The fashion design program focuses on building a strong design foundation. Students learn about fabrics, silhouettes, styling, and garment construction. Creative thinking is developed through regular design work and hands-on projects. The aim is to help students understand how fashion works as a profession, not just as an art form.
               </p>
               <div class="pt-3 border-top mt-auto d-flex justify-content-between align-items-center">
-                <a href="fashion-design.html" class="btn btn-outline-danger rounded-pill px-4 btn-sm fw-bold">Read More</a>
+                <a href="fashion-design.html" class="btn btn-mint-outline rounded-pill px-4 btn-sm fw-bold">Read More</a>
                 <span class="small text-muted"><i class="bi bi-clock me-1"></i> 1, 2, 3 Years</span>
               </div>
             </div>
@@ -257,7 +258,7 @@
                 The interior design program helps students understand spaces, layouts, and materials. Students learn how to plan functional interiors while keeping aesthetics in mind. Practical assignments are used to explain real world design challenges. This helps students gain the skills needed to design residential and commercial environments effectively.
               </p>
               <div class="pt-3 border-top mt-auto d-flex justify-content-between align-items-center">
-                <a href="interior-design.html" class="btn btn-outline-danger rounded-pill px-4 btn-sm fw-bold">Read More</a>
+                <a href="interior-design.html" class="btn btn-mint-outline rounded-pill px-4 btn-sm fw-bold">Read More</a>
                 <span class="small text-muted"><i class="bi bi-clock me-1"></i> 1, 2, 3 Years</span>
               </div>
             </div>
@@ -277,7 +278,7 @@
                 The design management program combines creative thinking with business skills. Students study market trends, brand building, merchandising, and project planning. This program is for those who want to work in leadership or strategy roles within the fashion and design sectors, bridging the gap between design concepts and business outcomes.
               </p>
               <div class="pt-3 border-top mt-auto d-flex justify-content-between align-items-center">
-                <a href="about-us.html" class="btn btn-outline-danger rounded-pill px-4 btn-sm fw-bold">Read More</a>
+                <a href="about-us.html" class="btn btn-mint-outline rounded-pill px-4 btn-sm fw-bold">Read More</a>
                 <span class="small text-muted"><i class="bi bi-clock me-1"></i> 3 Years BBA</span>
               </div>
             </div>
@@ -286,14 +287,14 @@
       </div>
 
       <!-- Apply Now Floating CTA Banner -->
-      <div class="mt-5 p-4 rounded-4 text-white text-center shadow-lg" style="background: linear-gradient(135deg, #b23228 0%, #1e2430 100%);">
+      <div class="mt-5 p-4 rounded-4 text-white text-center shadow-lg" style="background: linear-gradient(135deg, #064E3B 0%, #065F46 50%, #047857 100%); border: 1px solid rgba(52, 211, 153, 0.35); box-shadow: 0 16px 40px rgba(6, 78, 59, 0.3);">
         <div class="row align-items-center">
           <div class="col-lg-8 text-lg-start mb-3 mb-lg-0">
             <h4 class="fw-bold mb-1" style="color: #ffffff !important; font-size: 1.45rem; text-shadow: 0 2px 4px rgba(0,0,0,0.4);">Admissions Open For 2026 Academic Batch!</h4>
             <p class="mb-0" style="color: #ffffff !important; opacity: 0.95; font-size: 1rem; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Early bird merit scholarships &amp; flexible zero-cost EMI installment options available.</p>
           </div>
           <div class="col-lg-4 text-lg-end">
-            <a href="#enquirySection" class="btn btn-light rounded-pill px-4 py-2 fw-bold text-danger">Apply Now <i class="bi bi-arrow-right"></i></a>
+            <a href="#enquirySection" class="btn btn-light rounded-pill px-4 py-2 fw-bold" style="color: #059669 !important;">Apply Now <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -306,11 +307,11 @@
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6">
-          <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Mumbai Platinum Center</span>
+          <span class="mint-badge">Mumbai Platinum Center</span>
           <h1 class="h2 fw-bold font-serif mb-3">
             Best Fashion &amp; Interior Design Institute in Mumbai – NIF Global Ghatkopar
           </h1>
-          <h2 class="h5 text-danger fw-bold mb-3">
+          <h2 class="h5 text-success fw-bold mb-3">
             Unleash Your Creativity with Our Fashion &amp; Interior Design Courses
           </h2>
           <p class="text-muted">
@@ -323,31 +324,31 @@
           <div class="row g-3 pt-2 mb-4">
             <div class="col-sm-6">
               <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-check-circle-fill text-danger fs-5"></i>
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
                 <span class="fw-semibold small">Celebrity Masterclasses</span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-check-circle-fill text-danger fs-5"></i>
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
                 <span class="fw-semibold small">100% Placement Support</span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-check-circle-fill text-danger fs-5"></i>
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
                 <span class="fw-semibold small">UGC Degree &amp; LST London</span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-check-circle-fill text-danger fs-5"></i>
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
                 <span class="fw-semibold small">Lakmé &amp; NYFW Showcases</span>
               </div>
             </div>
           </div>
 
-          <a href="about-us.html" class="btn btn-danger rounded-pill px-4 py-2 fw-bold">Know More About Us <i class="bi bi-arrow-right"></i></a>
+          <a href="about-us.html" class="btn btn-mint-primary rounded-pill px-4 py-2 fw-bold">Know More About Us <i class="bi bi-arrow-right"></i></a>
         </div>
 
         <!-- 4-Grid Student Photography Showcase -->
@@ -375,7 +376,7 @@
   <!-- ================= 6. OUR PARTNERS ================= -->
   <section class="py-5 bg-light" id="partners">
     <div class="container text-center">
-      <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Accreditations &amp; Alliances</span>
+      <span class="mint-badge">Accreditations &amp; Alliances</span>
       <h2 class="display-6 fw-bold font-serif mb-4">Our Partners</h2>
       <p class="text-muted mx-auto mb-5" style="max-width: 600px;">
         Collaborating with globally accredited universities, national skill councils, and prestigious fashion platforms.
@@ -438,7 +439,7 @@
         </div>
 
         <div class="col-lg-6">
-          <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">The Ghatkopar Edge</span>
+          <span class="mint-badge">The Ghatkopar Edge</span>
           <h2 class="display-6 fw-bold font-serif mb-3">Why Choose NIF Global, Ghatkopar?</h2>
           <p class="text-muted mb-4">
             NIF Global, Ghatkopar is a premier design institute shaping the future of Fashion, Interior, and Beauty Design. Our industry-driven curriculum, celebrity mentorship, and international exposure equip students with skills to excel globally.
@@ -448,7 +449,7 @@
             <div class="col-sm-6">
               <div class="p-3 border rounded-3 h-100 bg-light">
                 <div class="d-flex align-items-center gap-2 mb-2">
-                  <i class="bi bi-globe-americas text-danger fs-5"></i>
+                  <i class="bi bi-globe-americas text-success fs-5"></i>
                   <h3 class="h6 fw-bold mb-0">Global Runways</h3>
                 </div>
                 <p class="text-muted small mb-0">Showcase collections at New York, London, Dubai &amp; Lakmé Fashion Week.</p>
@@ -487,7 +488,7 @@
           </div>
 
           <div class="mt-4">
-            <a href="why-us.html" class="btn btn-danger rounded-pill px-4 py-2 fw-bold">Explore Our Campus Edge</a>
+            <a href="why-us.html" class="btn btn-mint-primary rounded-pill px-4 py-2 fw-bold">Explore Our Campus Edge</a>
           </div>
         </div>
       </div>
@@ -499,7 +500,7 @@
   <section class="py-5 bg-light" id="institutes">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Specialized Academies</span>
+        <span class="mint-badge">Specialized Academies</span>
         <h2 class="display-5 fw-bold font-serif mb-2">NIF Global’s Institutes</h2>
         <p class="text-muted">Specialized Education | Industry Exposure | Networking Opportunities</p>
       </div>
@@ -514,7 +515,7 @@
               <p class="text-muted small flex-grow-1">
                 A world-class institute focusing on fashion, interior, and beauty design education. Students actively participate in international events and runway shows across New York and London.
               </p>
-              <a href="fashion-design.html" class="btn btn-outline-danger rounded-pill btn-sm fw-bold mt-auto align-self-start">Enquire Now</a>
+              <a href="fashion-design.html" class="btn btn-mint-outline rounded-pill btn-sm fw-bold mt-auto align-self-start">Enquire Now</a>
             </div>
           </div>
         </div>
@@ -529,10 +530,10 @@
                 Offers high-demand management programs preparing creative minds for corporate luxury:
               </p>
               <ul class="list-unstyled small text-muted mb-4">
-                <li><i class="bi bi-arrow-right-short text-danger"></i> <strong>BBA in Design Management</strong></li>
-                <li><i class="bi bi-arrow-right-short text-danger"></i> <strong>BBA in Retail Management</strong></li>
+                <li><i class="bi bi-arrow-right-short text-success"></i> <strong>BBA in Design Management</strong></li>
+                <li><i class="bi bi-arrow-right-short text-success"></i> <strong>BBA in Retail Management</strong></li>
               </ul>
-              <a href="#enquirySection" class="btn btn-outline-danger rounded-pill btn-sm fw-bold mt-auto align-self-start">Enquire Now</a>
+              <a href="#enquirySection" class="btn btn-mint-outline rounded-pill btn-sm fw-bold mt-auto align-self-start">Enquire Now</a>
             </div>
           </div>
         </div>
@@ -547,10 +548,10 @@
                 Professional cosmetology, runway makeup artistry, and luxury aesthetics:
               </p>
               <ul class="list-unstyled small text-muted mb-4">
-                <li><i class="bi bi-arrow-right-short text-danger"></i> <strong>Diploma in Beauty &amp; Hair Design – 1 Year</strong></li>
-                <li><i class="bi bi-arrow-right-short text-danger"></i> Hands-on studio training with Pixi brand partner</li>
+                <li><i class="bi bi-arrow-right-short text-success"></i> <strong>Diploma in Beauty &amp; Hair Design – 1 Year</strong></li>
+                <li><i class="bi bi-arrow-right-short text-success"></i> Hands-on studio training with Pixi brand partner</li>
               </ul>
-              <a href="#enquirySection" class="btn btn-outline-danger rounded-pill btn-sm fw-bold mt-auto align-self-start">Enquire Now</a>
+              <a href="#enquirySection" class="btn btn-mint-outline rounded-pill btn-sm fw-bold mt-auto align-self-start">Enquire Now</a>
             </div>
           </div>
         </div>
@@ -562,7 +563,7 @@
   <!-- ================= 9. CELEBRITY MENTORS ================= -->
   <section class="py-5 bg-white" id="mentors">
     <div class="container text-center">
-      <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Masterclass Faculty</span>
+      <span class="mint-badge">Masterclass Faculty</span>
       <h2 class="display-5 fw-bold font-serif mb-4">CELEBRITY MENTORS</h2>
       <p class="text-muted mx-auto mb-5" style="max-width: 650px;">
         Learn directly from Bollywood couturiers, celebrity interior architects, and international style icons.
@@ -574,7 +575,7 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
             <img src="assets/images/8.jpg" alt="Ashley Rebello" class="rounded-4 mb-3 w-100" style="height: 220px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Ashley Rebello</h3>
-            <p class="small text-danger mb-0">Fashion Designer</p>
+            <p class="small text-success mb-0">Fashion Designer</p>
           </div>
         </div>
 
@@ -583,7 +584,7 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
             <img src="assets/images/Artboard1.jpg" alt="Manish Malhotra" class="rounded-4 mb-3 w-100" style="height: 220px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Manish Malhotra</h3>
-            <p class="small text-danger mb-0">Fashion Designer</p>
+            <p class="small text-success mb-0">Fashion Designer</p>
           </div>
         </div>
 
@@ -592,7 +593,7 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
             <img src="assets/images/14.png" alt="Ananya Panday" class="rounded-4 mb-3 w-100" style="height: 220px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Ananya Panday</h3>
-            <p class="small text-danger mb-0">Style Icon</p>
+            <p class="small text-success mb-0">Style Icon</p>
           </div>
         </div>
 
@@ -601,7 +602,7 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
             <img src="assets/images/13.png" alt="Gauri Khan" class="rounded-4 mb-3 w-100" style="height: 220px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Gauri Khan</h3>
-            <p class="small text-danger mb-0">Interior Designer</p>
+            <p class="small text-success mb-0">Interior Designer</p>
           </div>
         </div>
 
@@ -610,7 +611,7 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
             <img src="assets/images/12.jpg" alt="Twinkle Khanna" class="rounded-4 mb-3 w-100" style="height: 220px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Twinkle Khanna</h3>
-            <p class="small text-danger mb-0">Interior Designer</p>
+            <p class="small text-success mb-0">Interior Designer</p>
           </div>
         </div>
       </div>
@@ -621,7 +622,7 @@
   <!-- ================= 10. NIF INTERNATIONAL MENTORS ================= -->
   <section class="py-5 bg-light" id="intl-mentors">
     <div class="container text-center">
-      <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Global Faculty</span>
+      <span class="mint-badge">Global Faculty</span>
       <h2 class="display-6 fw-bold font-serif mb-4">NIF INTERNATIONAL MENTORS</h2>
       <p class="text-muted mx-auto mb-5" style="max-width: 650px;">
         London School of Trends and global visiting faculty conducting live international portfolio crits and jury reviews.
@@ -691,7 +692,7 @@
   <section class="py-5 bg-white" id="testimonials">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Student Voices</span>
+        <span class="mint-badge">Student Voices</span>
         <h2 class="display-5 fw-bold font-serif mb-3">What Our Students Say</h2>
         <p class="text-muted mx-auto" style="max-width: 650px;">Real journeys, authentic achievements, and inspiring experiences from NIF Global Ghatkopar learners.</p>
       </div>
@@ -706,10 +707,10 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 bg-light p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center gap-3 mb-3">
-              <img src="assets/images/VANSHIKA-1.webp" class="rounded-circle border border-2 border-danger" style="width: 55px; height: 55px; object-fit: cover;" alt="Vanshika Bhanushali">
+              <img src="assets/images/VANSHIKA-1.webp" class="rounded-circle border border-2" style="border-color: #10B981 !important; width: 55px; height: 55px; object-fit: cover;" style="width: 55px; height: 55px; object-fit: cover;" alt="Vanshika Bhanushali">
               <div>
                 <h3 class="h6 fw-bold mb-0">Vanshika Bhanushali</h3>
-                <span class="small text-danger">Fashion Design • 1st Year</span>
+                <span class="small text-success">Fashion Design • 1st Year</span>
               </div>
             </div>
             <p class="small text-muted mb-0">
@@ -721,10 +722,10 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 bg-light p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center gap-3 mb-3">
-              <img src="assets/images/ZOYAKHAN.webp" class="rounded-circle border border-2 border-danger" style="width: 55px; height: 55px; object-fit: cover;" alt="Zoya Khan">
+              <img src="assets/images/ZOYAKHAN.webp" class="rounded-circle border border-2" style="border-color: #10B981 !important; width: 55px; height: 55px; object-fit: cover;" style="width: 55px; height: 55px; object-fit: cover;" alt="Zoya Khan">
               <div>
                 <h3 class="h6 fw-bold mb-0">Zoya Khan</h3>
-                <span class="small text-danger">Fashion Design Alumna</span>
+                <span class="small text-success">Fashion Design Alumna</span>
               </div>
             </div>
             <p class="small text-muted mb-0">
@@ -736,10 +737,10 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 bg-light p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center gap-3 mb-3">
-              <img src="assets/images/khushiparekh.webp" class="rounded-circle border border-2 border-danger" style="width: 55px; height: 55px; object-fit: cover;" alt="Khushi Parekh">
+              <img src="assets/images/khushiparekh.webp" class="rounded-circle border border-2" style="border-color: #10B981 !important; width: 55px; height: 55px; object-fit: cover;" style="width: 55px; height: 55px; object-fit: cover;" alt="Khushi Parekh">
               <div>
                 <h3 class="h6 fw-bold mb-0">Khushi Parekh</h3>
-                <span class="small text-danger">Interior Design Graduate</span>
+                <span class="small text-success">Interior Design Graduate</span>
               </div>
             </div>
             <p class="small text-muted mb-0">
@@ -751,10 +752,10 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 bg-light p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center gap-3 mb-3">
-              <img src="assets/images/MAHEKJADHAV.webp" class="rounded-circle border border-2 border-danger" style="width: 55px; height: 55px; object-fit: cover;" alt="Mahek Jadhav">
+              <img src="assets/images/MAHEKJADHAV.webp" class="rounded-circle border border-2" style="border-color: #10B981 !important; width: 55px; height: 55px; object-fit: cover;" style="width: 55px; height: 55px; object-fit: cover;" alt="Mahek Jadhav">
               <div>
                 <h3 class="h6 fw-bold mb-0">Mahek Jadhav</h3>
-                <span class="small text-danger">Fashion Design</span>
+                <span class="small text-success">Fashion Design</span>
               </div>
             </div>
             <p class="small text-muted mb-0">
@@ -766,10 +767,10 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 bg-light p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center gap-3 mb-3">
-              <img src="assets/images/SANIKARANE.webp" class="rounded-circle border border-2 border-danger" style="width: 55px; height: 55px; object-fit: cover;" alt="Sanika Rane">
+              <img src="assets/images/SANIKARANE.webp" class="rounded-circle border border-2" style="border-color: #10B981 !important; width: 55px; height: 55px; object-fit: cover;" style="width: 55px; height: 55px; object-fit: cover;" alt="Sanika Rane">
               <div>
                 <h3 class="h6 fw-bold mb-0">Sanika Rane</h3>
-                <span class="small text-danger">Fashion Styling</span>
+                <span class="small text-success">Fashion Styling</span>
               </div>
             </div>
             <p class="small text-muted mb-0">
@@ -781,10 +782,10 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 bg-light p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center gap-3 mb-3">
-              <img src="assets/images/SAKSHIBADALA.webp" class="rounded-circle border border-2 border-danger" style="width: 55px; height: 55px; object-fit: cover;" alt="Sakshi Badala">
+              <img src="assets/images/SAKSHIBADALA.webp" class="rounded-circle border border-2" style="border-color: #10B981 !important; width: 55px; height: 55px; object-fit: cover;" style="width: 55px; height: 55px; object-fit: cover;" alt="Sakshi Badala">
               <div>
                 <h3 class="h6 fw-bold mb-0">Sakshi Badala</h3>
-                <span class="small text-danger">Interior Architecture</span>
+                <span class="small text-success">Interior Architecture</span>
               </div>
             </div>
             <p class="small text-muted mb-0">
@@ -801,7 +802,7 @@
   <section class="py-5 bg-light" id="blogs">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Knowledge Hub</span>
+        <span class="mint-badge">Knowledge Hub</span>
         <h2 class="display-5 fw-bold font-serif mb-3">Latest Articles and Blog</h2>
         <p class="text-muted mx-auto" style="max-width: 600px;">Expert insights, career roadmaps, and design tips from faculty and industry leaders.</p>
       </div>
@@ -812,12 +813,12 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
             <img src="assets/images/Choosing-Mumbais-Interior-Design-Institute.png" class="card-img-top" alt="Choosing Interior Design Institute" style="height: 220px; object-fit: cover;">
             <div class="card-body p-4 d-flex flex-column">
-              <span class="text-danger small fw-bold text-uppercase mb-2">Interior Design</span>
+              <span class="text-success small fw-bold text-uppercase mb-2">Interior Design</span>
               <h3 class="h5 fw-bold mb-3">How to Choose the Best Interior Design Institute in Mumbai: 7 Key Factors</h3>
               <p class="text-muted small flex-grow-1">
                 Choosing where to study interior design is one of the biggest career decisions. Here are 7 essential parameters to evaluate faculty, syllabus, and live project placements.
               </p>
-              <a href="blog.html" class="btn btn-outline-danger btn-sm rounded-pill fw-bold align-self-start mt-3">Read Article</a>
+              <a href="blog.html" class="btn btn-mint-outline btn-sm rounded-pill fw-bold align-self-start mt-3">Read Article</a>
             </div>
           </div>
         </div>
@@ -827,12 +828,12 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
             <img src="assets/images/blog-Images-04.png" class="card-img-top" alt="Best Interior Design Course" style="height: 220px; object-fit: cover;">
             <div class="card-body p-4 d-flex flex-column">
-              <span class="text-danger small fw-bold text-uppercase mb-2">Career Guide</span>
+              <span class="text-success small fw-bold text-uppercase mb-2">Career Guide</span>
               <h3 class="h5 fw-bold mb-3">Which is the Best Interior Design Course in Ghatkopar for Beginners?</h3>
               <p class="text-muted small flex-grow-1">
                 Starting with no background in CAD or sketching? Discover degree and diploma pathways designed to build your architectural foundation step by step.
               </p>
-              <a href="blog.html" class="btn btn-outline-danger btn-sm rounded-pill fw-bold align-self-start mt-3">Read Article</a>
+              <a href="blog.html" class="btn btn-mint-outline btn-sm rounded-pill fw-bold align-self-start mt-3">Read Article</a>
             </div>
           </div>
         </div>
@@ -842,12 +843,12 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
             <img src="assets/images/Blog-Images-03.png" class="card-img-top" alt="Interior Design 2026 Guide" style="height: 220px; object-fit: cover;">
             <div class="card-body p-4 d-flex flex-column">
-              <span class="text-danger small fw-bold text-uppercase mb-2">Admissions 2026</span>
+              <span class="text-success small fw-bold text-uppercase mb-2">Admissions 2026</span>
               <h3 class="h5 fw-bold mb-3">What is the Best Interior Design Institute in Ghatkopar? A Complete 2026 Guide</h3>
               <p class="text-muted small flex-grow-1">
                 A complete breakdown of fees, curriculum modules, Gauri Khan spatial studio masterclasses, and Medhavi Skills University certification.
               </p>
-              <a href="blog.html" class="btn btn-outline-danger btn-sm rounded-pill fw-bold align-self-start mt-3">Read Article</a>
+              <a href="blog.html" class="btn btn-mint-outline btn-sm rounded-pill fw-bold align-self-start mt-3">Read Article</a>
             </div>
           </div>
         </div>
@@ -860,7 +861,7 @@
   <section class="py-5 bg-white" id="stories">
     <div class="container">
       <div class="text-center mb-5">
-        <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Testimonials</span>
+        <span class="mint-badge">Testimonials</span>
         <h2 class="display-5 fw-bold font-serif mb-3">Inspiring Stories</h2>
         <p class="text-muted mx-auto" style="max-width: 600px;">How NIF Global Ghatkopar students turn raw ambition into celebrated design careers.</p>
       </div>
@@ -869,9 +870,9 @@
         <!-- Story 1: Kavya Patel -->
         <div class="col-md-6 col-lg-3">
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
-            <img src="assets/images/kavyapatel.webp" alt="Kavya Patel" class="rounded-circle mx-auto mb-3 border border-2 border-danger" style="width: 85px; height: 85px; object-fit: cover;">
+            <img src="assets/images/kavyapatel.webp" alt="Kavya Patel" class="rounded-circle mx-auto mb-3 border border-2" style="border-color: #10B981 !important; width: 85px; height: 85px; object-fit: cover;" style="width: 85px; height: 85px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Kavya Patel</h3>
-            <span class="small text-danger d-block mb-3">Interior Design</span>
+            <span class="small text-success d-block mb-3">Interior Design</span>
             <p class="small text-muted mb-0">
               "Hey! Kavya Patel here… I have been studying Interior Designing in NIF Ghatkopar since a month now and I just wanted to share how practical the learning is. The site visits and CAD labs give real industry confidence!"
             </p>
@@ -881,9 +882,9 @@
         <!-- Story 2: Vedant Gaikar -->
         <div class="col-md-6 col-lg-3">
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
-            <img src="assets/images/vedantgaikar.webp" alt="Vedant Gaikar" class="rounded-circle mx-auto mb-3 border border-2 border-danger" style="width: 85px; height: 85px; object-fit: cover;">
+            <img src="assets/images/vedantgaikar.webp" alt="Vedant Gaikar" class="rounded-circle mx-auto mb-3 border border-2" style="border-color: #10B981 !important; width: 85px; height: 85px; object-fit: cover;" style="width: 85px; height: 85px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Vedant Gaikar</h3>
-            <span class="small text-danger d-block mb-3">Fashion Styling</span>
+            <span class="small text-success d-block mb-3">Fashion Styling</span>
             <p class="small text-muted mb-0">
               "The exposure to international design trends and fashion draping software here is extraordinary. The mentors push you to craft original garments from day one."
             </p>
@@ -893,9 +894,9 @@
         <!-- Story 3: Mitisha -->
         <div class="col-md-6 col-lg-3">
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
-            <img src="assets/images/mitisha.webp" alt="Mitisha" class="rounded-circle mx-auto mb-3 border border-2 border-danger" style="width: 85px; height: 85px; object-fit: cover;">
+            <img src="assets/images/mitisha.webp" alt="Mitisha" class="rounded-circle mx-auto mb-3 border border-2" style="border-color: #10B981 !important; width: 85px; height: 85px; object-fit: cover;" style="width: 85px; height: 85px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Mitisha</h3>
-            <span class="small text-danger d-block mb-3">Interior Architecture</span>
+            <span class="small text-success d-block mb-3">Interior Architecture</span>
             <p class="small text-muted mb-0">
               "From day one, the faculty encourages you to think outside conventional boundaries. We work on live commercial floorplans and residential 3D renders."
             </p>
@@ -905,9 +906,9 @@
         <!-- Story 4: Dhara Shah -->
         <div class="col-md-6 col-lg-3">
           <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center p-3">
-            <img src="assets/images/dharashah.webp" alt="Dhara Shah" class="rounded-circle mx-auto mb-3 border border-2 border-danger" style="width: 85px; height: 85px; object-fit: cover;">
+            <img src="assets/images/dharashah.webp" alt="Dhara Shah" class="rounded-circle mx-auto mb-3 border border-2" style="border-color: #10B981 !important; width: 85px; height: 85px; object-fit: cover;" style="width: 85px; height: 85px; object-fit: cover;">
             <h3 class="h6 fw-bold mb-1">Dhara Shah</h3>
-            <span class="small text-danger d-block mb-3">Fashion Merchandising</span>
+            <span class="small text-success d-block mb-3">Fashion Merchandising</span>
             <p class="small text-muted mb-0">
               "The workshops by celebrity designers give you insights you won't get anywhere else. NIF Global Ghatkopar is the ideal creative home for design lovers!"
             </p>
@@ -922,7 +923,7 @@
   <section class="py-5 bg-light" id="faq">
     <div class="container" style="max-width: 900px;">
       <div class="text-center mb-5">
-        <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Have Questions?</span>
+        <span class="mint-badge">Have Questions?</span>
         <h2 class="display-5 fw-bold font-serif mb-3">FAQ'S</h2>
         <p class="text-muted">Find answers to the most frequently asked questions about admissions, courses, and certifications.</p>
       </div>
@@ -1005,9 +1006,9 @@
   <!-- ================= 15. ENQUIRE NOW FORM ================= -->
   <section class="py-5 bg-white" id="enquirySection">
     <div class="container" style="max-width: 900px;">
-      <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5" style="background: linear-gradient(145deg, #ffffff 0%, #fffbfb 100%); border: 1px solid #fee2e2 !important;">
+      <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5" style="background: linear-gradient(145deg, #ffffff 0%, #fffbfb 100%); border: 1px solid #A7F3D0 !important; background: linear-gradient(145deg, #FFFFFF 0%, #F0FDF4 100%) !important;">
         <div class="text-center mb-4">
-          <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill small mb-2 d-inline-block">Get in Touch</span>
+          <span class="mint-badge">Get in Touch</span>
           <h2 class="display-6 fw-bold font-serif mb-2">Enquire Now</h2>
           <p class="text-muted small">Fill out the quick form below and our Senior Admissions Counselor from Ghatkopar will contact you shortly.</p>
         </div>
@@ -1051,7 +1052,7 @@
             </div>
 
             <div class="col-12 text-center mt-4">
-              <button type="submit" class="btn btn-danger rounded-pill px-5 py-3 fw-bold shadow">
+              <button type="submit" class="btn btn-mint-primary rounded-pill px-5 py-3 fw-bold shadow">
                 <img src="assets/images/submit-spin.svg" alt="Loading" class="me-2 d-none spinner-icon" style="width: 18px; height: 18px;">
                 Submit Application Now <i class="bi bi-send-fill ms-1"></i>
               </button>

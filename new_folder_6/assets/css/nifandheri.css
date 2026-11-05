@@ -253,3 +253,17 @@ body.andheri-theme {
   padding-top: 22px;
   font-size: 0.85rem;
 }
+
+
+/* Universal High Contrast Protection for Text in Dark Containers */
+.text-white,
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span {
+  color: #FFFFFF !important;
+}

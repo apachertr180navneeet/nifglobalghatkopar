@@ -38,10 +38,11 @@
   </div>
   
   <!-- Main Navigation -->
+  <!-- ================= UNIFIED MAIN NAVIGATION (EXACT USER SPEC) ================= -->
   <nav class="navbar navbar-expand-xl mint-navbar sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/images/Logo.webp" alt="NIF Global Ghatkopar Logo" class="mint-logo">
+        <img src="assets/images/Logo.webp" alt="NIF Global Ghatkopar Logo" class="mint-logo" style="height: 48px; width: auto;">
       </a>
       
       <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#nifNavContent" aria-controls="nifNavContent" aria-expanded="false" aria-label="Toggle Navigation">
@@ -49,44 +50,44 @@
       </button>
 
       <div class="collapse navbar-collapse" id="nifNavContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center text-center">
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="index.html">Home</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="index.html">HOME</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link mint-nav-link dropdown-toggle " href="#" id="courseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Courses
+            <a class="nav-link dropdown-toggle text-uppercase fw-bold px-2 px-xxl-3 " href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              COURSES
             </a>
-            <ul class="dropdown-menu border-0 shadow-lg rounded-3 py-2" aria-labelledby="courseDropdown">
-              <li><a class="dropdown-item py-2 fw-semibold" href="fashion-design.html"><i class="bi bi-scissors me-2" style="color: #10B981;"></i> Fashion Design</a></li>
-              <li><a class="dropdown-item py-2 fw-semibold" href="interior-design.html"><i class="bi bi-building me-2" style="color: #10B981;"></i> Interior Design</a></li>
+            <ul class="dropdown-menu border-0 shadow-lg rounded-3 py-2" aria-labelledby="coursesDropdown">
+              <li><a class="dropdown-item py-2 fw-semibold" href="fashion-design.html"><i class="bi bi-scissors me-2 text-success"></i> Fashion Design</a></li>
+              <li><a class="dropdown-item py-2 fw-semibold" href="interior-design.html"><i class="bi bi-house-door me-2 text-success"></i> Interior Design</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="about-us.html">About Us</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="about-us.html">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="why-us.html">Why Us</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="why-us.html">WHY US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="gallery.html">Student Work</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="gallery.html">STUDENT WORK</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="testimonial.html">Mentors &amp; Voices</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="testimonial.html">MENTORS &amp; VOICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link active" href="blog.html">Blog</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 active" href="blog.html">BLOG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mint-nav-link " href="contact-us.html">Contact</a>
+            <a class="nav-link text-uppercase fw-bold px-2 px-xxl-3 " href="contact-us.html">CONTACT</a>
           </li>
         </ul>
 
-        <div class="d-flex align-items-center gap-3">
-          <a href="#applyModal" data-bs-toggle="modal" class="btn-mint-primary">
-            <i class="bi bi-mortarboard-fill"></i> Apply 2026 Batch
+        <div class="d-flex align-items-center justify-content-center gap-2 mt-3 mt-xl-0">
+          <a href="#applyModal" data-bs-toggle="modal" class="btn-mint-primary text-uppercase fw-bold">
+            <i class="bi bi-mortarboard-fill me-1"></i> APPLY 2026 BATCH
           </a>
-          <a href="assets/images/pdf-1.webp" download class="d-none d-lg-inline-block" title="Download Brochure">
+          <a href="assets/images/pdf-1.webp" download class="ms-1 d-none d-lg-inline-block" title="Download Brochure">
             <img src="assets/images/pdf-1.webp" alt="Download Brochure" style="height: 38px;">
           </a>
         </div>
@@ -99,7 +100,7 @@
   <!-- Banner -->
   <section class="nif-hero-section py-5">
     <div class="container text-center py-4">
-      <span class="hero-pill-badge mb-3"><span class="pulse-dot"></span> Design Editorial</span>
+      <span class="hero-pill-badge mb-3"><span class="pulse-dot" style="background-color: #10B981 !important;"></span> Design Editorial</span>
       <h1 class="hero-heading font-serif mb-3">Articles &amp; Industry <span class="gradient-text">Insights</span></h1>
       <p class="hero-subhead mx-auto mb-0">Expert analysis, career guides, and admissions insights from Mumbai’s premier design educators.</p>
     </div>
@@ -117,7 +118,7 @@
               <span class="badge bg-primary-subtle text-primary mb-2" style="width: fit-content;">Interior Design</span>
               <h5 class="fw-bold mb-2">How to Choose the Best Interior Design Institute in Mumbai: 7 Key Factors</h5>
               <p class="text-muted small mb-3 flex-grow-1">Choosing where to study interior design is one of the most important decisions you’ll make. Learn key evaluation metrics.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -130,7 +131,7 @@
               <span class="badge bg-primary-subtle text-primary mb-2" style="width: fit-content;">Ghatkopar Campus</span>
               <h5 class="fw-bold mb-2">Which is the Best Interior Design Course in Ghatkopar for Beginners?</h5>
               <p class="text-muted small mb-3 flex-grow-1">Starting a career in interior design is an exciting step for creative minds who enjoy spatial planning and architecture.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -143,7 +144,7 @@
               <span class="badge bg-primary-subtle text-primary mb-2" style="width: fit-content;">2026 Guide</span>
               <h5 class="fw-bold mb-2">What is the Best Interior Design Institute in Ghatkopar? A Complete 2026 Guide</h5>
               <p class="text-muted small mb-3 flex-grow-1">Choosing the right institute is vital for anyone planning to build a professional career in Mumbai's interior design industry.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -153,10 +154,10 @@
           <div class="card h-100 rounded-4 border overflow-hidden shadow-sm bg-white">
             <img src="assets/images/Fashion-Design-Courses-in-Mumbai-300x179.png" alt="Fashion Design Courses Mumbai" class="card-img-top" style="height: 200px; object-fit: cover;">
             <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-danger-subtle text-danger mb-2" style="width: fit-content;">Fashion Design</span>
+              <span class="badge mint-badge mb-2" style="width: fit-content;">Fashion Design</span>
               <h5 class="fw-bold mb-2">Fashion Design Courses in Mumbai: Complete Guide to Fees, Colleges &amp; Admissions</h5>
               <p class="text-muted small mb-3 flex-grow-1">Mumbai is not just India’s financial capital; it is the undisputed fashion capital. Explore fee breakdowns and eligibility.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -166,10 +167,10 @@
           <div class="card h-100 rounded-4 border overflow-hidden shadow-sm bg-white">
             <img src="assets/images/Online-vs-Offline-Fashion-Design-Courses-in-Mumbai-Pros-Cons-300x142.png" alt="Online vs Offline Fashion Design" class="card-img-top" style="height: 200px; object-fit: cover;">
             <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-danger-subtle text-danger mb-2" style="width: fit-content;">Pros &amp; Cons</span>
+              <span class="badge mint-badge mb-2" style="width: fit-content;">Pros &amp; Cons</span>
               <h5 class="fw-bold mb-2">Online vs Offline Fashion Design Courses in Mumbai: Pros &amp; Cons</h5>
               <p class="text-muted small mb-3 flex-grow-1">Mumbai offers aspiring designers numerous pathways. We analyze flexible online learning vs immersive studio experiences.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -179,10 +180,10 @@
           <div class="card h-100 rounded-4 border overflow-hidden shadow-sm bg-white">
             <img src="assets/images/The-Ultimate-List-of-Best-Fashion-Institutes-in-Mumbai-for-Global-Careers-300x142.png" alt="Best Fashion Institutes Global" class="card-img-top" style="height: 200px; object-fit: cover;">
             <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-danger-subtle text-danger mb-2" style="width: fit-content;">Global Careers</span>
+              <span class="badge mint-badge mb-2" style="width: fit-content;">Global Careers</span>
               <h5 class="fw-bold mb-2">The Ultimate List of Best Fashion Institutes in Mumbai for Global Careers</h5>
               <p class="text-muted small mb-3 flex-grow-1">Learn how international credentials from London School of Trends enable opportunities across Milan, New York, and Paris.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -192,10 +193,10 @@
           <div class="card h-100 rounded-4 border overflow-hidden shadow-sm bg-white">
             <img src="assets/images/Top-10-Fashion-Design-Institutes-in-Mumbai-Complete-2026-Guide-300x143.png" alt="Top 10 Fashion Design Institutes" class="card-img-top" style="height: 200px; object-fit: cover;">
             <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-danger-subtle text-danger mb-2" style="width: fit-content;">Ranking Guide</span>
+              <span class="badge mint-badge mb-2" style="width: fit-content;">Ranking Guide</span>
               <h5 class="fw-bold mb-2">Top 10 Fashion Design Institutes in Mumbai: Complete 2026 Guide</h5>
               <p class="text-muted small mb-3 flex-grow-1">A curated guide comparing studio labs, faculty credentials, and runway showcases for aspiring designers.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -208,7 +209,7 @@
               <span class="badge bg-primary-subtle text-primary mb-2" style="width: fit-content;">Career Growth</span>
               <h5 class="fw-bold mb-2">Interior Design Courses in Ghatkopar: Unlocking Endless Career Possibilities</h5>
               <p class="text-muted small mb-3 flex-grow-1">Mumbai has always been a city of innovation. Discover how modern homes and retail spaces drive high demand for designers.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -218,10 +219,10 @@
           <div class="card h-100 rounded-4 border overflow-hidden shadow-sm bg-white">
             <img src="assets/images/Blog3-2-300x142.png" alt="Find Perfect Fashion Institute" class="card-img-top" style="height: 200px; object-fit: cover;">
             <div class="p-4 d-flex flex-column flex-grow-1">
-              <span class="badge bg-danger-subtle text-danger mb-2" style="width: fit-content;">Admissions</span>
+              <span class="badge mint-badge mb-2" style="width: fit-content;">Admissions</span>
               <h5 class="fw-bold mb-2">Best Fashion Design Institute in Mumbai: How to Find the Perfect One for You</h5>
               <p class="text-muted small mb-3 flex-grow-1">Key checkpoints to inspect before choosing your institute, from sewing lab equipment to internship partnerships.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -234,7 +235,7 @@
               <span class="badge bg-primary-subtle text-primary mb-2" style="width: fit-content;">Creative Minds</span>
               <h5 class="fw-bold mb-2">Best Interior Design Institute in Mumbai: A Guide for Creative Minds</h5>
               <p class="text-muted small mb-3 flex-grow-1">A guide for students eager to turn their passion for spatial balance and material aesthetics into an architectural profession.</p>
-              <a href="contact-us.html" class="text-danger fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
+              <a href="contact-us.html" class="text-success fw-bold small text-decoration-none">Read Full Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>

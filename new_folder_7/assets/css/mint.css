@@ -9,22 +9,26 @@
 :root {
   --mint-primary: #10B981;
   --mint-primary-hover: #059669;
+  --mint-primary-dark: #047857;
+  --mint-primary-forest: #064E3B;
   --mint-primary-light: #ECFDF5;
   --mint-primary-soft: rgba(16, 185, 129, 0.12);
+  --mint-accent: #34D399;
   --mint-dark: #0F172A;
   --mint-charcoal: #1E293B;
   --mint-light: #F8FAFC;
   --mint-card-bg: #FFFFFF;
   --mint-border: #E2E8F0;
+  --mint-border-mint: rgba(16, 185, 129, 0.4);
   --mint-text-main: #1E293B;
   --mint-text-muted: #64748B;
-  --mint-font: 'Plus Jakarta Sans', sans-serif;
+  --mint-font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --mint-radius-sm: 8px;
   --mint-radius-md: 16px;
   --mint-radius-lg: 24px;
   --mint-radius-pill: 50px;
   --mint-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
-  --mint-shadow-hover: 0 20px 40px rgba(16, 185, 129, 0.18);
+  --mint-shadow-hover: 0 20px 40px rgba(16, 185, 129, 0.2);
 }
 
 body.mint-theme {
@@ -34,7 +38,7 @@ body.mint-theme {
   line-height: 1.7;
 }
 
-.mint-theme h1, .mint-theme h2, .mint-theme h3, .mint-theme h4, .mint-theme .font-serif {
+.mint-theme h1, .mint-theme h2, .mint-theme h3, .mint-theme h4, .mint-theme h5, .mint-theme .font-serif {
   font-family: var(--mint-font) !important;
   color: var(--mint-dark) !important;
   font-weight: 800;
@@ -52,7 +56,7 @@ body.mint-theme {
   color: #94A3B8;
   font-size: 0.82rem;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 2px solid var(--mint-primary);
 }
 .mint-topbar a {
   color: #E2E8F0;
@@ -60,28 +64,31 @@ body.mint-theme {
   transition: color 0.2s;
 }
 .mint-topbar a:hover {
-  color: var(--mint-primary);
+  color: var(--mint-accent);
 }
 
 /* ---------------- Navbar ---------------- */
 .mint-navbar {
-  background-color: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--mint-border);
   padding: 14px 0;
   transition: all 0.3s ease;
 }
 .mint-navbar.scrolled {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
+  border-bottom-color: var(--mint-primary);
 }
 .mint-logo {
   height: 48px;
   width: auto;
 }
 .mint-nav-link {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   color: var(--mint-charcoal) !important;
   padding: 8px 14px !important;
   border-radius: var(--mint-radius-pill);
@@ -94,9 +101,12 @@ body.mint-theme {
 }
 
 /* ---------------- Buttons & Badges ---------------- */
-.btn-mint-primary, .mint-theme .btn-danger, .mint-theme .btn-primary {
-  background-color: var(--mint-primary) !important;
+.btn-mint-primary, 
+.mint-theme .btn-danger, 
+.mint-theme .btn-primary {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
   color: #FFFFFF !important;
+  font-family: var(--mint-font) !important;
   font-size: 0.86rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.5px !important;
@@ -110,17 +120,22 @@ body.mint-theme {
   text-decoration: none !important;
   box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35) !important;
 }
-.btn-mint-primary:hover, .mint-theme .btn-danger:hover, .mint-theme .btn-primary:hover {
-  background-color: var(--mint-primary-hover) !important;
+.btn-mint-primary:hover, 
+.mint-theme .btn-danger:hover, 
+.mint-theme .btn-primary:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
   color: #FFFFFF !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5) !important;
 }
 
-.btn-mint-outline, .mint-theme .btn-outline-danger, .mint-theme .btn-outline-primary {
+.btn-mint-outline, 
+.mint-theme .btn-outline-danger, 
+.mint-theme .btn-outline-primary {
   background-color: transparent !important;
-  color: var(--mint-dark) !important;
-  border: 1.5px solid var(--mint-border) !important;
+  color: var(--mint-primary-dark) !important;
+  border: 1.5px solid var(--mint-primary) !important;
+  font-family: var(--mint-font) !important;
   font-size: 0.86rem !important;
   font-weight: 700 !important;
   padding: 12px 26px !important;
@@ -131,25 +146,44 @@ body.mint-theme {
   gap: 8px !important;
   text-decoration: none !important;
 }
-.btn-mint-outline:hover, .mint-theme .btn-outline-danger:hover, .mint-theme .btn-outline-primary:hover {
+.btn-mint-outline:hover, 
+.mint-theme .btn-outline-danger:hover, 
+.mint-theme .btn-outline-primary:hover {
+  background-color: var(--mint-primary) !important;
   border-color: var(--mint-primary) !important;
-  color: var(--mint-primary) !important;
-  background-color: var(--mint-primary-soft) !important;
+  color: #FFFFFF !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
 }
 
-.mint-badge, .mint-theme .badge, .mint-theme .bg-danger-subtle {
+.mint-badge, 
+.mint-theme .badge, 
+.mint-theme .bg-danger-subtle {
   display: inline-flex !important;
   align-items: center !important;
   gap: 6px !important;
   background-color: var(--mint-primary-light) !important;
-  color: var(--mint-primary) !important;
-  font-size: 0.8rem !important;
-  font-weight: 700 !important;
+  color: var(--mint-primary-dark) !important;
+  font-family: var(--mint-font) !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
   padding: 6px 16px !important;
   border-radius: var(--mint-radius-pill) !important;
-  border: 1px solid rgba(16, 185, 129, 0.25) !important;
-  margin-bottom: 14px !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  margin-bottom: 12px !important;
+}
+
+/* Text & Border Color Mint Overrides */
+.mint-theme .text-danger {
+  color: var(--mint-primary) !important;
+}
+.mint-theme .border-danger {
+  border-color: var(--mint-primary) !important;
+}
+.mint-theme .text-warning {
+  color: #F59E0B !important;
 }
 
 /* ---------------- Hero Section (Mint Style) ---------------- */
@@ -188,7 +222,8 @@ body.mint-theme {
 }
 
 /* ---------------- Cards & Content ---------------- */
-.mint-theme .card, .mint-card {
+.mint-theme .card, 
+.mint-card {
   background-color: #FFFFFF !important;
   border: 1px solid var(--mint-border) !important;
   border-radius: var(--mint-radius-lg) !important;
@@ -196,14 +231,16 @@ body.mint-theme {
   transition: all 0.35s ease;
   box-shadow: var(--mint-shadow) !important;
 }
-.mint-theme .card:hover, .mint-card:hover {
+.mint-theme .card:hover, 
+.mint-card:hover {
   transform: translateY(-6px);
   border-color: var(--mint-primary) !important;
   box-shadow: var(--mint-shadow-hover) !important;
 }
 
 /* ---------------- Form Elements ---------------- */
-.mint-theme .form-control, .mint-form-control {
+.mint-theme .form-control, 
+.mint-form-control {
   background-color: #FFFFFF !important;
   border: 1.5px solid var(--mint-border) !important;
   border-radius: var(--mint-radius-md) !important;
@@ -212,9 +249,10 @@ body.mint-theme {
   color: var(--mint-dark) !important;
   transition: all 0.25s;
 }
-.mint-theme .form-control:focus, .mint-form-control:focus {
+.mint-theme .form-control:focus, 
+.mint-form-control:focus {
   border-color: var(--mint-primary) !important;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15) !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2) !important;
   outline: none;
 }
 
@@ -225,9 +263,21 @@ body.mint-theme {
   margin-bottom: 12px;
   overflow: hidden;
 }
+.mint-theme .accordion-button {
+  font-weight: 700;
+  color: var(--mint-dark) !important;
+}
 .mint-theme .accordion-button:not(.collapsed) {
-  color: var(--mint-primary) !important;
+  color: var(--mint-primary-dark) !important;
   background-color: var(--mint-primary-light) !important;
+}
+
+/* ---------------- CTA Banner ---------------- */
+.mint-theme .cta-banner-mint,
+.mint-theme .bg-cta-banner {
+  background: linear-gradient(135deg, #064E3B 0%, #065F46 50%, #047857 100%) !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  box-shadow: 0 16px 40px rgba(6, 78, 59, 0.3) !important;
 }
 
 /* ---------------- Footer ---------------- */
@@ -255,4 +305,17 @@ body.mint-theme {
   margin-top: 50px;
   padding-top: 25px;
   font-size: 0.85rem;
+}
+
+/* Universal High Contrast Protection for Text in Dark Containers */
+.text-white,
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span {
+  color: #FFFFFF !important;
 }
