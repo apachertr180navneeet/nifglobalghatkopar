@@ -1742,3 +1742,17 @@ body {
 .text-white span {
   color: #FFFFFF !important;
 }
+
+
+/* ==========================================================
+   UNIFIED HEADER NAVIGATION HOVER & ACTIVE STATE (EXACT SCREENSHOT)
+   ========================================================== */
+.navbar-nav .nav-link {
+  color: #111827 !important;
+  font-weight: 700 !important;
+  transition: all 0.2s ease !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #E31E24 !important;
+}

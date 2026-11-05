@@ -276,3 +276,17 @@ body.eduglobal-theme {
 .text-white span {
   color: #FFFFFF !important;
 }
+
+
+/* ==========================================================
+   UNIFIED HEADER NAVIGATION HOVER & ACTIVE STATE (EXACT SCREENSHOT)
+   ========================================================== */
+.navbar-nav .nav-link {
+  color: #0A1C33 !important;
+  font-weight: 700 !important;
+  transition: all 0.2s ease !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #EAA41A !important;
+}

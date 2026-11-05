@@ -319,3 +319,17 @@ body.mint-theme {
 .text-white span {
   color: #FFFFFF !important;
 }
+
+
+/* ==========================================================
+   UNIFIED HEADER NAVIGATION HOVER & ACTIVE STATE (EXACT SCREENSHOT)
+   ========================================================== */
+.navbar-nav .nav-link {
+  color: #1E293B !important;
+  font-weight: 700 !important;
+  transition: all 0.2s ease !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #10B981 !important;
+}
