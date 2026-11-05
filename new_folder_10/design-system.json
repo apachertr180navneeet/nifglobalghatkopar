@@ -1,0 +1,99 @@
+{
+  "brand": {
+    "name": "NIF Global Andheri (Mumbai)",
+    "website": "https://nifandheri.com/",
+    "tagline": "Learn Design the Practical Way at NIF Mumbai - Leading Design Institute in Mumbai",
+    "description": "23 Years of Excellence with 100% Placement Record. Premier institute for Fashion Design, Interior Design, and Design Management."
+  },
+  "colors": {
+    "primary": {
+      "name": "Midnight Royal Navy",
+      "hex": "#19196F",
+      "rgb": "rgb(25, 25, 111)",
+      "hsl": "hsl(240, 63%, 27%)",
+      "role": "Brand primary color, prominent in headers, primary branding, navigation, buttons, and dark accents."
+    },
+    "secondary": {
+      "name": "Sienna Terracotta",
+      "hex": "#A0522C",
+      "rgb": "rgb(160, 82, 44)",
+      "hsl": "hsl(20, 57%, 40%)",
+      "role": "Warm earth tone for secondary elements, badges, and gradient blends."
+    },
+    "accent": {
+      "name": "Coral Sunset Peach",
+      "hex": "#EB866B",
+      "rgb": "rgb(235, 134, 107)",
+      "hsl": "hsl(13, 76%, 67%)",
+      "role": "Call-to-action buttons, highlights, badges, active tabs, and promotional highlights."
+    },
+    "electric_indigo": {
+      "name": "Electric Indigo",
+      "hex": "#060097",
+      "rgb": "rgb(6, 0, 151)",
+      "role": "Deep royal accent for gradients and interactive hover states."
+    },
+    "gold": {
+      "name": "Warm Gold",
+      "hex": "#FFCD57",
+      "rgb": "rgb(255, 205, 87)",
+      "role": "Ratings, stars, excellence badges, and trust indicators."
+    },
+    "neutrals": {
+      "heading_dark": "#101828",
+      "heading_secondary": "#1D2939",
+      "body_text": "#475467",
+      "muted_gray": "#696969",
+      "light_slate": "#98A2B3",
+      "border_gray": "#E5E7EB",
+      "border_periwinkle": "#CDD1DE",
+      "surface_ice_blue": "#EEF0F6",
+      "surface_subtle": "#F9FAFB",
+      "surface_white": "#FFFFFF"
+    },
+    "gradients": {
+      "hero_background": "linear-gradient(180deg, #FFFFFF 28%, #CDD2E038 100%)",
+      "cta_gradient": "linear-gradient(135deg, #EB866B 0%, #A0522C 100%)",
+      "navy_glow": "linear-gradient(135deg, #19196F 0%, #060097 100%)"
+    }
+  },
+  "typography": {
+    "primary_font": "Poppins, sans-serif",
+    "display_font": "Plus Jakarta Sans, Poppins, sans-serif",
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "sizes": {
+      "display_hero": "54px",
+      "section_heading": "38px",
+      "subsection_heading": "24px",
+      "card_title": "20px",
+      "body": "16px",
+      "small": "14px",
+      "badge": "12px"
+    }
+  },
+  "key_stats": [
+    { "label": "Years of Excellence", "value": "23+" },
+    { "label": "Students Trained", "value": "30,000+" },
+    { "label": "Student Placement Record", "value": "100%" },
+    { "label": "Top Recruiting Partners", "value": "500+" }
+  ],
+  "core_courses": [
+    "Fashion Design (B.Des, M.Des, Diploma, Certificate)",
+    "Interior Design (B.Des, M.Des, Diploma, Certificate)",
+    "Design Management",
+    "Beauty, Makeup & Hairstyling"
+  ],
+  "celebrity_mentors": [
+    "Ashley Rebello (Chief Mentor - Fashion)",
+    "Gauri Khan (Mentor - Interior Design)",
+    "Manish Malhotra (Industry Partner)",
+    "Twinkle Khanna (Celebrity Mentor)"
+  ]
+}
+
