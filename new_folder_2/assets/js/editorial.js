@@ -137,5 +137,64 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // 8. Editorial Hero Carousel & Mode Toggler
+  const edHeroCarouselEl = document.getElementById('editorialHeroCarousel');
+  const edHeroPrev = document.getElementById('edHeroPrev');
+  const edHeroNext = document.getElementById('edHeroNext');
+
+  if (edHeroCarouselEl && typeof bootstrap !== 'undefined') {
+    const edHeroCarousel = new bootstrap.Carousel(edHeroCarouselEl, {
+      interval: 5000,
+      ride: 'carousel',
+      pause: 'hover',
+      wrap: true
+    });
+
+    if (edHeroPrev) {
+      edHeroPrev.addEventListener('click', function (e) {
+        e.preventDefault();
+        edHeroCarousel.prev();
+      });
+    }
+    if (edHeroNext) {
+      edHeroNext.addEventListener('click', function (e) {
+        e.preventDefault();
+        edHeroCarousel.next();
+      });
+    }
+  }
+
+  // View Mode Toggler (Editorial Split vs Full Official Banners)
+  const btnEdSplitHero = document.getElementById('btnEdSplitHero');
+  const btnEdFullBanner = document.getElementById('btnEdFullBanner');
+  const edSplitHeroView = document.getElementById('edSplitHeroView');
+  const edFullBannerView = document.getElementById('edFullBannerView');
+
+  if (btnEdSplitHero && btnEdFullBanner && edSplitHeroView && edFullBannerView) {
+    btnEdSplitHero.addEventListener('click', function () {
+      btnEdSplitHero.classList.add('active');
+      btnEdFullBanner.classList.remove('active');
+      edSplitHeroView.classList.remove('d-none');
+      edFullBannerView.classList.add('d-none');
+    });
+
+    btnEdFullBanner.addEventListener('click', function () {
+      btnEdFullBanner.classList.add('active');
+      btnEdSplitHero.classList.remove('active');
+      edFullBannerView.classList.remove('d-none');
+      edSplitHeroView.classList.add('d-none');
+
+      const edFullBannerCarouselEl = document.getElementById('editorialFullBannerCarousel');
+      if (edFullBannerCarouselEl && typeof bootstrap !== 'undefined') {
+        new bootstrap.Carousel(edFullBannerCarouselEl, {
+          interval: 4500,
+          ride: 'carousel',
+          pause: 'hover',
+          wrap: true
+        });
+      }
+    });
+  }
 });
 

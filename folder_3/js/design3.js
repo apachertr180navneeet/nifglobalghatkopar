@@ -30,25 +30,63 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. Carousel Controls
-  const prevBtn = document.getElementById('heroPrev');
-  const nextBtn = document.getElementById('heroNext');
-  const heroImg = document.getElementById('heroMainImg');
-  const heroImages = [
-    'assets/images/design3/hero_model.jpg',
-    'assets/images/Ananya-Panday-Celebrity-min.png.webp',
-    'assets/images/aboutus-1.webp'
-  ];
-  let curIndex = 0;
+  // 3. Hero Carousel Controls & Autoplay
+  const heroCarouselEl = document.getElementById('heroCarousel');
+  const heroPrev = document.getElementById('heroPrev');
+  const heroNext = document.getElementById('heroNext');
 
-  if (heroImg && prevBtn && nextBtn) {
-    nextBtn.addEventListener('click', function () {
-      curIndex = (curIndex + 1) % heroImages.length;
-      heroImg.src = heroImages[curIndex];
+  if (heroCarouselEl && typeof bootstrap !== 'undefined') {
+    const heroCarousel = new bootstrap.Carousel(heroCarouselEl, {
+      interval: 5000,
+      ride: 'carousel',
+      pause: 'hover',
+      wrap: true
     });
-    prevBtn.addEventListener('click', function () {
-      curIndex = (curIndex - 1 + heroImages.length) % heroImages.length;
-      heroImg.src = heroImages[curIndex];
+
+    if (heroPrev) {
+      heroPrev.addEventListener('click', function (e) {
+        e.preventDefault();
+        heroCarousel.prev();
+      });
+    }
+    if (heroNext) {
+      heroNext.addEventListener('click', function (e) {
+        e.preventDefault();
+        heroCarousel.next();
+      });
+    }
+  }
+
+  // 4. Hero View Mode Toggler (Interactive Split vs Full Banners)
+  const btnSplitHero = document.getElementById('btnSplitHero');
+  const btnFullBanner = document.getElementById('btnFullBanner');
+  const viewSplitHero = document.getElementById('viewSplitHero');
+  const viewFullBanner = document.getElementById('viewFullBanner');
+
+  if (btnSplitHero && btnFullBanner && viewSplitHero && viewFullBanner) {
+    btnSplitHero.addEventListener('click', function () {
+      btnSplitHero.classList.add('active');
+      btnFullBanner.classList.remove('active');
+      viewSplitHero.classList.remove('d-none');
+      viewFullBanner.classList.add('d-none');
+    });
+
+    btnFullBanner.addEventListener('click', function () {
+      btnFullBanner.classList.add('active');
+      btnSplitHero.classList.remove('active');
+      viewFullBanner.classList.remove('d-none');
+      viewSplitHero.classList.add('d-none');
+
+      const fullBannerCarouselEl = document.getElementById('fullBannerCarousel');
+      if (fullBannerCarouselEl && typeof bootstrap !== 'undefined') {
+        new bootstrap.Carousel(fullBannerCarouselEl, {
+          interval: 4500,
+          ride: 'carousel',
+          pause: 'hover',
+          wrap: true
+        });
+      }
     });
   }
 });
+

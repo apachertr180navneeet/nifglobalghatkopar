@@ -108,4 +108,63 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // 7. Hero Carousel & Mode Toggler
+  const nifHeroLeftCarouselEl = document.getElementById('nifHeroLeftCarousel');
+  const nifHeroPrev = document.getElementById('nifHeroPrev');
+  const nifHeroNext = document.getElementById('nifHeroNext');
+
+  if (nifHeroLeftCarouselEl && typeof bootstrap !== 'undefined') {
+    const nifHeroCarousel = new bootstrap.Carousel(nifHeroLeftCarouselEl, {
+      interval: 5000,
+      ride: 'carousel',
+      pause: 'hover',
+      wrap: true
+    });
+
+    if (nifHeroPrev) {
+      nifHeroPrev.addEventListener('click', function (e) {
+        e.preventDefault();
+        nifHeroCarousel.prev();
+      });
+    }
+    if (nifHeroNext) {
+      nifHeroNext.addEventListener('click', function (e) {
+        e.preventDefault();
+        nifHeroCarousel.next();
+      });
+    }
+  }
+
+  // View Mode Toggler (Course Slider vs Full Official Banners)
+  const btnNifSplitHero = document.getElementById('btnNifSplitHero');
+  const btnNifFullBanner = document.getElementById('btnNifFullBanner');
+  const nifSplitHeroView = document.getElementById('nifSplitHeroView');
+  const nifFullBannerView = document.getElementById('nifFullBannerView');
+
+  if (btnNifSplitHero && btnNifFullBanner && nifSplitHeroView && nifFullBannerView) {
+    btnNifSplitHero.addEventListener('click', function () {
+      btnNifSplitHero.classList.add('active');
+      btnNifFullBanner.classList.remove('active');
+      nifSplitHeroView.classList.remove('d-none');
+      nifFullBannerView.classList.add('d-none');
+    });
+
+    btnNifFullBanner.addEventListener('click', function () {
+      btnNifFullBanner.classList.add('active');
+      btnNifSplitHero.classList.remove('active');
+      nifFullBannerView.classList.remove('d-none');
+      nifSplitHeroView.classList.add('d-none');
+
+      const nifFullBannerCarouselEl = document.getElementById('nifFullBannerCarousel');
+      if (nifFullBannerCarouselEl && typeof bootstrap !== 'undefined') {
+        new bootstrap.Carousel(nifFullBannerCarouselEl, {
+          interval: 4500,
+          ride: 'carousel',
+          pause: 'hover',
+          wrap: true
+        });
+      }
+    });
+  }
 });

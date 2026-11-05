@@ -394,6 +394,126 @@ a {
   backdrop-filter: blur(8px);
 }
 
+/* Hero Slider Controls & Mode Switcher */
+.nif-slider-mode-pill {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.nif-mode-btn {
+  border: none;
+  background: transparent;
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nif-mode-btn.active {
+  background: var(--nif-red);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(179, 29, 40, 0.4);
+}
+
+.nif-mode-btn:hover:not(.active) {
+  color: #ffffff;
+}
+
+.nif-hero-carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.nif-carousel-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 1.1rem;
+}
+
+.nif-carousel-btn:hover {
+  background: var(--nif-red);
+  border-color: var(--nif-red);
+  transform: scale(1.08);
+}
+
+.nif-carousel-indicators-custom {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nif-carousel-indicators-custom button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.nif-carousel-indicators-custom button.active {
+  width: 28px;
+  border-radius: 10px;
+  background: var(--nif-red);
+  border-color: var(--nif-red);
+}
+
+.nif-full-banner-card {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.nif-full-banner-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.nif-banner-caption-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(11, 14, 20, 0.95) 0%, rgba(11, 14, 20, 0.5) 60%, transparent 100%);
+  padding: 30px 40px 25px 40px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nif-full-banner-img {
+    height: 260px;
+  }
+  .nif-banner-caption-bar {
+    padding: 15px 20px;
+  }
+}
+
 .pulse-dot {
   width: 8px;
   height: 8px;
