@@ -30,7 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. Hero Carousel Controls & Autoplay
+  // 3. Mentor Hero Carousel (media_1793849778293_16d8a738.jpg)
+  const mentorCardCarouselEl = document.getElementById('mentorCardCarousel');
+  if (mentorCardCarouselEl && typeof bootstrap !== 'undefined') {
+    new bootstrap.Carousel(mentorCardCarouselEl, {
+      interval: 4000,
+      ride: 'carousel',
+      pause: 'hover',
+      wrap: true
+    });
+  }
+
+  // Hero Carousel Controls & Autoplay
   const heroCarouselEl = document.getElementById('heroCarousel');
   const heroPrev = document.getElementById('heroPrev');
   const heroNext = document.getElementById('heroNext');

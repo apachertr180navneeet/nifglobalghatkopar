@@ -138,7 +138,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // 8. Editorial Hero Carousel & Mode Toggler
+  // 8. Mentor Hero Carousel (media_1793849778293_16d8a738.jpg)
+  const mentorCardCarouselEl = document.getElementById('mentorCardCarousel');
+  if (mentorCardCarouselEl && typeof bootstrap !== 'undefined') {
+    new bootstrap.Carousel(mentorCardCarouselEl, {
+      interval: 4000,
+      ride: 'carousel',
+      pause: 'hover',
+      wrap: true
+    });
+  }
+
+  // Editorial Hero Carousel & Mode Toggler
   const edHeroCarouselEl = document.getElementById('editorialHeroCarousel');
   const edHeroPrev = document.getElementById('edHeroPrev');
   const edHeroNext = document.getElementById('edHeroNext');
