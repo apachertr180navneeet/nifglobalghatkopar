@@ -1,0 +1,189 @@
+/* ==========================================================================
+   UNIFIED HEADER DESIGN (EXACT MATCH TO REFERENCE SCREENSHOT)
+   ========================================================================== */
+
+:root {
+  --unified-nif-red: #c92127;
+  --unified-nif-red-hover: #b01b20;
+  --unified-nif-dark: #1f2937;
+  --unified-nif-border: #e5e7eb;
+}
+
+/* Main Navbar Container with Crisp Top Red Stripe */
+.unified-nif-navbar {
+  background-color: #ffffff !important;
+  border-top: 3.5px solid var(--unified-nif-red) !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.85) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05) !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1040 !important;
+  transition: all 0.25s ease !important;
+  width: 100% !important;
+}
+
+.unified-nif-navbar .navbar-brand {
+  padding: 0 !important;
+  margin-right: 1.25rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.unified-nif-navbar .navbar-brand img {
+  height: 48px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+/* Nav Menu Items */
+.unified-nif-navbar .navbar-nav {
+  align-items: center !important;
+}
+
+.unified-nif-navbar .navbar-nav .nav-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.unified-nif-navbar .navbar-nav .nav-link {
+  color: var(--unified-nif-dark) !important;
+  font-family: inherit !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+  padding: 6px 10px !important;
+  min-height: 42px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  transition: color 0.2s ease !important;
+  text-decoration: none !important;
+  background: transparent !important;
+}
+
+.unified-nif-navbar .navbar-nav .nav-link.stacked-link {
+  flex-direction: column !important;
+  line-height: 1.15 !important;
+  font-size: 0.84rem !important;
+}
+
+/* Active and Hover States with Red Underline */
+.unified-nif-navbar .navbar-nav .nav-link:hover,
+.unified-nif-navbar .navbar-nav .nav-link.active {
+  color: var(--unified-nif-red) !important;
+}
+
+.unified-nif-navbar .navbar-nav .nav-link::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 2px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 0 !important;
+  height: 2.5px !important;
+  background-color: var(--unified-nif-red) !important;
+  border-radius: 4px !important;
+  transition: width 0.25s ease !important;
+}
+
+.unified-nif-navbar .navbar-nav .nav-link:hover::after,
+.unified-nif-navbar .navbar-nav .nav-link.active::after {
+  width: 24px !important;
+}
+
+/* Dropdown Menu */
+.unified-nif-navbar .dropdown-menu {
+  border: 1px solid var(--unified-nif-border) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+  padding: 8px !important;
+  min-width: 240px !important;
+  background: #ffffff !important;
+}
+
+.unified-nif-navbar .dropdown-menu .dropdown-item {
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  color: #334155 !important;
+  padding: 9px 14px !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.unified-nif-navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #fff1f2 !important;
+  color: var(--unified-nif-red) !important;
+}
+
+/* CTA Pill Button (Matching Screenshot) */
+.unified-nif-navbar .unified-apply-btn {
+  background: linear-gradient(135deg, #e31e24 0%, #b71c1c 100%) !important;
+  background-color: var(--unified-nif-red) !important;
+  color: #ffffff !important;
+  border-radius: 50px !important;
+  border: none !important;
+  padding: 7px 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  box-shadow: 0 4px 14px rgba(201, 33, 39, 0.35) !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.unified-nif-navbar .unified-apply-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(201, 33, 39, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.unified-nif-navbar .unified-apply-btn i {
+  color: #ffffff !important;
+  font-size: 1.15rem !important;
+  margin-right: 8px !important;
+}
+
+.unified-nif-navbar .unified-apply-btn .btn-text {
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
+  text-align: left !important;
+  display: inline-block !important;
+}
+
+/* Brochure Download Image */
+.unified-nif-navbar .unified-pdf-btn img {
+  height: 38px !important;
+  width: auto !important;
+  display: inline-block !important;
+  transition: transform 0.2s ease !important;
+}
+
+.unified-nif-navbar .unified-pdf-btn:hover img {
+  transform: translateY(-2px) !important;
+}
+
+/* Mobile responsive menu */
+@media (max-width: 1199.98px) {
+  .unified-nif-navbar .navbar-collapse {
+    background: #ffffff !important;
+    padding: 16px 12px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    margin-top: 10px !important;
+  }
+  .unified-nif-navbar .navbar-nav {
+    gap: 8px !important;
+  }
+}

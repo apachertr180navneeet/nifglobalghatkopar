@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/nifandheri.css">
+  <link rel="stylesheet" href="assets/css/unified_header.css">
 </head>
 <body class="undefined">
 
@@ -40,7 +41,8 @@
   <!-- Main Navigation -->
   <!-- ================= UNIFIED MAIN NAVIGATION (EXACT USER SPEC) ================= -->
   <!-- ================= EXACT SCREENSHOT UNIFIED MAIN NAVIGATION ================= -->
-  <nav class="navbar navbar-expand-xl andheri-navbar sticky-top shadow-sm py-2 bg-white">
+  <!-- ================= UNIFIED MAIN NAVIGATION (EXACT SCREENSHOT) ================= -->
+  <nav class="navbar navbar-expand-xl unified-nif-navbar sticky-top bg-white">
     <div class="container">
       <a class="navbar-brand py-0 me-3" href="index.html">
         <img src="assets/images/Logo.webp" alt="NIF Global Ghatkopar Logo" style="height: 48px; width: auto;" class="img-fluid">
@@ -71,7 +73,7 @@
 
           <!-- 3. ABOUT US (Stacked) -->
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold px-2 py-1 active" href="about-us.html" style="font-size: 0.84rem; letter-spacing: 0.5px; line-height: 1.15; min-height: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+            <a class="nav-link text-uppercase fw-bold px-2 py-1 active stacked-link" href="about-us.html" style="font-size: 0.84rem; letter-spacing: 0.5px; line-height: 1.15; min-height: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
               <span>ABOUT</span>
               <span>US</span>
             </a>
@@ -79,7 +81,7 @@
 
           <!-- 4. WHY US (Stacked) -->
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold px-2 py-1 " href="why-us.html" style="font-size: 0.84rem; letter-spacing: 0.5px; line-height: 1.15; min-height: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+            <a class="nav-link text-uppercase fw-bold px-2 py-1  stacked-link" href="why-us.html" style="font-size: 0.84rem; letter-spacing: 0.5px; line-height: 1.15; min-height: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
               <span>WHY</span>
               <span>US</span>
             </a>
@@ -87,7 +89,7 @@
 
           <!-- 5. STUDENT WORK (Stacked) -->
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold px-2 py-1 " href="gallery.html" style="font-size: 0.84rem; letter-spacing: 0.5px; line-height: 1.15; min-height: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+            <a class="nav-link text-uppercase fw-bold px-2 py-1  stacked-link" href="gallery.html" style="font-size: 0.84rem; letter-spacing: 0.5px; line-height: 1.15; min-height: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
               <span>STUDENT</span>
               <span>WORK</span>
             </a>
@@ -95,7 +97,7 @@
 
           <!-- 6. MENTORS & VOICES (Stacked) -->
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold px-2 py-1 " href="testimonial.html" style="font-size: 0.84rem; letter-spacing: 0.5px; line-height: 1.15; min-height: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+            <a class="nav-link text-uppercase fw-bold px-2 py-1  stacked-link" href="testimonial.html" style="font-size: 0.84rem; letter-spacing: 0.5px; line-height: 1.15; min-height: 42px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
               <span>MENTORS &amp;</span>
               <span>VOICES</span>
             </a>
@@ -115,11 +117,11 @@
 
         <!-- Right Side: Two-Line Pill Button + PDF Badge -->
         <div class="d-flex align-items-center justify-content-center gap-2 mt-3 mt-xl-0 ms-xl-2">
-          <a href="#applyModal" data-bs-toggle="modal" class="btn-andheri-primary text-white d-inline-flex align-items-center rounded-pill py-2 px-3 text-start shadow-sm" style="text-decoration: none; border-radius: 50px !important;">
-            <i class="bi bi-mortarboard-fill fs-5 me-2"></i>
-            <span class="text-uppercase fw-bold lh-1" style="font-size: 0.78rem; letter-spacing: 0.5px;">APPLY 2026<br>BATCH</span>
+          <a href="#applyModal" data-bs-toggle="modal" data-bs-target="#applyModal" class="btn text-white d-inline-flex align-items-center rounded-pill py-2 px-3 text-start shadow-sm unified-apply-btn" style="text-decoration: none; border-radius: 50px !important; background: linear-gradient(135deg, #e31e24 0%, #b71c1c 100%) !important; background-color: #c92127 !important; border: none !important; box-shadow: 0 4px 14px rgba(201, 33, 39, 0.35) !important;">
+            <i class="bi bi-mortarboard-fill fs-5 me-2 text-white"></i>
+            <span class="text-uppercase fw-bold lh-1 text-white btn-text" style="font-size: 0.78rem; letter-spacing: 0.5px;">APPLY 2026<br>BATCH</span>
           </a>
-          <a href="assets/images/pdf-1.webp" download class="ms-1 d-none d-lg-inline-block" title="Download Brochure">
+          <a href="assets/images/pdf-1.webp" download class="ms-1 d-none d-lg-inline-block unified-pdf-btn" title="Download Brochure">
             <img src="assets/images/pdf-1.webp" alt="Download Brochure" style="height: 38px;">
           </a>
         </div>
