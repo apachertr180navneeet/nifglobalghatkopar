@@ -1406,3 +1406,89 @@ img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+
+
+/* ==========================================================
+   VOGUE / HARPER'S BAZAAR EDITORIAL LUXURY OVERRIDES
+   ========================================================== */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #FAF8F5 !important;
+  color: #262626 !important;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: #111111 !important;
+}
+
+/* Luxury Editorial Cards */
+.card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #EBE6DF !important;
+  border-radius: 2px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
+  transition: all 0.4s ease !important;
+}
+.card:hover {
+  transform: translateY(-5px) !important;
+  border-color: #D4AF37 !important;
+  box-shadow: 0 16px 40px rgba(212, 175, 55, 0.15) !important;
+}
+
+/* Minimalist Noir & Gold Badges */
+.badge, .bg-danger-subtle {
+  background-color: #FAF5EA !important;
+  color: #9A7B1C !important;
+  border: 1px solid #E2D2A8 !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 0.76rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  border-radius: 0px !important;
+  padding: 6px 14px !important;
+}
+
+/* Minimalist Noir Buttons */
+.btn-danger, .btn-primary {
+  background-color: #111111 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #111111 !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  border-radius: 0px !important;
+  padding: 12px 28px !important;
+  transition: all 0.3s ease !important;
+}
+.btn-danger:hover, .btn-primary:hover {
+  background-color: #D4AF37 !important;
+  border-color: #D4AF37 !important;
+  color: #FFFFFF !important;
+}
+
+.btn-outline-danger, .btn-outline-primary {
+  background-color: transparent !important;
+  color: #111111 !important;
+  border: 1px solid #111111 !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  border-radius: 0px !important;
+  padding: 12px 26px !important;
+  transition: all 0.3s ease !important;
+}
+.btn-outline-danger:hover, .btn-outline-primary:hover {
+  background-color: #111111 !important;
+  color: #FFFFFF !important;
+}
+
+/* Section Backdrops */
+.bg-light {
+  background-color: #F4EFEB !important;
+}

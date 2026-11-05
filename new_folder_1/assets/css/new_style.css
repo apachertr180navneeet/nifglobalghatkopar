@@ -1661,3 +1661,70 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+/* ==========================================================
+   HIGH-CONVERSION DARK GRADIENT & CRIMSON OVERRIDES
+   ========================================================== */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #111827;
+}
+
+.card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.3s ease !important;
+}
+.card:hover {
+  transform: translateY(-5px) !important;
+  border-color: #E31E24 !important;
+  box-shadow: 0 15px 35px rgba(227, 30, 36, 0.15) !important;
+}
+
+.badge, .bg-danger-subtle {
+  background-color: rgba(227, 30, 36, 0.1) !important;
+  color: #E31E24 !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 6px 14px !important;
+  border-radius: 6px !important;
+}
+
+.btn-danger, .btn-primary {
+  background: linear-gradient(135deg, #E31E24 0%, #B71217 100%) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 6px !important;
+  padding: 12px 28px !important;
+  box-shadow: 0 4px 15px rgba(227, 30, 36, 0.35) !important;
+  transition: all 0.3s ease !important;
+}
+.btn-danger:hover, .btn-primary:hover {
+  background: linear-gradient(135deg, #C21319 0%, #9B0D11 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(227, 30, 36, 0.5) !important;
+  color: #FFFFFF !important;
+}
+
+.btn-outline-danger, .btn-outline-primary {
+  background-color: transparent !important;
+  color: #E31E24 !important;
+  border: 1.5px solid #E31E24 !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  border-radius: 6px !important;
+  padding: 12px 26px !important;
+  transition: all 0.3s ease !important;
+}
+.btn-outline-danger:hover, .btn-outline-primary:hover {
+  background-color: #E31E24 !important;
+  color: #FFFFFF !important;
+}
