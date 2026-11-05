@@ -1,70 +1,77 @@
 /* ==========================================================================
-   NIF GLOBAL ANDHERI (MUMBAI) - DESIGN SYSTEM & COLOR PALETTE
-   Extracted directly from https://nifandheri.com/
+   NIF GLOBAL - VIBRANT & LUXURY DESIGN SYSTEM
+   Enhanced Colorful Palette with Royal Navy, Electric Indigo,
+   Sunset Coral, Gold, Magenta, and Radiant Gradients
    ========================================================================== */
 
 :root {
   /* Brand Primary Colors */
-  --nif-primary: #19196F;           /* Midnight Navy Blue (Elementor Primary) */
-  --nif-primary-dark: #0f1048;      /* Deep Midnight Dark */
-  --nif-primary-light: #2c2c96;     /* Bright Royal Blue */
+  --nif-primary: #121356;           /* Deep Royal Navy */
+  --nif-primary-dark: #0A0A38;      /* Midnight Luxury Dark */
+  --nif-primary-light: #1E2387;     /* Bright Royal Navy */
   
-  /* Brand Secondary & Accent Colors */
-  --nif-secondary: #A0522C;         /* Sienna Terracotta Brown */
-  --nif-accent: #EB866B;            /* Coral / Peach Warm Accent */
-  --nif-accent-hover: #d97156;      /* Darker Coral on hover */
-  --nif-electric-indigo: #060097;   /* Electric Indigo */
-  --nif-gold: #FFCD57;              /* Warm Gold / Rating Star */
-  --nif-purple: #C10FFF;            /* Vibrant Violet Accent */
-  --nif-danger: #EE0004;            /* Notification Red */
+  /* Vibrant Brand Accents */
+  --nif-coral: #FF5A36;             /* Ultra Vibrant Sunset Coral */
+  --nif-coral-light: #FF7E61;       /* Light Coral */
+  --nif-accent: #EB866B;            /* Classic NIF Sunset Coral */
+  --nif-electric-indigo: #4F46E5;   /* Electric Indigo */
+  --nif-magenta: #C10FFF;           /* Vibrant Violet / Magenta */
+  --nif-pink: #EC4899;              /* Runway Pink */
+  --nif-cyan: #06B6D4;              /* Vibrant Cyan */
+  --nif-gold: #F59E0B;              /* Rich Amber Gold */
+  --nif-gold-light: #FFD56B;        /* Champagne Gold */
+  --nif-emerald: #10B981;           /* Emerald Mint */
 
   /* Neutral & Grayscale Colors */
-  --nif-text-primary: #101828;      /* Deep Charcoal for Headings */
-  --nif-text-secondary: #475467;    /* Slate Gray for Subtitles */
-  --nif-text-muted: #696969;        /* Elementor text gray */
-  --nif-text-light: #98A2B3;        /* Tertiary muted text */
+  --nif-text-primary: #0F172A;      /* Rich Slate Dark for Headings */
+  --nif-text-secondary: #475569;    /* Refined Slate for Body */
+  --nif-text-muted: #64748B;        /* Muted Slate */
   --nif-white: #FFFFFF;             /* Pure White */
   --nif-black: #000000;             /* Pure Black */
 
-  /* Backgrounds & Surface Colors */
-  --nif-bg-page: #FFFFFF;           /* Main page body background */
-  --nif-bg-subtle: #F9FAFB;         /* Ultra-light grayish background */
-  --nif-bg-card: #FFFFFF;           /* Card background */
-  --nif-bg-soft-blue: #EEF0F6;      /* Soft Ice Blue / Elementor 84f8eeb */
-  --nif-bg-soft-peach: #FFF5F2;     /* Warm Tinted Peach */
-  --nif-bg-soft-purple: #F9F6FE;    /* Soft Lavender Tint */
+  /* Colorful Surface Tints */
+  --nif-bg-page: #FFFFFF;
+  --nif-bg-subtle: #F8FAFC;         /* Crisp Soft Slate */
+  --nif-bg-coral-tint: #FFF4F0;     /* Warm Coral Glow */
+  --nif-bg-indigo-tint: #F3F4FD;    /* Soft Lavender/Royal Glow */
+  --nif-bg-gold-tint: #FFFBEB;      /* Warm Amber Glow */
+  --nif-bg-cyan-tint: #ECFEFF;      /* Cool Minty Cyan Glow */
+  --nif-bg-magenta-tint: #FDF2F8;   /* Soft Rose/Magenta Glow */
 
-  /* Borders & Dividers */
-  --nif-border: #E5E7EB;            /* Standard neutral border */
-  --nif-border-subtle: #CDD1DE;     /* Elementor c75f9d3 soft blue-gray border */
-  --nif-border-gray: #D7DAE0;       /* Elementor eecf92b border */
+  /* High Impact Colorful Gradients */
+  --nif-grad-primary: linear-gradient(135deg, #121356 0%, #312E81 50%, #4F46E5 100%);
+  --nif-grad-coral: linear-gradient(135deg, #FF5A36 0%, #FF8A50 50%, #F59E0B 100%);
+  --nif-grad-magenta: linear-gradient(135deg, #C10FFF 0%, #EC4899 50%, #FF5A36 100%);
+  --nif-grad-cyan-indigo: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%);
+  --nif-grad-gold: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FDE047 100%);
+  --nif-grad-hero: linear-gradient(180deg, #FFFFFF 0%, #F1F4FD 50%, #FFF5F2 100%);
+  --nif-grad-mesh: radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.12) 0px, transparent 50%),
+                   radial-gradient(at 100% 0%, rgba(255, 90, 54, 0.14) 0px, transparent 50%),
+                   radial-gradient(at 100% 100%, rgba(193, 15, 255, 0.1) 0px, transparent 50%),
+                   radial-gradient(at 0% 100%, rgba(6, 182, 212, 0.1) 0px, transparent 50%);
 
-  /* Gradients */
-  --nif-gradient-hero: linear-gradient(180deg, #FFFFFF 28%, #CDD2E038 100%);
-  --nif-gradient-coral: linear-gradient(135deg, #EB866B 0%, #A0522C 100%);
-  --nif-gradient-navy: linear-gradient(135deg, #19196F 0%, #060097 100%);
-  --nif-gradient-card: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
+  /* Glowing Colorful Shadows */
+  --nif-shadow-coral: 0 12px 28px -4px rgba(255, 90, 54, 0.38);
+  --nif-shadow-indigo: 0 12px 28px -4px rgba(79, 70, 229, 0.35);
+  --nif-shadow-magenta: 0 12px 28px -4px rgba(193, 15, 255, 0.32);
+  --nif-shadow-card: 0 10px 30px -5px rgba(15, 23, 42, 0.08);
+  --nif-shadow-card-hover: 0 20px 40px -8px rgba(15, 23, 42, 0.15);
 
-  /* Shadows */
-  --nif-shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
-  --nif-shadow-md: 0 4px 8px -2px rgba(16, 24, 40, 0.1), 0 2px 4px -2px rgba(16, 24, 40, 0.06);
-  --nif-shadow-lg: 0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03);
-  --nif-shadow-xl: 0 20px 24px -4px rgba(16, 24, 40, 0.1), 0 8px 8px -4px rgba(16, 24, 40, 0.04);
-  --nif-shadow-navy: 0 10px 25px -5px rgba(25, 25, 111, 0.25);
-  --nif-shadow-coral: 0 10px 25px -5px rgba(235, 134, 107, 0.35);
+  /* Borders */
+  --nif-border: #E2E8F0;
+  --nif-border-focus: #4F46E5;
 
   /* Typography */
   --nif-font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --nif-font-display: 'Plus Jakarta Sans', 'Poppins', sans-serif;
 
-  /* Border Radius */
-  --nif-radius-sm: 6px;
-  --nif-radius-md: 10px;
-  --nif-radius-lg: 16px;
-  --nif-radius-xl: 24px;
+  /* Radius */
+  --nif-radius-sm: 8px;
+  --nif-radius-md: 14px;
+  --nif-radius-lg: 20px;
+  --nif-radius-xl: 30px;
   --nif-radius-full: 9999px;
 
-  /* Spacing */
+  /* Layout */
   --container-max-width: 1240px;
 }
-
