@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 5. Admissions Enquiry Form Handler
-  const enquiryForms = document.querySelectorAll('#admissionsEnquiryForm, #heroQuickForm, #modalApplyForm');
+  const enquiryForms = document.querySelectorAll('#admissionsEnquiryForm, #heroQuickForm, #modalApplyForm, #globalEnquiryForm, #modalEnquiryForm');
   enquiryForms.forEach(form => {
     form.addEventListener('submit', function (e) {
       e.preventDefault();

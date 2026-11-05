@@ -1,0 +1,264 @@
+/* ===================================================================
+   EDUGLOBAL STYLE THEME - NIF GLOBAL GHATKOPAR
+   Reference: https://bestwebcreator.com/eduglobal/demo/index.html
+   Classic Prestige Global University, Regal Oxford Navy & Academic Gold
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --eduglobal-navy: #0A1C33;
+  --eduglobal-navy-light: #122845;
+  --eduglobal-gold: #EAA41A;
+  --eduglobal-gold-hover: #D49010;
+  --eduglobal-crimson: #C9182B;
+  --eduglobal-light: #F8FAFC;
+  --eduglobal-border: #E2E8F0;
+  --eduglobal-text-main: #1E293B;
+  --eduglobal-text-muted: #64748B;
+  --eduglobal-font-academic: 'Cinzel', Georgia, serif;
+  --eduglobal-font-body: 'Plus Jakarta Sans', sans-serif;
+  --eduglobal-radius-sm: 4px;
+  --eduglobal-radius-md: 8px;
+  --eduglobal-radius-lg: 14px;
+  --eduglobal-shadow: 0 10px 30px rgba(10, 28, 51, 0.08);
+  --eduglobal-shadow-hover: 0 16px 40px rgba(234, 164, 26, 0.22);
+}
+
+body.eduglobal-theme {
+  font-family: var(--eduglobal-font-body);
+  color: var(--eduglobal-text-main);
+  background-color: var(--eduglobal-light);
+  line-height: 1.7;
+}
+
+.eduglobal-theme h1, .eduglobal-theme h2, .eduglobal-theme h3, .eduglobal-theme h4, .eduglobal-theme .font-serif, .eduglobal-theme .font-academic {
+  font-family: var(--eduglobal-font-academic) !important;
+  color: var(--eduglobal-navy) !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Background overrides */
+.eduglobal-theme .bg-light {
+  background-color: #F1F5F9 !important;
+}
+
+/* ---------------- Top Bar ---------------- */
+.eduglobal-topbar {
+  background-color: var(--eduglobal-navy);
+  color: #CBD5E1;
+  font-size: 0.82rem;
+  padding: 9px 0;
+  border-bottom: 2px solid var(--eduglobal-gold);
+}
+.eduglobal-topbar a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.eduglobal-topbar a:hover {
+  color: var(--eduglobal-gold);
+}
+
+/* ---------------- Navbar ---------------- */
+.eduglobal-navbar {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--eduglobal-border);
+  padding: 14px 0;
+  transition: all 0.3s ease;
+}
+.eduglobal-navbar.scrolled {
+  box-shadow: 0 10px 30px rgba(10, 28, 51, 0.1);
+}
+.eduglobal-logo {
+  height: 50px;
+  width: auto;
+}
+.eduglobal-nav-link {
+  font-family: var(--eduglobal-font-academic);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--eduglobal-navy) !important;
+  padding: 8px 14px !important;
+  transition: color 0.25s;
+}
+.eduglobal-nav-link:hover,
+.eduglobal-nav-link.active {
+  color: var(--eduglobal-gold) !important;
+}
+
+/* ---------------- Buttons & Badges ---------------- */
+.btn-eduglobal-primary, .eduglobal-theme .btn-danger, .eduglobal-theme .btn-primary {
+  background-color: var(--eduglobal-gold) !important;
+  color: var(--eduglobal-navy) !important;
+  font-family: var(--eduglobal-font-academic) !important;
+  font-size: 0.84rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 12px 28px !important;
+  border: 1px solid var(--eduglobal-gold) !important;
+  border-radius: var(--eduglobal-radius-sm) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 15px rgba(234, 164, 26, 0.3) !important;
+}
+.btn-eduglobal-primary:hover, .eduglobal-theme .btn-danger:hover, .eduglobal-theme .btn-primary:hover {
+  background-color: var(--eduglobal-gold-hover) !important;
+  color: #000000 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(234, 164, 26, 0.45) !important;
+}
+
+.btn-eduglobal-outline, .eduglobal-theme .btn-outline-danger, .eduglobal-theme .btn-outline-primary {
+  background-color: transparent !important;
+  color: var(--eduglobal-navy) !important;
+  border: 1.5px solid var(--eduglobal-navy) !important;
+  font-family: var(--eduglobal-font-academic) !important;
+  font-size: 0.84rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 12px 26px !important;
+  border-radius: var(--eduglobal-radius-sm) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+}
+.btn-eduglobal-outline:hover, .eduglobal-theme .btn-outline-danger:hover, .eduglobal-theme .btn-outline-primary:hover {
+  background-color: var(--eduglobal-navy) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+}
+
+.eduglobal-badge, .eduglobal-theme .badge, .eduglobal-theme .bg-danger-subtle {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background-color: rgba(234, 164, 26, 0.12) !important;
+  color: var(--eduglobal-gold-hover) !important;
+  font-family: var(--eduglobal-font-academic) !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  padding: 6px 16px !important;
+  border-radius: var(--eduglobal-radius-sm) !important;
+  border-left: 3px solid var(--eduglobal-gold) !important;
+  margin-bottom: 14px !important;
+}
+
+/* ---------------- Hero Section (Eduglobal Style) ---------------- */
+.eduglobal-hero-section {
+  position: relative;
+  background: linear-gradient(135deg, #0A1C33 0%, #162E52 100%);
+  color: #FFFFFF;
+  padding: 95px 0 80px 0;
+  border-bottom: 3px solid var(--eduglobal-gold);
+  overflow: hidden;
+}
+
+/* ---------------- Floating Stats ---------------- */
+.eduglobal-stats-container {
+  background-color: #FFFFFF;
+  border: 1px solid var(--eduglobal-border);
+  border-radius: var(--eduglobal-radius-md);
+  padding: 34px 24px;
+  box-shadow: var(--eduglobal-shadow);
+  margin-top: -45px;
+  position: relative;
+  z-index: 10;
+  border-top: 3px solid var(--eduglobal-gold);
+}
+.eduglobal-stat-num {
+  font-family: var(--eduglobal-font-academic);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--eduglobal-navy);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.eduglobal-stat-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--eduglobal-gold-hover);
+}
+
+/* ---------------- Cards & Content ---------------- */
+.eduglobal-theme .card, .eduglobal-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid var(--eduglobal-border) !important;
+  border-radius: var(--eduglobal-radius-md) !important;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  box-shadow: var(--eduglobal-shadow) !important;
+}
+.eduglobal-theme .card:hover, .eduglobal-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--eduglobal-gold) !important;
+  box-shadow: var(--eduglobal-shadow-hover) !important;
+}
+
+/* ---------------- Form Elements ---------------- */
+.eduglobal-theme .form-control, .eduglobal-form-control {
+  background-color: #FFFFFF !important;
+  border: 1.5px solid var(--eduglobal-border) !important;
+  border-radius: var(--eduglobal-radius-sm) !important;
+  padding: 13px 18px !important;
+  font-size: 0.92rem !important;
+  color: var(--eduglobal-navy) !important;
+  transition: all 0.25s;
+}
+.eduglobal-theme .form-control:focus, .eduglobal-form-control:focus {
+  border-color: var(--eduglobal-gold) !important;
+  box-shadow: 0 0 0 3px rgba(234, 164, 26, 0.2) !important;
+  outline: none;
+}
+
+/* ---------------- Accordion ---------------- */
+.eduglobal-theme .accordion-item {
+  border: 1px solid var(--eduglobal-border) !important;
+  border-radius: var(--eduglobal-radius-sm) !important;
+  margin-bottom: 12px;
+}
+.eduglobal-theme .accordion-button:not(.collapsed) {
+  color: var(--eduglobal-navy) !important;
+  background-color: rgba(234, 164, 26, 0.1) !important;
+}
+
+/* ---------------- Footer ---------------- */
+.eduglobal-footer {
+  background-color: var(--eduglobal-navy);
+  color: #94A3B8;
+  padding: 80px 0 30px 0;
+  border-top: 3px solid var(--eduglobal-gold);
+}
+.eduglobal-footer h4 {
+  color: #FFFFFF !important;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+.eduglobal-footer a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.eduglobal-footer a:hover {
+  color: var(--eduglobal-gold);
+}
+.eduglobal-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+  padding-top: 25px;
+  font-size: 0.85rem;
+}

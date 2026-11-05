@@ -1,0 +1,308 @@
+/* ===================================================================
+   KITCHOR HOME 10 THEME - NIF GLOBAL GHATKOPAR
+   Reference: https://demo2.themelexus.com/kitchor/home-10/
+   Full Dark Sleek Obsidian, Architectural Amber Glow & Modern Grid
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --k10-bg: #0B0D11;
+  --k10-surface: #13171F;
+  --k10-surface-light: #1C222D;
+  --k10-surface-card: #161B24;
+  --k10-amber: #F0A500;
+  --k10-amber-hover: #D99500;
+  --k10-amber-glow: rgba(240, 165, 0, 0.25);
+  --k10-text-primary: #FFFFFF;
+  --k10-text-secondary: #CBD5E1;
+  --k10-text-muted: #8E9AA8;
+  --k10-border: rgba(255, 255, 255, 0.1);
+  --k10-border-amber: rgba(240, 165, 0, 0.4);
+  --k10-font-heading: 'Outfit', sans-serif;
+  --k10-font-body: 'Plus Jakarta Sans', sans-serif;
+  --k10-radius-sm: 4px;
+  --k10-radius-md: 10px;
+  --k10-radius-lg: 18px;
+  --k10-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+  --k10-shadow-amber: 0 0 25px rgba(240, 165, 0, 0.25);
+}
+
+body.k10-theme {
+  font-family: var(--k10-font-body);
+  background-color: var(--k10-bg) !important;
+  color: var(--k10-text-secondary) !important;
+  line-height: 1.7;
+}
+
+.k10-theme h1, .k10-theme h2, .k10-theme h3, .k10-theme h4, .k10-theme .font-serif, .k10-theme .font-heading {
+  font-family: var(--k10-font-heading) !important;
+  color: var(--k10-text-primary) !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Comprehensive Dark Mode Section & Container Overrides */
+.k10-theme section {
+  background-color: var(--k10-bg) !important;
+  border-bottom: 1px solid var(--k10-border);
+}
+.k10-theme .bg-light, .k10-theme section:nth-of-type(even) {
+  background-color: var(--k10-surface) !important;
+}
+.k10-theme .bg-white {
+  background-color: var(--k10-surface-card) !important;
+}
+.k10-theme .text-dark {
+  color: var(--k10-text-primary) !important;
+}
+.k10-theme .text-muted {
+  color: var(--k10-text-muted) !important;
+}
+
+/* ---------------- Top Bar ---------------- */
+.k10-topbar {
+  background-color: #07090C;
+  color: var(--k10-text-muted);
+  font-size: 0.82rem;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--k10-border);
+}
+.k10-topbar a {
+  color: var(--k10-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.k10-topbar a:hover {
+  color: var(--k10-amber);
+}
+
+/* ---------------- Header & Navbar ---------------- */
+.k10-navbar {
+  background-color: rgba(11, 13, 17, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--k10-border);
+  padding: 16px 0;
+  transition: all 0.3s ease;
+}
+.k10-navbar.scrolled {
+  background-color: rgba(11, 13, 17, 0.98);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border-bottom-color: var(--k10-border-amber);
+}
+.k10-logo {
+  height: 48px;
+  width: auto;
+  filter: brightness(1.2);
+}
+.k10-nav-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--k10-text-secondary) !important;
+  padding: 8px 14px !important;
+  transition: all 0.25s;
+}
+.k10-nav-link:hover,
+.k10-nav-link.active {
+  color: var(--k10-amber) !important;
+  text-shadow: 0 0 10px rgba(240, 165, 0, 0.4);
+}
+
+/* ---------------- Buttons & Badges ---------------- */
+.btn-k10-primary, .k10-theme .btn-danger, .k10-theme .btn-primary {
+  background: linear-gradient(135deg, #F0A500 0%, #D98200 100%) !important;
+  color: #07090C !important;
+  font-weight: 800 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 12px 28px !important;
+  border: none !important;
+  border-radius: var(--k10-radius-sm) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 15px rgba(240, 165, 0, 0.3) !important;
+}
+.btn-k10-primary:hover, .k10-theme .btn-danger:hover, .k10-theme .btn-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(240, 165, 0, 0.6) !important;
+  color: #000000 !important;
+}
+
+.btn-k10-outline, .k10-theme .btn-outline-danger, .k10-theme .btn-outline-primary {
+  background: transparent !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid var(--k10-border) !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 12px 26px !important;
+  border-radius: var(--k10-radius-sm) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+}
+.btn-k10-outline:hover, .k10-theme .btn-outline-danger:hover, .k10-theme .btn-outline-primary:hover {
+  border-color: var(--k10-amber) !important;
+  color: var(--k10-amber) !important;
+  background-color: rgba(240, 165, 0, 0.08) !important;
+  box-shadow: 0 0 15px rgba(240, 165, 0, 0.25) !important;
+}
+
+.k10-badge, .k10-theme .badge, .k10-theme .bg-danger-subtle {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background-color: rgba(240, 165, 0, 0.12) !important;
+  color: var(--k10-amber) !important;
+  font-size: 0.76rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  padding: 6px 14px !important;
+  border-radius: 50px !important;
+  border: 1px solid rgba(240, 165, 0, 0.3) !important;
+  margin-bottom: 14px !important;
+}
+
+/* ---------------- Hero Section (Kitchor 10 Style) ---------------- */
+.k10-hero-section {
+  position: relative;
+  background-color: var(--k10-bg);
+  background-image: 
+    radial-gradient(circle at 80% 20%, rgba(240, 165, 0, 0.08) 0%, transparent 50%),
+    linear-gradient(to right, #0B0D11 40%, rgba(11, 13, 17, 0.6) 100%),
+    url('../images/bg-14.webp');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 100px 0 85px 0;
+  border-bottom: 1px solid var(--k10-border);
+  overflow: hidden;
+}
+
+/* ---------------- Floating Stats ---------------- */
+.k10-stats-container {
+  background-color: var(--k10-surface);
+  border: 1px solid var(--k10-border);
+  border-radius: var(--k10-radius-md);
+  padding: 34px 24px;
+  box-shadow: var(--k10-shadow);
+  margin-top: -45px;
+  position: relative;
+  z-index: 10;
+}
+.k10-stat-num {
+  font-family: var(--k10-font-heading);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--k10-amber);
+  line-height: 1;
+  margin-bottom: 6px;
+  text-shadow: 0 0 15px rgba(240, 165, 0, 0.3);
+}
+.k10-stat-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--k10-text-secondary);
+}
+
+/* ---------------- Cards & Content ---------------- */
+.k10-theme .card, .k10-card {
+  background-color: var(--k10-surface-card) !important;
+  border: 1px solid var(--k10-border) !important;
+  border-radius: var(--k10-radius-md) !important;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+.k10-theme .card:hover, .k10-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--k10-amber) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), var(--k10-shadow-amber) !important;
+}
+
+/* ---------------- Form Elements ---------------- */
+.k10-theme .form-control, .k10-form-control {
+  background-color: var(--k10-surface-light) !important;
+  border: 1px solid var(--k10-border) !important;
+  border-radius: var(--k10-radius-sm) !important;
+  padding: 13px 18px !important;
+  font-size: 0.92rem !important;
+  color: #FFFFFF !important;
+  transition: all 0.25s;
+}
+.k10-theme .form-control:focus, .k10-form-control:focus {
+  background-color: #1F2633 !important;
+  border-color: var(--k10-amber) !important;
+  box-shadow: 0 0 15px rgba(240, 165, 0, 0.25) !important;
+  color: #FFFFFF !important;
+  outline: none;
+}
+.k10-theme .form-control::placeholder {
+  color: var(--k10-text-muted) !important;
+}
+
+/* ---------------- Accordion ---------------- */
+.k10-theme .accordion-item {
+  background-color: var(--k10-surface-card) !important;
+  border: 1px solid var(--k10-border) !important;
+  margin-bottom: 12px;
+  border-radius: var(--k10-radius-md) !important;
+  overflow: hidden;
+}
+.k10-theme .accordion-button {
+  background-color: var(--k10-surface-card) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  padding: 18px 22px !important;
+}
+.k10-theme .accordion-button:not(.collapsed) {
+  color: var(--k10-amber) !important;
+  background-color: rgba(240, 165, 0, 0.08) !important;
+  border-bottom: 1px solid var(--k10-border) !important;
+}
+.k10-theme .accordion-body {
+  color: var(--k10-text-secondary) !important;
+  background-color: var(--k10-surface-card) !important;
+  padding: 22px !important;
+}
+
+/* ---------------- Footer ---------------- */
+.k10-footer {
+  background-color: #07090C !important;
+  color: var(--k10-text-muted);
+  padding: 80px 0 30px 0;
+  border-top: 2px solid var(--k10-amber);
+}
+.k10-footer h4 {
+  color: #FFFFFF !important;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+.k10-footer a {
+  color: var(--k10-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.k10-footer a:hover {
+  color: var(--k10-amber);
+}
+.k10-footer-bottom {
+  border-top: 1px solid var(--k10-border);
+  margin-top: 50px;
+  padding-top: 25px;
+  font-size: 0.85rem;
+}

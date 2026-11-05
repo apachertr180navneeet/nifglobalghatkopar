@@ -1,0 +1,258 @@
+/* ===================================================================
+   MINT STYLE THEME - NIF GLOBAL GHATKOPAR
+   Reference: https://george-fx.github.io/mint/index.html
+   Ultra-Clean Fresh Mint/Sage, Soft Frosted Cards & Pill Badges
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --mint-primary: #10B981;
+  --mint-primary-hover: #059669;
+  --mint-primary-light: #ECFDF5;
+  --mint-primary-soft: rgba(16, 185, 129, 0.12);
+  --mint-dark: #0F172A;
+  --mint-charcoal: #1E293B;
+  --mint-light: #F8FAFC;
+  --mint-card-bg: #FFFFFF;
+  --mint-border: #E2E8F0;
+  --mint-text-main: #1E293B;
+  --mint-text-muted: #64748B;
+  --mint-font: 'Plus Jakarta Sans', sans-serif;
+  --mint-radius-sm: 8px;
+  --mint-radius-md: 16px;
+  --mint-radius-lg: 24px;
+  --mint-radius-pill: 50px;
+  --mint-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  --mint-shadow-hover: 0 20px 40px rgba(16, 185, 129, 0.18);
+}
+
+body.mint-theme {
+  font-family: var(--mint-font);
+  color: var(--mint-text-main);
+  background-color: var(--mint-light);
+  line-height: 1.7;
+}
+
+.mint-theme h1, .mint-theme h2, .mint-theme h3, .mint-theme h4, .mint-theme .font-serif {
+  font-family: var(--mint-font) !important;
+  color: var(--mint-dark) !important;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+/* Background overrides for fresh modern agency feel */
+.mint-theme .bg-light {
+  background-color: #F0FDF4 !important;
+}
+
+/* ---------------- Top Announcement Bar ---------------- */
+.mint-topbar {
+  background-color: var(--mint-dark);
+  color: #94A3B8;
+  font-size: 0.82rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.mint-topbar a {
+  color: #E2E8F0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mint-topbar a:hover {
+  color: var(--mint-primary);
+}
+
+/* ---------------- Navbar ---------------- */
+.mint-navbar {
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--mint-border);
+  padding: 14px 0;
+  transition: all 0.3s ease;
+}
+.mint-navbar.scrolled {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+.mint-logo {
+  height: 48px;
+  width: auto;
+}
+.mint-nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--mint-charcoal) !important;
+  padding: 8px 14px !important;
+  border-radius: var(--mint-radius-pill);
+  transition: all 0.25s;
+}
+.mint-nav-link:hover,
+.mint-nav-link.active {
+  color: var(--mint-primary) !important;
+  background-color: var(--mint-primary-soft);
+}
+
+/* ---------------- Buttons & Badges ---------------- */
+.btn-mint-primary, .mint-theme .btn-danger, .mint-theme .btn-primary {
+  background-color: var(--mint-primary) !important;
+  color: #FFFFFF !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  padding: 12px 28px !important;
+  border: none !important;
+  border-radius: var(--mint-radius-pill) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35) !important;
+}
+.btn-mint-primary:hover, .mint-theme .btn-danger:hover, .mint-theme .btn-primary:hover {
+  background-color: var(--mint-primary-hover) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5) !important;
+}
+
+.btn-mint-outline, .mint-theme .btn-outline-danger, .mint-theme .btn-outline-primary {
+  background-color: transparent !important;
+  color: var(--mint-dark) !important;
+  border: 1.5px solid var(--mint-border) !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  padding: 12px 26px !important;
+  border-radius: var(--mint-radius-pill) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+}
+.btn-mint-outline:hover, .mint-theme .btn-outline-danger:hover, .mint-theme .btn-outline-primary:hover {
+  border-color: var(--mint-primary) !important;
+  color: var(--mint-primary) !important;
+  background-color: var(--mint-primary-soft) !important;
+  transform: translateY(-2px) !important;
+}
+
+.mint-badge, .mint-theme .badge, .mint-theme .bg-danger-subtle {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background-color: var(--mint-primary-light) !important;
+  color: var(--mint-primary) !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  padding: 6px 16px !important;
+  border-radius: var(--mint-radius-pill) !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  margin-bottom: 14px !important;
+}
+
+/* ---------------- Hero Section (Mint Style) ---------------- */
+.mint-hero-section {
+  position: relative;
+  background: linear-gradient(135deg, #F0FDF4 0%, #FFFFFF 50%, #ECFDF5 100%);
+  padding: 95px 0 80px 0;
+  border-bottom: 1px solid var(--mint-border);
+  overflow: hidden;
+}
+
+/* ---------------- Floating Stats ---------------- */
+.mint-stats-container {
+  background-color: #FFFFFF;
+  border: 1px solid var(--mint-border);
+  border-radius: var(--mint-radius-lg);
+  padding: 34px 24px;
+  box-shadow: var(--mint-shadow);
+  margin-top: -45px;
+  position: relative;
+  z-index: 10;
+}
+.mint-stat-num {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--mint-primary);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.mint-stat-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--mint-dark);
+}
+
+/* ---------------- Cards & Content ---------------- */
+.mint-theme .card, .mint-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid var(--mint-border) !important;
+  border-radius: var(--mint-radius-lg) !important;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  box-shadow: var(--mint-shadow) !important;
+}
+.mint-theme .card:hover, .mint-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--mint-primary) !important;
+  box-shadow: var(--mint-shadow-hover) !important;
+}
+
+/* ---------------- Form Elements ---------------- */
+.mint-theme .form-control, .mint-form-control {
+  background-color: #FFFFFF !important;
+  border: 1.5px solid var(--mint-border) !important;
+  border-radius: var(--mint-radius-md) !important;
+  padding: 13px 18px !important;
+  font-size: 0.92rem !important;
+  color: var(--mint-dark) !important;
+  transition: all 0.25s;
+}
+.mint-theme .form-control:focus, .mint-form-control:focus {
+  border-color: var(--mint-primary) !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15) !important;
+  outline: none;
+}
+
+/* ---------------- Accordion ---------------- */
+.mint-theme .accordion-item {
+  border: 1px solid var(--mint-border) !important;
+  border-radius: var(--mint-radius-md) !important;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.mint-theme .accordion-button:not(.collapsed) {
+  color: var(--mint-primary) !important;
+  background-color: var(--mint-primary-light) !important;
+}
+
+/* ---------------- Footer ---------------- */
+.mint-footer {
+  background-color: var(--mint-dark);
+  color: #94A3B8;
+  padding: 80px 0 30px 0;
+  border-top: 3px solid var(--mint-primary);
+}
+.mint-footer h4 {
+  color: #FFFFFF !important;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+.mint-footer a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mint-footer a:hover {
+  color: var(--mint-primary);
+}
+.mint-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+  padding-top: 25px;
+  font-size: 0.85rem;
+}

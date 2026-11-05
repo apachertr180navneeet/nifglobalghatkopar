@@ -1,0 +1,308 @@
+/* ===================================================================
+   KITCHOR HOME 5 THEME - NIF GLOBAL GHATKOPAR
+   Reference: https://demo2.themelexus.com/kitchor/home-5/
+   Warm Earthy Luxury, Architectural Serif Typography & Refined Bronze
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --k5-primary: #C59B27;
+  --k5-primary-hover: #AA821A;
+  --k5-dark: #1F1B18;
+  --k5-espresso: #2A2521;
+  --k5-light: #FBF9F5;
+  --k5-sand: #F3ECE1;
+  --k5-sand-dark: #E8DECE;
+  --k5-border: #E5DCCF;
+  --k5-text-main: #38332E;
+  --k5-text-muted: #7A7269;
+  --k5-serif: 'Cormorant Garamond', Georgia, serif;
+  --k5-sans: 'Plus Jakarta Sans', sans-serif;
+  --k5-radius-sm: 4px;
+  --k5-radius-md: 8px;
+  --k5-radius-lg: 14px;
+  --k5-shadow: 0 10px 30px rgba(42, 37, 33, 0.08);
+  --k5-shadow-hover: 0 16px 40px rgba(197, 155, 39, 0.2);
+}
+
+body.k5-theme {
+  font-family: var(--k5-sans);
+  color: var(--k5-text-main);
+  background-color: var(--k5-light);
+  line-height: 1.75;
+}
+
+.k5-theme h1, .k5-theme h2, .k5-theme h3, .k5-theme h4, .k5-theme .font-serif {
+  font-family: var(--k5-serif) !important;
+  color: var(--k5-espresso) !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Background overrides for warm architectural atmosphere */
+.k5-theme .bg-light {
+  background-color: var(--k5-sand) !important;
+}
+.k5-theme .bg-white {
+  background-color: #FFFFFF !important;
+}
+.k5-theme section {
+  border-bottom: 1px solid var(--k5-border);
+}
+
+/* ---------------- Top Bar ---------------- */
+.k5-topbar {
+  background-color: var(--k5-dark);
+  color: #D6CEC5;
+  font-size: 0.82rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(197, 155, 39, 0.3);
+}
+.k5-topbar a {
+  color: #D6CEC5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.k5-topbar a:hover {
+  color: var(--k5-primary);
+}
+
+/* ---------------- Header & Navbar ---------------- */
+.k5-navbar {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--k5-border);
+  padding: 14px 0;
+  transition: all 0.3s ease;
+}
+.k5-navbar.scrolled {
+  box-shadow: 0 8px 24px rgba(42, 37, 33, 0.08);
+}
+.k5-logo {
+  height: 48px;
+  width: auto;
+}
+.k5-nav-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--k5-espresso) !important;
+  padding: 8px 14px !important;
+  position: relative;
+  transition: color 0.25s;
+}
+.k5-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 14px;
+  right: 14px;
+  height: 2px;
+  background-color: var(--k5-primary);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+.k5-nav-link:hover::after,
+.k5-nav-link.active::after {
+  transform: scaleX(1);
+}
+.k5-nav-link:hover,
+.k5-nav-link.active {
+  color: var(--k5-primary) !important;
+}
+
+/* ---------------- Buttons & Badges ---------------- */
+.btn-k5-primary, .k5-theme .btn-danger, .k5-theme .btn-primary {
+  background-color: var(--k5-primary) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--k5-primary) !important;
+  font-size: 0.84rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 12px 28px !important;
+  border-radius: var(--k5-radius-sm) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+}
+.btn-k5-primary:hover, .k5-theme .btn-danger:hover, .k5-theme .btn-primary:hover {
+  background-color: var(--k5-primary-hover) !important;
+  border-color: var(--k5-primary-hover) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(197, 155, 39, 0.35) !important;
+}
+
+.btn-k5-outline, .k5-theme .btn-outline-danger, .k5-theme .btn-outline-primary {
+  background-color: transparent !important;
+  color: var(--k5-espresso) !important;
+  border: 1.5px solid var(--k5-espresso) !important;
+  font-size: 0.84rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 12px 26px !important;
+  border-radius: var(--k5-radius-sm) !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.btn-k5-outline:hover, .k5-theme .btn-outline-danger:hover, .k5-theme .btn-outline-primary:hover {
+  background-color: var(--k5-espresso) !important;
+  border-color: var(--k5-espresso) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+}
+
+.k5-badge, .k5-theme .badge, .k5-theme .bg-danger-subtle {
+  display: inline-block !important;
+  background-color: var(--k5-sand-dark) !important;
+  color: var(--k5-primary) !important;
+  font-family: var(--k5-sans) !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  padding: 6px 14px !important;
+  border-radius: var(--k5-radius-sm) !important;
+  border-left: 3px solid var(--k5-primary) !important;
+  margin-bottom: 12px !important;
+}
+
+/* ---------------- Hero Section (Kitchor 5 Style) ---------------- */
+.k5-hero-section {
+  position: relative;
+  background: linear-gradient(135deg, #FBF9F5 0%, #F3ECE1 100%);
+  padding: 90px 0 70px 0;
+  border-bottom: 1px solid var(--k5-border);
+  overflow: hidden;
+}
+
+/* ---------------- Floating Stats Section ---------------- */
+.k5-stats-container {
+  background-color: #FFFFFF;
+  border: 1px solid var(--k5-border);
+  border-radius: var(--k5-radius-md);
+  padding: 36px 24px;
+  box-shadow: var(--k5-shadow);
+  margin-top: -45px;
+  position: relative;
+  z-index: 10;
+}
+.k5-stat-num {
+  font-family: var(--k5-serif);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--k5-primary);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.k5-stat-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--k5-espresso);
+}
+
+/* ---------------- Cards & Content ---------------- */
+.k5-theme .card, .k5-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid var(--k5-border) !important;
+  border-radius: var(--k5-radius-md) !important;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  box-shadow: var(--k5-shadow) !important;
+}
+.k5-theme .card:hover, .k5-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--k5-primary) !important;
+  box-shadow: var(--k5-shadow-hover) !important;
+}
+
+/* ---------------- Mentors ---------------- */
+.k5-theme .card img, .k5-mentor-img {
+  transition: transform 0.4s ease;
+}
+.k5-theme .card:hover img {
+  transform: scale(1.03);
+}
+
+/* ---------------- Form Elements ---------------- */
+.k5-theme .form-control, .k5-form-control {
+  background-color: #FFFFFF !important;
+  border: 1.5px solid var(--k5-border) !important;
+  border-radius: var(--k5-radius-sm) !important;
+  padding: 12px 16px !important;
+  font-size: 0.92rem !important;
+  color: var(--k5-espresso) !important;
+  transition: all 0.25s;
+}
+.k5-theme .form-control:focus, .k5-form-control:focus {
+  border-color: var(--k5-primary) !important;
+  box-shadow: 0 0 0 3px rgba(197, 155, 39, 0.15) !important;
+  outline: none;
+}
+
+/* ---------------- Accordion ---------------- */
+.k5-theme .accordion-item {
+  border: 1px solid var(--k5-border) !important;
+  background-color: #FFFFFF !important;
+  margin-bottom: 12px;
+  border-radius: var(--k5-radius-sm) !important;
+}
+.k5-theme .accordion-button {
+  font-family: var(--k5-serif) !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: var(--k5-espresso) !important;
+  background-color: #FFFFFF !important;
+}
+.k5-theme .accordion-button:not(.collapsed) {
+  color: var(--k5-primary) !important;
+  background-color: var(--k5-sand) !important;
+}
+
+/* ---------------- Footer ---------------- */
+.k5-footer {
+  background-color: var(--k5-dark);
+  color: #BDB5AA;
+  padding: 80px 0 30px 0;
+  border-top: 2px solid var(--k5-primary);
+}
+.k5-footer h4 {
+  color: #FFFFFF !important;
+  font-size: 1.45rem;
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 12px;
+}
+.k5-footer h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 36px;
+  height: 2px;
+  background-color: var(--k5-primary);
+}
+.k5-footer a {
+  color: #BDB5AA;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.k5-footer a:hover {
+  color: var(--k5-primary);
+}
+.k5-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 50px;
+  padding-top: 25px;
+  font-size: 0.85rem;
+}

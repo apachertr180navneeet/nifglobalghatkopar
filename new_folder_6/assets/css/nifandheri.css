@@ -1,0 +1,255 @@
+/* ===================================================================
+   NIF ANDHERI STYLE THEME - NIF GLOBAL GHATKOPAR
+   Reference: https://nifandheri.com/
+   High-Impact Campus Portal, Bold NIF Red, Deep Navy & Golden Accents
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --andheri-red: #D71920;
+  --andheri-red-hover: #BA1218;
+  --andheri-navy: #0F172A;
+  --andheri-blue: #1E293B;
+  --andheri-yellow: #FFB703;
+  --andheri-light: #F8FAFC;
+  --andheri-border: #E2E8F0;
+  --andheri-text-main: #1E293B;
+  --andheri-text-muted: #64748B;
+  --andheri-font-heading: 'Montserrat', sans-serif;
+  --andheri-font-body: 'Inter', sans-serif;
+  --andheri-radius: 6px;
+  --andheri-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  --andheri-shadow-hover: 0 16px 35px rgba(215, 25, 32, 0.22);
+}
+
+body.andheri-theme {
+  font-family: var(--andheri-font-body);
+  color: var(--andheri-text-main);
+  background-color: var(--andheri-light);
+  line-height: 1.65;
+}
+
+.andheri-theme h1, .andheri-theme h2, .andheri-theme h3, .andheri-theme h4, .andheri-theme .font-serif, .andheri-theme .font-heading {
+  font-family: var(--andheri-font-heading) !important;
+  color: var(--andheri-navy) !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* ---------------- Top Announcement Bar ---------------- */
+.andheri-topbar {
+  background-color: var(--andheri-red);
+  color: #FFFFFF;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 8px 0;
+}
+.andheri-topbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.andheri-topbar a:hover {
+  opacity: 0.85;
+}
+
+/* ---------------- Navbar ---------------- */
+.andheri-navbar {
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #F1F5F9;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+.andheri-navbar.scrolled {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-bottom-color: var(--andheri-red);
+}
+.andheri-logo {
+  height: 50px;
+  width: auto;
+}
+.andheri-nav-link {
+  font-family: var(--andheri-font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--andheri-navy) !important;
+  padding: 8px 14px !important;
+  transition: color 0.25s;
+}
+.andheri-nav-link:hover,
+.andheri-nav-link.active {
+  color: var(--andheri-red) !important;
+}
+
+/* ---------------- Buttons & Badges ---------------- */
+.btn-andheri-primary, .andheri-theme .btn-danger, .andheri-theme .btn-primary {
+  background-color: var(--andheri-red) !important;
+  color: #FFFFFF !important;
+  font-family: var(--andheri-font-heading) !important;
+  font-size: 0.84rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 12px 26px !important;
+  border: none !important;
+  border-radius: var(--andheri-radius) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(215, 25, 32, 0.3) !important;
+}
+.btn-andheri-primary:hover, .andheri-theme .btn-danger:hover, .andheri-theme .btn-primary:hover {
+  background-color: var(--andheri-red-hover) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(215, 25, 32, 0.45) !important;
+}
+
+.btn-andheri-navy, .andheri-theme .btn-outline-danger, .andheri-theme .btn-outline-primary {
+  background-color: var(--andheri-navy) !important;
+  color: #FFFFFF !important;
+  font-family: var(--andheri-font-heading) !important;
+  font-size: 0.84rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 12px 26px !important;
+  border: none !important;
+  border-radius: var(--andheri-radius) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+}
+.btn-andheri-navy:hover, .andheri-theme .btn-outline-danger:hover, .andheri-theme .btn-outline-primary:hover {
+  background-color: #1E293B !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+}
+
+.andheri-badge, .andheri-theme .badge, .andheri-theme .bg-danger-subtle {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background-color: rgba(215, 25, 32, 0.1) !important;
+  color: var(--andheri-red) !important;
+  font-family: var(--andheri-font-heading) !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  padding: 6px 14px !important;
+  border-radius: 4px !important;
+  margin-bottom: 12px !important;
+}
+
+/* ---------------- Hero Section (NIF Andheri Style) ---------------- */
+.andheri-hero-section {
+  position: relative;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  color: #FFFFFF;
+  padding: 85px 0 75px 0;
+  overflow: hidden;
+}
+
+/* ---------------- Floating Stats ---------------- */
+.andheri-stats-container {
+  background-color: #FFFFFF;
+  border: 1px solid var(--andheri-border);
+  border-radius: var(--andheri-radius);
+  padding: 30px 20px;
+  box-shadow: var(--andheri-shadow);
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+}
+.andheri-stat-num {
+  font-family: var(--andheri-font-heading);
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--andheri-red);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.andheri-stat-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--andheri-navy);
+}
+
+/* ---------------- Cards & Content ---------------- */
+.andheri-theme .card, .andheri-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid var(--andheri-border) !important;
+  border-top: 3px solid var(--andheri-red) !important;
+  border-radius: var(--andheri-radius) !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: var(--andheri-shadow) !important;
+}
+.andheri-theme .card:hover, .andheri-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--andheri-red) !important;
+  box-shadow: var(--andheri-shadow-hover) !important;
+}
+
+/* ---------------- Form Elements ---------------- */
+.andheri-theme .form-control, .andheri-form-control {
+  background-color: #FFFFFF !important;
+  border: 1.5px solid var(--andheri-border) !important;
+  border-radius: var(--andheri-radius) !important;
+  padding: 12px 16px !important;
+  font-size: 0.92rem !important;
+  color: var(--andheri-navy) !important;
+  transition: all 0.25s;
+}
+.andheri-theme .form-control:focus, .andheri-form-control:focus {
+  border-color: var(--andheri-red) !important;
+  box-shadow: 0 0 0 3px rgba(215, 25, 32, 0.15) !important;
+  outline: none;
+}
+
+/* ---------------- Accordion ---------------- */
+.andheri-theme .accordion-item {
+  border: 1px solid var(--andheri-border) !important;
+  border-radius: var(--andheri-radius) !important;
+  margin-bottom: 12px;
+}
+.andheri-theme .accordion-button:not(.collapsed) {
+  color: var(--andheri-red) !important;
+  background-color: rgba(215, 25, 32, 0.05) !important;
+}
+
+/* ---------------- Footer ---------------- */
+.andheri-footer {
+  background-color: var(--andheri-navy);
+  color: #94A3B8;
+  padding: 75px 0 30px 0;
+  border-top: 3px solid var(--andheri-red);
+}
+.andheri-footer h4 {
+  color: #FFFFFF !important;
+  font-size: 1.35rem;
+  margin-bottom: 22px;
+}
+.andheri-footer a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.andheri-footer a:hover {
+  color: var(--andheri-yellow);
+}
+.andheri-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 45px;
+  padding-top: 22px;
+  font-size: 0.85rem;
+}

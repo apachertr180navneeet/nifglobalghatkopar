@@ -12,23 +12,27 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 2. Admission Form Handler
-  const admissionForm = document.getElementById('d3AdmissionForm');
-  if (admissionForm) {
-    admissionForm.addEventListener('submit', function (e) {
+  const admissionForms = document.querySelectorAll('#d3AdmissionForm, #globalEnquiryForm, #modalEnquiryForm');
+  admissionForms.forEach(form => {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
-      const course = document.getElementById('d3CourseSelect').value;
-      const name = document.getElementById('d3StudentName').value;
-      const mobile = document.getElementById('d3StudentMobile').value;
+      const courseInput = form.querySelector('[name="course"]') || form.querySelector('#d3CourseSelect');
+      const nameInput = form.querySelector('[name="name"]') || form.querySelector('#d3StudentName');
+      const mobileInput = form.querySelector('[name="mobile"]') || form.querySelector('#d3StudentMobile');
 
-      if (!course || !name || !mobile) {
-        alert('Please fill out all fields before submitting.');
+      const course = courseInput ? courseInput.value : '';
+      const name = nameInput ? nameInput.value : '';
+      const mobile = mobileInput ? mobileInput.value : '';
+
+      if (!name || !mobile) {
+        alert('Please fill out your name and mobile number before submitting.');
         return;
       }
 
-      alert('Thank you, ' + name + '! Your enquiry for ' + course + ' has been received. Our admissions team at Ghatkopar will contact you at ' + mobile + ' shortly.');
-      admissionForm.reset();
+      alert('Thank you, ' + name + '! Your enquiry' + (course ? ' for ' + course : '') + ' has been received. Our admissions team at Ghatkopar will contact you at ' + mobile + ' shortly.');
+      form.reset();
     });
-  }
+  });
 
   // 3. Mentor Hero Carousel (media_1793849778293_16d8a738.jpg)
   const mentorCardCarouselEl = document.getElementById('mentorCardCarousel');

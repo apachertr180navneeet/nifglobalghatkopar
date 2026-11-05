@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // 4. Admission Enquiry Form Validation & Submission
-  const forms = document.querySelectorAll('#heroEnquiryForm, #modalApplyForm, #enquiryForm');
+  const forms = document.querySelectorAll('#heroEnquiryForm, #modalApplyForm, #enquiryForm, #globalEnquiryForm, #modalEnquiryForm');
   forms.forEach(form => {
     form.addEventListener('submit', function (e) {
       e.preventDefault();

@@ -1,0 +1,264 @@
+/* ===================================================================
+   EDUPLS STYLE THEME - NIF GLOBAL GHATKOPAR
+   Reference: https://tfhtml.themepul.com/edupls/demo/index.html
+   Modern Vibrant EdTech, Electric Royal Indigo & Radiant Coral Gradients
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --edupls-indigo: #4F46E5;
+  --edupls-indigo-hover: #4338CA;
+  --edupls-indigo-light: #EEF2FF;
+  --edupls-coral: #FF5722;
+  --edupls-coral-hover: #F4511E;
+  --edupls-coral-light: #FFF3E0;
+  --edupls-cyan: #06B6D4;
+  --edupls-dark: #0F172A;
+  --edupls-charcoal: #1E293B;
+  --edupls-light: #F8FAFC;
+  --edupls-border: #E2E8F0;
+  --edupls-text-main: #1E293B;
+  --edupls-text-muted: #64748B;
+  --edupls-font-heading: 'Urbanist', sans-serif;
+  --edupls-font-body: 'Plus Jakarta Sans', sans-serif;
+  --edupls-radius-sm: 6px;
+  --edupls-radius-md: 12px;
+  --edupls-radius-lg: 20px;
+  --edupls-radius-pill: 50px;
+  --edupls-shadow: 0 10px 30px rgba(79, 70, 229, 0.08);
+  --edupls-shadow-hover: 0 18px 40px rgba(79, 70, 229, 0.2);
+}
+
+body.edupls-theme {
+  font-family: var(--edupls-font-body);
+  color: var(--edupls-text-main);
+  background-color: var(--edupls-light);
+  line-height: 1.7;
+}
+
+.edupls-theme h1, .edupls-theme h2, .edupls-theme h3, .edupls-theme h4, .edupls-theme .font-serif, .edupls-theme .font-heading {
+  font-family: var(--edupls-font-heading) !important;
+  color: var(--edupls-dark) !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Background overrides */
+.edupls-theme .bg-light {
+  background-color: #EEF2FF !important;
+}
+
+/* ---------------- Top Bar ---------------- */
+.edupls-topbar {
+  background-color: var(--edupls-dark);
+  color: #94A3B8;
+  font-size: 0.82rem;
+  padding: 8px 0;
+  border-bottom: 2px solid var(--edupls-indigo);
+}
+.edupls-topbar a {
+  color: #E2E8F0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.edupls-topbar a:hover {
+  color: var(--edupls-coral);
+}
+
+/* ---------------- Navbar ---------------- */
+.edupls-navbar {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--edupls-border);
+  padding: 14px 0;
+  transition: all 0.3s ease;
+}
+.edupls-navbar.scrolled {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.edupls-logo {
+  height: 48px;
+  width: auto;
+}
+.edupls-nav-link {
+  font-family: var(--edupls-font-heading);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--edupls-charcoal) !important;
+  padding: 8px 14px !important;
+  transition: color 0.25s;
+}
+.edupls-nav-link:hover,
+.edupls-nav-link.active {
+  color: var(--edupls-indigo) !important;
+}
+
+/* ---------------- Buttons & Badges ---------------- */
+.btn-edupls-coral, .edupls-theme .btn-danger, .edupls-theme .btn-primary {
+  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%) !important;
+  color: #FFFFFF !important;
+  font-family: var(--edupls-font-heading) !important;
+  font-size: 0.86rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+  padding: 12px 28px !important;
+  border: none !important;
+  border-radius: var(--edupls-radius-pill) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 15px rgba(255, 87, 34, 0.35) !important;
+}
+.btn-edupls-coral:hover, .edupls-theme .btn-danger:hover, .edupls-theme .btn-primary:hover {
+  background: linear-gradient(135deg, #F4511E 0%, #D84315 100%) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(255, 87, 34, 0.5) !important;
+}
+
+.btn-edupls-primary, .edupls-theme .btn-outline-danger, .edupls-theme .btn-outline-primary {
+  background: linear-gradient(135deg, #4F46E5 0%, #3730A3 100%) !important;
+  color: #FFFFFF !important;
+  font-family: var(--edupls-font-heading) !important;
+  font-size: 0.86rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+  padding: 12px 28px !important;
+  border: none !important;
+  border-radius: var(--edupls-radius-pill) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35) !important;
+}
+.btn-edupls-primary:hover, .edupls-theme .btn-outline-danger:hover, .edupls-theme .btn-outline-primary:hover {
+  background: linear-gradient(135deg, #4338CA 0%, #312E81 100%) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.5) !important;
+}
+
+.edupls-badge, .edupls-theme .badge, .edupls-theme .bg-danger-subtle {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background-color: var(--edupls-indigo-light) !important;
+  color: var(--edupls-indigo) !important;
+  font-family: var(--edupls-font-heading) !important;
+  font-size: 0.8rem !important;
+  font-weight: 800 !important;
+  padding: 6px 16px !important;
+  border-radius: var(--edupls-radius-pill) !important;
+  border: 1px solid rgba(79, 70, 229, 0.2) !important;
+  margin-bottom: 14px !important;
+}
+
+/* ---------------- Hero Section (Edupls Style) ---------------- */
+.edupls-hero-section {
+  position: relative;
+  background: linear-gradient(135deg, #EEF2FF 0%, #FFFFFF 60%, #FFF3E0 100%);
+  padding: 95px 0 80px 0;
+  border-bottom: 1px solid var(--edupls-border);
+  overflow: hidden;
+}
+
+/* ---------------- Floating Stats ---------------- */
+.edupls-stats-container {
+  background-color: #FFFFFF;
+  border: 1px solid var(--edupls-border);
+  border-radius: var(--edupls-radius-lg);
+  padding: 34px 24px;
+  box-shadow: var(--edupls-shadow);
+  margin-top: -45px;
+  position: relative;
+  z-index: 10;
+}
+.edupls-stat-num {
+  font-family: var(--edupls-font-heading);
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--edupls-indigo);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.edupls-stat-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--edupls-dark);
+}
+
+/* ---------------- Cards & Content ---------------- */
+.edupls-theme .card, .edupls-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid var(--edupls-border) !important;
+  border-radius: var(--edupls-radius-lg) !important;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  box-shadow: var(--edupls-shadow) !important;
+}
+.edupls-theme .card:hover, .edupls-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--edupls-indigo) !important;
+  box-shadow: var(--edupls-shadow-hover) !important;
+}
+
+/* ---------------- Form Elements ---------------- */
+.edupls-theme .form-control, .edupls-form-control {
+  background-color: #FFFFFF !important;
+  border: 1.5px solid var(--edupls-border) !important;
+  border-radius: var(--edupls-radius-md) !important;
+  padding: 13px 18px !important;
+  font-size: 0.92rem !important;
+  color: var(--edupls-dark) !important;
+  transition: all 0.25s;
+}
+.edupls-theme .form-control:focus, .edupls-form-control:focus {
+  border-color: var(--edupls-indigo) !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15) !important;
+  outline: none;
+}
+
+/* ---------------- Accordion ---------------- */
+.edupls-theme .accordion-item {
+  border: 1px solid var(--edupls-border) !important;
+  border-radius: var(--edupls-radius-md) !important;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.edupls-theme .accordion-button:not(.collapsed) {
+  color: var(--edupls-indigo) !important;
+  background-color: var(--edupls-indigo-light) !important;
+}
+
+/* ---------------- Footer ---------------- */
+.edupls-footer {
+  background-color: var(--edupls-dark);
+  color: #94A3B8;
+  padding: 80px 0 30px 0;
+  border-top: 3px solid var(--edupls-indigo);
+}
+.edupls-footer h4 {
+  color: #FFFFFF !important;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+.edupls-footer a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.edupls-footer a:hover {
+  color: var(--edupls-coral);
+}
+.edupls-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+  padding-top: 25px;
+  font-size: 0.85rem;
+}
