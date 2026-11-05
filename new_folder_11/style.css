@@ -1027,10 +1027,11 @@ button {
   gap: 20px;
 }
 
-.mentors-grid-4 {
+.mentors-grid-4,
+.mentors-grid-intl {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
 }
 
 .mentor-card-portrait {
