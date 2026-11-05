@@ -1,5 +1,5 @@
 /* ==========================================================================
-   UNIFIED HEADER DESIGN (EXACT MATCH - SINGLE LINE MENU ITEMS)
+   UNIFIED HEADER DESIGN (EXACT MATCH TO REFERENCE SCREENSHOT)
    ========================================================================== */
 
 :root {
@@ -24,13 +24,13 @@
   width: 100% !important;
 }
 
-/* Fluid Container - Always strictly ONE LINE across desktop */
+/* Force container to never restrict to 1140px and never wrap */
 .unified-nif-navbar .container,
 .unified-nif-navbar .container-fluid {
   max-width: 1650px !important;
   width: 100% !important;
-  padding-left: clamp(12px, 2.2vw, 36px) !important;
-  padding-right: clamp(12px, 2.2vw, 36px) !important;
+  padding-left: clamp(12px, 2.5vw, 36px) !important;
+  padding-right: clamp(12px, 2.5vw, 36px) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
@@ -71,7 +71,7 @@
     flex-shrink: 0 !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    gap: clamp(2px, 0.55vw, 12px) !important;
+    gap: clamp(2px, 0.5vw, 10px) !important;
   }
 
   .unified-nif-navbar .unified-header-actions {
@@ -85,7 +85,7 @@
   }
 }
 
-/* Nav Menu Items - STRICTLY ONE LINE */
+/* Nav Menu Items */
 .unified-nif-navbar .navbar-nav .nav-item {
   display: flex !important;
   align-items: center !important;
@@ -96,14 +96,14 @@
 .unified-nif-navbar .navbar-nav .nav-link {
   color: var(--unified-nif-dark) !important;
   font-family: inherit !important;
-  font-size: clamp(0.78rem, 0.8vw, 0.86rem) !important;
+  font-size: clamp(0.78rem, 0.82vw, 0.86rem) !important;
   font-weight: 700 !important;
   letter-spacing: 0.3px !important;
   text-transform: uppercase !important;
   position: relative !important;
-  padding: 8px clamp(4px, 0.5vw, 10px) !important;
+  padding: 6px clamp(4px, 0.5vw, 9px) !important;
   min-height: 42px !important;
-  display: inline-flex !important;
+  display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   text-align: center !important;
@@ -111,7 +111,12 @@
   text-decoration: none !important;
   background: transparent !important;
   white-space: nowrap !important;
-  line-height: 1 !important;
+}
+
+.unified-nif-navbar .navbar-nav .nav-link.stacked-link {
+  flex-direction: column !important;
+  line-height: 1.15 !important;
+  font-size: clamp(0.75rem, 0.78vw, 0.84rem) !important;
 }
 
 /* Active and Hover States with Red Underline */
@@ -164,7 +169,7 @@
   color: var(--unified-nif-red) !important;
 }
 
-/* CTA Pill Button */
+/* CTA Pill Button (Matching Screenshot) */
 .unified-nif-navbar .unified-apply-btn {
   background: linear-gradient(135deg, #e31e24 0%, #b71c1c 100%) !important;
   background-color: var(--unified-nif-red) !important;
